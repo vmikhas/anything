@@ -1,11 +1,14 @@
-import { headerContent } from "./constants/copyright";
-import Header from "./header/Header";
+import { BrowserRouter } from "react-router-dom";
 import "./style.scss";
+import { Router } from "./router/router";
+
 
 function App() {
 	return (
 		<div className={"App"}>
-			<Header {...headerContent} />
+			<BrowserRouter>
+				<Router />
+			</BrowserRouter>
 		</div>
 	);
 }
