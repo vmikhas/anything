@@ -1,10 +1,11 @@
-import Counter from "./features/counter/Counter";
+import { headerContent } from "./constants/copyright";
+import Header from "./header/Header";
 import "./style.scss";
 
 function App() {
 	return (
 		<div className={"App"}>
-			<Counter />
+			<Header {...headerContent} />
 		</div>
 	);
 }
