@@ -17,7 +17,7 @@ export const counterSlice = createSlice({
     },
 	decrementByAmount: (state, action) => {
 		state.value -= action.payload
-	}
+	},
   },
 })
 
