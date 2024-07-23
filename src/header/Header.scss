@@ -1,0 +1,101 @@
+.header {
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		@include option(padding, 14rem 50rem 13rem);
+
+		background-color: $black900;
+	}
+
+	&__site-list {
+		display: flex;
+		gap: 43rem;
+	}
+
+	&__site-link {
+		display: flex;
+		align-items: center;
+		@include option(gap, 12rem);
+		@include option(padding, 10rem);
+
+		@include option(font-size, 14rem);
+		@include option(font-weight, 600);
+		@include option(line-height, 90%);
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $white;
+	}
+
+	&__button {
+		@include option(width, 7rem);
+		@include option(height, 7rem);
+
+		background: url("../assest/images/icons/header_arrow.svg") no-repeat center;
+		background-size: 7rem 7 rem;
+		background-color: transparent;
+
+		border: none;
+	}
+
+	&__user-list {
+		display: flex;
+		align-items: center;
+		@include option(gap, 153rem);
+	}
+
+	&__image {
+		position: relative;
+
+		@include option(width, 22rem);
+		@include option(height, 20rem);
+
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+			@include option(width, 86rem);
+			@include option(height, 4rem);
+
+			background-color: $grey700;
+			border-radius: 20rem;
+
+			position: absolute;
+			top: 7rem;
+			left: 29rem;
+		}
+
+		&::after {
+			@include option(width, 23rem);
+
+			background-color: $white;
+		}
+	}
+
+	&__user-name {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		@include option(gap, 12rem);
+		@include option(padding, 0 9rem 0 0);
+		
+		@include option(font-size, 14rem);
+		@include option(font-weight, 600);
+		@include option(line-height, 90%);
+		text-transform: uppercase;
+		color: $white;
+
+		&::before {
+			content: "";
+			display: block;
+			@include option(width, 20rem);
+			@include option(height, 20rem);
+
+			background: url("../assest/images/icons/icon_user.svg") no-repeat center;
+
+			position: absolute;
+			top: -5rem;
+			left: -31rem;
+		}
+	}
+}

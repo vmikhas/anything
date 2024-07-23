@@ -1,24 +1,30 @@
-@include font-face("Montserrat",
-	400,
-	normal,
-	"./../assest/fonts/Montserrat-Regular.woff2",
-	"./../assest/fonts/Montserrat-Regular.woff"
-);
-@include font-face("Montserrat",
-	500,
-	normal,
-	"./../assest/fonts/Montserrat-Medium.woff2",
-	"./../assest/fonts/Montserrat-Medium.woff"
-);
-@include font-face("Montserrat",
+@include font-face("Lato",
 	600,
 	normal,
-	"./../assest/fonts/Montserrat-SemiBold.woff2",
-	"./../assest/fonts/Montserrat-SemiBold.woff"
+	"./../assest/fonts/Lato-SemiBold.woff2",
+	"./../assest/fonts/Lato-SemiBold.woff"
 );
-@include font-face("Montserrat",
+@include font-face("Roboto",
+	400,
+	normal,
+	"./../assest/fonts/Roboto-Regular.woff2",
+	"./../assest/fonts/Roboto-Regular.woff"
+);
+@include font-face("Roboto",
+	600,
+	normal,
+	"./../assest/fonts/Roboto-SemiBold.woff2",
+	"./../assest/fonts/Roboto-SemiBold.woff"
+);
+@include font-face("RobotoCondensed",
+	500,
+	normal,
+	"./../assest/fonts/RobotoCondensed-MediumItalic.woff2",
+	"./../assest/fonts/RobotoCondensed-MediumItalic.woff"
+);
+@include font-face("RobotoCondensed",
 	700,
 	normal,
-	"./../assest/fonts/Montserrat-Bold.woff2",
-	"./../assest/fonts/Montserrat-Bold.woff"
+	"./../assest/fonts/RobotoCondensed-BoldItalic.woff2",
+	"./../assest/fonts/RobotoCondensed-BoldItalic.woff"
 );
