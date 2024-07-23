@@ -1,0 +1,61 @@
+.pagination {
+
+	&__list {
+		display: flex;
+		@include option(gap, 149rem);
+		@include option(padding, 160rem 0 0 291rem);
+	}
+
+	&__item {
+		position: relative;
+		z-index: 2;
+
+		&:not(:last-child)::before {
+			content: "";
+			display: block;
+			@include option(width, 127rem);
+			@include option(height, 1rem);
+
+			background-color: $grey300;
+
+			position: absolute;
+			top: 11rem;
+			left: 54rem;
+		}
+
+		&_active {
+			.pagination__link {
+				color: $white;
+			}
+
+			&::after {
+				content: "";
+				display: block;
+				@include option(width, 75rem);
+				@include option(height, 68rem);
+
+				mask: url("../assest/images/icons/rhombus.svg") no-repeat center;
+				background-color: $grey300;
+
+				position: absolute;
+				top: -22rem;
+				left: -15rem;
+				z-index: 1;
+			}
+		}
+	}
+
+	&__link {
+		position: relative;
+		z-index: 2;
+
+		font-family: $RobotoCondensed;
+		font-style: italic;
+		@include option(font-size, 24rem);
+		@include option(font-weight, 500);
+		@include option(line-height, 100%);
+		@include option(letter-spacing, -0.06em);
+		text-decoration: none;
+		color: $grey300;
+	}
+}

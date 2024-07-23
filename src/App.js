@@ -1,13 +1,19 @@
 import { BrowserRouter } from "react-router-dom";
 import "./style.scss";
 import { Router } from "./router/router";
+import { SwitchTransition, CSSTransition} from "react-transition-group";
 
 
 function App() {
+	
 	return (
 		<div className={"App"}>
 			<BrowserRouter>
-				<Router />
+				<SwitchTransition>
+					<CSSTransition >
+						<Router />
+					</CSSTransition>
+				</SwitchTransition>
 			</BrowserRouter>
 		</div>
 	);

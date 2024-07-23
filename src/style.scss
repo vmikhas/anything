@@ -10,11 +10,6 @@
 /* COMPONENTS */
 
 @import './header/Header.scss';
-// @import './calculate/Calculate.scss';
-// @import './winnings/Winnings.scss';
-// @import './pay/Pay.scss';
-// @import './filling/Filling.scss';
-// @import './resident/Resident.scss';
-// @import './cases/Cases.scss';
-// @import './map/Map.scss';
-// @import './footer/Footer.scss';
+@import './nav/Nav.scss';
+@import './pagination/Pagination.scss';
+@import './story/Story.scss';

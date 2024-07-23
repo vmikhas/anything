@@ -1,0 +1,28 @@
+.story {
+	&__title {
+		font-family: $RobotoCondensed;
+		font-style: italic;
+		@include option(font-size, 128rem);
+		@include option(font-weight, 700);
+		@include option(line-height, 100%);
+		@include option(letter-spacing, -0.06em);
+		color: $crimson;
+	}
+
+	&__subtitle {
+		font-family: $RobotoCondensed;
+		font-style: italic;
+		@include option(font-size, 36rem);
+		@include option(font-weight, 700);
+		@include option(line-height, 130%);
+		@include option(letter-spacing, -0.03em);
+		color: $grey600;
+	}
+
+	&__desc {
+		@include option(font-size, 20rem);
+		@include option(font-weight, 400);
+		@include option(line-height, 140%);
+		color: $grey800;
+	}
+}

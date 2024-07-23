@@ -1,0 +1,69 @@
+.nav {
+	@include option(padding, 84rem 0 0);
+
+	&__logo {
+		display: block;
+		@include option(width, 158rem);
+		@include option(height, 101rem);
+	}
+
+	&__logo-image {
+		@include option(width, 158rem);
+		@include option(height, 101rem);
+		@include option(padding, 0 6rem 0 0);
+
+
+		color: $crimson;
+		fill: currentColor;
+		--color-rhombus: #b7c7df;
+		;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		@include option(gap, 21rem);
+		@include option(padding, 33rem 0 0 81rem);
+	}
+
+	&__link {
+		position: relative;
+
+		display: block;
+		width: max-content;
+		@include option(padding, 5rem);
+
+		font-family: $RobotoCondensed;
+		font-style: italic;
+		@include option(font-size, 16rem);
+		@include option(font-weight, 500);
+		@include option(line-height, 91%);
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $grey900;
+
+		&::before {
+			box-sizing: content-box;
+
+			content: "";
+			display: block;
+			@include option(width, 8rem);
+			@include option(height, 8rem);
+
+			background-color: $grey400;
+			border-radius: 50%;
+
+			position: absolute;
+			top: 13rem;
+			left: -25rem;
+		}
+
+		&_active {
+			&::before {
+				border: 12rem solid $grey200;
+				top: 2rem;
+				left: -37rem;
+			}
+		}
+	}
+}
