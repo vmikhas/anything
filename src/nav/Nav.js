@@ -1,12 +1,25 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { routes } from "../router/routes/routes";
 import { ReactComponent as Logo } from "../assest/images/logo/logo.svg";
 import parse from "html-react-parser";
-// import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Nav({ mainPage, nowPage, historyPage }) {
 	const navigate = useNavigate();
-	// const [active, setActive] = useState('main');
+	const location = useLocation();
+	const [active, setActive] = useState('');
+
+	useEffect(() => {
+		if (location.pathname === routes.main) return setActive('main');
+		if (location.pathname === routes.now) return setActive('now');
+		if (location.pathname === routes.history) return setActive('history');
+	}, [location.pathname]);
+
+	const navLinks = [
+		{ name: 'main', page: mainPage, route: routes.main },
+		{ name: 'now', page: nowPage, route: routes.now },
+		{ name: 'history', page: historyPage, route: routes.history }
+	];
 
 	return (
 		<section className={"nav"}>
@@ -14,12 +27,12 @@ export default function Nav({ mainPage, nowPage, historyPage }) {
 				<Logo className={"nav__logo-image"} />
 			</a>
 			<nav className={"nav__list"}>
-				<a className={`nav__link`} href={"#1"} onClick={() => navigate(routes.main)}>{parse(mainPage)}</a>
-				<a className={`nav__link`} href={"#2"} onClick={() => navigate(routes.now)}>{parse(nowPage)}</a>
-				<a className={`nav__link`} href={"#3"} onClick={() => navigate(routes.history)}>{parse(historyPage)}</a>
+				{navLinks.map(({ name, page, route }) => (
+					<a className={`nav__link ${active === name ? 'nav__link_active' : ''}`} href={`#${name}`} key={name} onClick={() => navigate(route)}>
+						{parse(page)}
+					</a>
+				))}
 			</nav>
 		</section>
 	);
 }
-
-// ${pages.type === active ? 'nav__link_active' : ''}
