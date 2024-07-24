@@ -21,6 +21,7 @@ img {
 *::before,
 *::after {
 	box-sizing: border-box;
+	// outline: 1rem solid tomato;
 }
 
 /*	2. Remove default margin	*/
@@ -96,7 +97,3 @@ button:focus,
 a:focus {
 	outline: none;
 }
-
-// * {
-// 	outline: 1px solidred;
-// }

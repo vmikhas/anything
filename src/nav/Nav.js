@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { routes } from "../router/routes/routes";
 import { ReactComponent as Logo } from "../assest/images/logo/logo.svg";
+import { ReactComponent as Arrow } from "../assest/images/icons/arrow.svg";
 import parse from "html-react-parser";
 import { useEffect, useState } from "react";
 
@@ -33,6 +34,9 @@ export default function Nav({ mainPage, nowPage, historyPage }) {
 					</a>
 				))}
 			</nav>
+			<a className="nav__button-bottom" href={"#1"} aria-label={"Перейти к следующему слайду"}>
+				<div className="nav__image"><Arrow /></div>
+			</a>
 		</section>
 	);
 }

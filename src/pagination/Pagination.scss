@@ -3,7 +3,7 @@
 	&__list {
 		display: flex;
 		@include option(gap, 149rem);
-		@include option(padding, 160rem 0 0 291rem);
+		@include option(padding, 0 0 0 19rem);
 	}
 
 	&__item {
