@@ -34,7 +34,7 @@ export default function Nav({ mainPage, nowPage, historyPage }) {
 					</a>
 				))}
 			</nav>
-			<a className="nav__button-bottom" href={"#1"} aria-label={"Перейти к следующему слайду"}>
+			<a className="nav__button" href={"#1"} aria-label={"Перейти к следующему слайду"}>
 				<div className="nav__image"><Arrow /></div>
 			</a>
 		</section>

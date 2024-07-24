@@ -5,6 +5,11 @@
 
 	width: max-content;
 
+	&__container {
+		display: flex;
+		@include option(gap, 276rem);
+	}
+
 	&__title {
 		@include option(padding, 41rem 0 0);
 
@@ -14,7 +19,39 @@
 		@include option(font-weight, 700);
 		@include option(line-height, 100%);
 		@include option(letter-spacing, -0.053em);
-		color: $crimson;
+
+		&_1999,
+		&_2020,
+		&_2021 {
+			color: $crimson;
+		}
+
+		&_2007 {
+			color: $violet-red;
+		}
+
+		&_2010 {
+			background: linear-gradient(180deg, #989ca3 0%, #c9ced7 50%, #424750 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		&_2014 {
+			color: $blue-steel;
+		}
+
+		&_2017 {
+			color: $dark-tangerine;
+		}
+
+		&_2019 {
+			color: $select-yellow;
+		}
+
+		&_2022 {
+			color: $chocolate;
+		}
 	}
 
 	&__subtitle {
@@ -26,7 +63,21 @@
 		@include option(font-weight, 700);
 		@include option(line-height, 130%);
 		@include option(letter-spacing, -0.03em);
-		color: $grey600;
+
+		&_1999,
+		&_2007,
+		&_2014,
+		&_2020,
+		&_2021 {
+			color: $grey600;
+		}
+		&_2007
+		&_2010 {}
+		
+		&_2017 {}
+		&_2019 {}
+		
+		&_2022 {}
 	}
 
 	&__desc {
@@ -40,11 +91,12 @@
 	}
 
 	&__image {
-		position: absolute;
-		@include option(top, 59rem);
-		@include option(left, 908rem);
+		// position: absolute;
+		// @include option(top, 59rem);
+		// @include option(left, 908rem);
 
 		@include option(width, 530rem);
 		@include option(height, 735rem);
+		@include option(margin, 35rem 0 0);
 	}
 }

@@ -1,4 +1,5 @@
 .nav {
+	position: relative;
 	@include option(padding, 268rem 0 0);
 
 	&__logo {
@@ -65,5 +66,26 @@
 				left: -37rem;
 			}
 		}
+	}
+
+	&__button {
+		position: absolute;
+		@include option(top, 932rem);
+		@include option(left, 50%);
+		transform: translateX(-50%);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include option(width, 48rem);
+		@include option(height, 48rem);
+
+		background-color: $white;
+		border-radius: 100%
+	}
+
+	&__image {
+		@include option(width, 20rem);
+		@include option(height, 26rem);
 	}
 }

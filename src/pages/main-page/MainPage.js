@@ -8,7 +8,7 @@ export default function MainPage() {
 		<>
 			<Header {...headerContent} />
 			<Nav {...navContent} />
-			<Story {...storyContent} />
+			<Story content={storyContent} />
 		</>
 	);
 }
