@@ -13,7 +13,7 @@ export default function Story({ content }) {
 			<Pagination {...paginationContent} />
 			<div className={"story__container"}>
 				<div className={"story__wrapper"}>
-					<h1 className={`story__title story_title_${currentContent.title}`}>{currentContent.title}</h1>
+					<h1 className={`story__title story__title_${currentContent.title}`}>{currentContent.title}</h1>
 					<h2 className={`story__subtitle story__subtitle_${currentContent.title}`}>{parse(currentContent.subtitle)}</h2>
 					<p className={`story__desc story__desc_${currentContent.title}`}>{parse(currentContent.desc)}</p>
 				</div>
@@ -24,8 +24,3 @@ export default function Story({ content }) {
 		</section>
 	);
 }
-// className={`calculate__carousel-button ${carouselItem.type === active ? 'calculate__carousel-button_active' : ''}
-// const titleClassName = classNames('story__title', {
-// 	[`story__title_${currentContent.type}`]: currentContent.type,
-//   });
-//   <p className={classNames("intro__user-desc intro__user-desc_me", {'active': isActive})}>{userDesc} </p>

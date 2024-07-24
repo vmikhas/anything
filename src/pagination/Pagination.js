@@ -2,8 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { setSlideIndex } from "../redux/reducers/contentSlice";
 
 export default function Pagination({ years }) {
-	const dispatch = useDispatch();
 	const active = useSelector((state) => state.content.slideIndex);
+	const dispatch = useDispatch();
 
 	console.log(active);
 

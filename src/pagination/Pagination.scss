@@ -42,6 +42,24 @@
 				left: -15rem;
 				z-index: 1;
 			}
+
+			&:nth-child(1){
+				&::after {
+					background-color: $chocolate;
+				}
+			}
+
+			&:nth-child(4){
+				&::after {
+					background-color: $select-yellow;
+				}
+			}
+
+			&:nth-child(5){
+				&::after {
+					background-color: $dark-tangerine;
+				}
+			}
 		}
 	}
 
@@ -56,6 +74,40 @@
 		@include option(line-height, 100%);
 		@include option(letter-spacing, -0.06em);
 		text-decoration: none;
+
+		&:not(:last-child)::before {
+			content: "";
+			display: block;
+			@include option(width, 127rem);
+			@include option(height, 1rem);
+
+			background-color: $grey300;
+
+			position: absolute;
+			top: 11rem;
+			left: 54rem;
+		}
+
+		&_active {
+			.pagination__link {
+				color: $white;
+			}
+
+			&::after {
+				content: "";
+				display: block;
+				@include option(width, 75rem);
+				@include option(height, 68rem);
+
+				mask: url("../assest/images/icons/rhombus.svg") no-repeat center;
+				background-color: $grey300;
+
+				position: absolute;
+				top: -22rem;
+				left: -15rem;
+				z-index: 1;
+			}
+		}
 
 		&_one,
 		&_four,
