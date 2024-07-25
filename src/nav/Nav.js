@@ -3,22 +3,22 @@ import { routes } from "../router/routes/routes";
 import { ReactComponent as Logo } from "../assest/images/logo/logo.svg";
 import { ReactComponent as Arrow } from "../assest/images/icons/arrow.svg";
 import parse from "html-react-parser";
-import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setActiveScreen } from "../redux/reducers/contentSlice";
 
 export default function Nav({ mainPage, nowPage, historyPage }) {
 	const slideIndex = useSelector((state) => state.content.slideIndex);
+	const active = useSelector((state) => state.content.activeScreen);
+	const dispatch = useDispatch();
 
 	const navigate = useNavigate();
 	const location = useLocation();
-	const [active, setActive] = useState('');
-
-	// console.log(active);
 
 	useEffect(() => {
-		if (location.pathname === routes.main) return setActive('main');
-		if (location.pathname === routes.now) return setActive('now');
-		if (location.pathname === routes.history) return setActive('history');
+		if (location.pathname === routes.main) return ()=> dispatch(setActiveScreen('main'));
+		if (location.pathname === routes.now) return ()=> dispatch(setActiveScreen('now'));
+		if (location.pathname === routes.history) return ()=> dispatch(setActiveScreen('history'));
 	}, [location.pathname]);
 
 	const navLinks = [
@@ -30,7 +30,7 @@ export default function Nav({ mainPage, nowPage, historyPage }) {
 	return (
 		<section className={"nav"}>
 			<a className={"nav__logo"} href={"/"} onClick={() => navigate(routes.main)}>
-				<Logo className={`nav__logo-image nav__logo-image_${slideIndex}`} />
+				<Logo className={`nav__logo-image nav__logo-image_${slideIndex} nav__logo-image_${active}`} />
 			</a>
 			<nav className={"nav__list"}>
 				{navLinks.map(({ name, page, route }) => (

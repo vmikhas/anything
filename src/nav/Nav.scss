@@ -45,6 +45,19 @@
 			color: $chocolate;
 			--color-rhombus: #353535;
 		}
+
+		&_now {
+			position: relative;
+			@include option(top, -231rem);
+			@include option(left, -75rem);
+
+			@include option(width, 275rem);
+			@include option(height, 180rem);
+
+			color: $crimson;
+			fill: currentColor;
+			--color-rhombus: #b7c7df;
+		}
 	}
 
 	&__list {
