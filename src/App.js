@@ -7,7 +7,7 @@ import { SwitchTransition, CSSTransition} from "react-transition-group";
 function App() {
 	
 	return (
-		<div className={"App"} style={{ maxHeight: '1080rem' }}>
+		<div className={"App"} style={{ maxHeight: '1080rem', height: '100%',  overflow: "hidden" }}>
 			<BrowserRouter>
 				<SwitchTransition>
 					<CSSTransition >

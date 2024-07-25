@@ -36,7 +36,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld1999_m@1.5x.webp 1.5x, ./images/pack/ld1999_m@2x.webp 2x',
 					type: 'image/webp',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				},
 				{
 					srcSet: './images/pack/ld1999_d@1.5x.webp',
@@ -45,7 +45,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld1999_m@1.5x.png 1.5x, ./images/pack/ld1999_m@2x.png 2x',
 					type: 'image/png',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				}
 			],
 			imgAttr: {
@@ -57,13 +57,13 @@ export const storyContent = {
 	eight: {
 		title: '2007',
 		subtitle: 'LD Pink Super Slims',
-		desc: 'За годы работы на российском рынке марка LD завоевала себе имя настоящего новатора. И в 2007 году появились сигареты LD в потенциальном и набирающим оборот в то время супертонком формате — LD Pink Super Slims. Новинка была выпущена в сегменте сигарет по доступной цене, сделав их доступными для широкого круга потребителей.',
+		desc: 'За годы работы на российском рынке марка LD завоевала себе&nbsp;имя настоящего новатора. И в 2007 году появились сигареты LD в потенциальном и набирающим оборот в&nbsp;то&nbsp;время&nbsp;супертонком формате — LD Pink Super&nbsp;Slims.&nbsp;Новинка&nbsp;была выпущена в сегменте сигарет по&nbsp;доступной цене, сделав их доступными для&nbsp;широкого&nbsp;круга потребителей.',
 		image: {
 			sources: [
 				{
 					srcSet: './images/pack/ld2007_m@1.5x.webp 1.5x, ./images/pack/ld2007_m@2x.webp 2x',
 					type: 'image/webp',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				},
 				{
 					srcSet: './images/pack/ld2007_d@1.5x.webp',
@@ -72,7 +72,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld2007_m@1.5x.png 1.5x, ./images/pack/ld2007_m@2x.png 2x',
 					type: 'image/png',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				}
 			],
 			imgAttr: {
@@ -84,14 +84,14 @@ export const storyContent = {
 	seven: {
 		title: '2010',
 		subtitle: 'LD Club Platinum',
-		desc: '<p>Подтверждая статус новатора, в 2010 году под маркой LD запускаются новые сигареты LD Club Platinum — первый в среднеценовом сегменте продукт формата King Size Super Slims.</p>' +
-			'<p>Вскоре после запуска линейка LD Club уже вошла в топ 3 мест по уровню продаж среди всех марок формата King Size Super Slims в России.</p>',
+		desc: '<p class="story__desc_p">Подтверждая статус новатора, в 2010 году под маркой LD запускаются новые сигареты LD Club Platinum — первый в&nbsp;среднеценовом сегменте продукт формата King Size Super Slims.</p>' +
+			'Вскоре после запуска линейка LD Club уже вошла в топ 3 мест по&nbsp;уровню продаж среди всех марок формата King&nbsp;Size&nbsp;Super&nbsp;Slims в России.',
 		image: {
 			sources: [
 				{
 					srcSet: './images/pack/ld2010_m@1.5x.webp 1.5x, ./images/pack/ld2010_m@2x.webp 2x',
 					type: 'image/webp',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				},
 				{
 					srcSet: './images/pack/ld2010_d@1.5x.webp',
@@ -100,7 +100,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld2010_m@1.5x.png 1.5x, ./images/pack/ld2010_m@2x.png 2x',
 					type: 'image/png',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				}
 			],
 			imgAttr: {
@@ -112,13 +112,13 @@ export const storyContent = {
 	six: {
 		title: '2014',
 		subtitle: 'LD Compact',
-		desc: 'Сосредоточившись на производстве столь популярных сигарет компактного формата, в 2014 году LD выпустили очередную новинку уже в компактном формате - LD Club Compact. А годом позже именно LD первым открыл эру компактного удлиненного формата, выпустив сигареты LD Compact 100’s Blue, в которых на 25% больше табака по сравнению с компактным предложением.',
+		desc: 'Сосредоточившись на производстве столь популярных сигарет компактного формата, в 2014 году LD выпустили очередную новинку уже в компактном формате - LD Club Compact.<br /> А годом позже именно LD первым открыл эру компактного удлиненного формата, выпустив сигареты LD Compact 100’s Blue, в которых на 25% больше табака по сравнению<br class="story__desc_br2014" /> с компактным предложением.',
 		image: {
 			sources: [
 				{
 					srcSet: './images/pack/ld2014_m@1.5x.webp 1.5x, ./images/pack/ld2014_m@2x.webp 2x',
 					type: 'image/webp',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				},
 				{
 					srcSet: './images/pack/ld2014_d@1.5x.webp',
@@ -127,7 +127,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld2014_m@1.5x.png 1.5x, ./images/pack/ld2014_m@2x.png 2x',
 					type: 'image/png',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				}
 			],
 			imgAttr: {
@@ -145,7 +145,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld2017_m@1.5x.webp 1.5x, ./images/pack/ld2017_m@2x.webp 2x',
 					type: 'image/webp',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				},
 				{
 					srcSet: './images/pack/ld2017_d@1.5x.webp',
@@ -154,7 +154,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld2017_m@1.5x.png 1.5x, ./images/pack/ld2017_m@2x.png 2x',
 					type: 'image/png',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				}
 			],
 			imgAttr: {
@@ -165,14 +165,14 @@ export const storyContent = {
 	},
 	four: {
 		title: '2019',
-		subtitle: '2019 год стал одним из важнейших в эволюции бренда',
-		desc: 'Рынок увидели новинки LD Sunny и LD Breezy с новыми вкусами капсул по доступной цене. Расширение капсульной линейки сигарет LD позволило сделать новый продукт интересным широкому кругу потребителей, давая возможность приобрести сигареты по доступной цене с новыми вкусами.',
+		subtitle: '2019 год стал одним из важнейших<br /> в эволюции бренда',
+		desc: 'Рынок увидели новинки LD Sunny и LD Breezy с новыми вкусами капсул по доступной цене. Расширение капсульной линейки сигарет LD позволило сделать новый продукт интересным широкому кругу потребителей, давая возможность приобрести сигареты по доступной цене с&nbsp;новыми вкусами.',
 		image: {
 			sources: [
 				{
 					srcSet: './images/pack/ld2019_m@1.5x.webp 1.5x, ./images/pack/ld2019_m@2x.webp 2x',
 					type: 'image/webp',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				},
 				{
 					srcSet: './images/pack/ld2019_d@1.5x.webp',
@@ -181,7 +181,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld2019_m@1.5x.png 1.5x, ./images/pack/ld2019_m@2x.png 2x',
 					type: 'image/png',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				}
 			],
 			imgAttr: {
@@ -193,14 +193,14 @@ export const storyContent = {
 	three: {
 		title: '2020',
 		subtitle: 'В 2020 году произошло обновление дизайна всей линейки сигарет LD',
-		desc: '<p>Эта новая ступень в развитии марки позволила создать продукт, соответствующий текущим запросам потребителей — были запущены сигареты в современном динамичном дизайне пачки и с новыми вкусами капсул, которые стали однимииз самых популярных среди потребителей.</p>' +
-			'<p>А также свет увидела обновленная линейка LD Autograph по доступной цене и LD Regular 100 в удлиненном классическом формате.</p>',
+		desc: '<p class="story__desc_p">Эта новая ступень в развитии марки позволила создать продукт, соответствующий текущим запросам потребителей — были запущены сигареты в современном динамичном дизайне пачки и с новыми вкусами капсул, которые стали одними из&nbsp;самых популярных среди потребителей.</p>' +
+			'А также свет увидела обновленная линейка LD Autograph по&nbsp;доступной цене и LD Regular 100 в удлиненном классическом&nbsp;формате.',
 		image: {
 			sources: [
 				{
 					srcSet: './images/pack/ld2020_m@1.5x.webp 1.5x, ./images/pack/ld2020_m@2x.webp 2x',
 					type: 'image/webp',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				},
 				{
 					srcSet: './images/pack/ld2020_d@1.5x.webp',
@@ -209,7 +209,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld2020_m@1.5x.png 1.5x, ./images/pack/ld2020_m@2x.png 2x',
 					type: 'image/png',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				}
 			],
 			imgAttr: {
@@ -227,7 +227,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld2021_m@1.5x.webp 1.5x, ./images/pack/ld2021_m@2x.webp 2x',
 					type: 'image/webp',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				},
 				{
 					srcSet: './images/pack/ld2021_d@1.5x.webp',
@@ -236,7 +236,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld2021_m@1.5x.png 1.5x, ./images/pack/ld2021_m@2x.png 2x',
 					type: 'image/png',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				}
 			],
 			imgAttr: {
@@ -248,14 +248,14 @@ export const storyContent = {
 	one: {
 		title: '2022',
 		subtitle: '2022 год – год экспериментов для бренда LD',
-		desc: '<p>Впервые в линейке LD появляются продукты с двумя уровнями вкуса: капсулой и ароматизированной табачной мешкой.</p>' +
-			'<p>Новый продукт был создан в соответствии с меняющимися трендами табачного рынка, чтобы удовлетворить самых требовательных потребителей.</p>',
+		desc: '<p class="story__desc_p2022">Впервые в линейке LD появляются продукты с двумя уровнями вкуса: капсулой и ароматизированной табачной мешкой.</p>' +
+			'<p class="story__desc_p2022">Новый продукт был создан в соответствии с&nbsp;меняющимися&nbsp;трендами табачного рынка, чтобы удовлетворить самых требовательных потребителей.</p>',
 		image: {
 			sources: [
 				{
 					srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
 					type: 'image/webp',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				},
 				{
 					srcSet: './images/pack/ld2022_d@1.5x.webp',
@@ -264,7 +264,7 @@ export const storyContent = {
 				{
 					srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
 					type: 'image/png',
-					media: '(max-width: 999rem)'
+					media: '(max-width: 999px)'
 				}
 			],
 			imgAttr: {

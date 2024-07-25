@@ -23,6 +23,24 @@
 			left: 54rem;
 		}
 
+		&_one {
+			&:not(:last-child)::before {
+				background-color: $chocolate;
+			}
+		}
+
+		&_four {
+			&:not(:last-child)::before {
+				background-color: $select-yellow;
+			}
+		}
+
+		&_five {
+			&:not(:last-child)::before {
+				background-color: $dark-tangerine;
+			}
+		}
+
 		&_active {
 			.pagination__link {
 				color: $white;
@@ -43,19 +61,19 @@
 				z-index: 1;
 			}
 
-			&:nth-child(1){
+			&:nth-child(1) {
 				&::after {
 					background-color: $chocolate;
 				}
 			}
 
-			&:nth-child(4){
+			&:nth-child(4) {
 				&::after {
 					background-color: $select-yellow;
 				}
 			}
 
-			&:nth-child(5){
+			&:nth-child(5) {
 				&::after {
 					background-color: $dark-tangerine;
 				}
@@ -74,19 +92,6 @@
 		@include option(line-height, 100%);
 		@include option(letter-spacing, -0.06em);
 		text-decoration: none;
-
-		&:not(:last-child)::before {
-			content: "";
-			display: block;
-			@include option(width, 127rem);
-			@include option(height, 1rem);
-
-			background-color: $grey300;
-
-			position: absolute;
-			top: 11rem;
-			left: 54rem;
-		}
 
 		&_active {
 			.pagination__link {
