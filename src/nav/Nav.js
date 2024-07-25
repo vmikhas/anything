@@ -4,11 +4,16 @@ import { ReactComponent as Logo } from "../assest/images/logo/logo.svg";
 import { ReactComponent as Arrow } from "../assest/images/icons/arrow.svg";
 import parse from "html-react-parser";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 export default function Nav({ mainPage, nowPage, historyPage }) {
+	const slideIndex = useSelector((state) => state.content.slideIndex);
+
 	const navigate = useNavigate();
 	const location = useLocation();
 	const [active, setActive] = useState('');
+
+	// console.log(active);
 
 	useEffect(() => {
 		if (location.pathname === routes.main) return setActive('main');
@@ -24,12 +29,12 @@ export default function Nav({ mainPage, nowPage, historyPage }) {
 
 	return (
 		<section className={"nav"}>
-			<a className={"nav__logo"} href={"#1"} onClick={() => navigate(routes.main)}>
-				<Logo className={"nav__logo-image"} />
+			<a className={"nav__logo"} href={"/"} onClick={() => navigate(routes.main)}>
+				<Logo className={`nav__logo-image nav__logo-image_${slideIndex}`} />
 			</a>
 			<nav className={"nav__list"}>
 				{navLinks.map(({ name, page, route }) => (
-					<a className={`nav__link ${active === name ? 'nav__link_active' : ''}`} href={`#${name}`} key={name} onClick={() => navigate(route)}>
+					<a className={`nav__link nav__link_${slideIndex} ${active === name ? 'nav__link_active' : ''}`} href={`#${name}`} key={name} onClick={() => navigate(route)}>
 						{parse(page)}
 					</a>
 				))}

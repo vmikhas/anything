@@ -5,8 +5,6 @@ export default function Pagination({ years }) {
 	const active = useSelector((state) => state.content.slideIndex);
 	const dispatch = useDispatch();
 
-	console.log(active);
-
 	return (
 		<div className={"pagination"}>
 			<ul className={"pagination__list"}>

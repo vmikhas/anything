@@ -5,6 +5,23 @@
 
 	width: max-content;
 
+	&__container {
+		&-enter {
+			opacity: 0;
+		}
+	
+		&-enter-active,
+		&-enter-done {
+			opacity: 1;
+			transition: 0.3s ease-in-out;
+		}
+	
+		&-exit-active {
+			opacity: 0;
+			transition: 0.3s ease-in-out;
+		}
+	}
+
 	&__title {
 		@include option(padding, 41rem 0 0 10rem);
 
@@ -70,8 +87,8 @@
 		&_2019 {
 			@include option(padding, 55rem 0 0 13rem);
 			@include option(line-height, 100%);
-			// color: $white;
-			color: black;
+			color: $white;
+			// color: black;
 		}
 
 		&_2020 {
@@ -83,8 +100,8 @@
 		&_2010,
 		&_2017,
 		&_2022 {
-			// color: $white;
-			color: yellowgreen;
+			color: $white;
+			// color: yellowgreen;
 		}
 	}
 

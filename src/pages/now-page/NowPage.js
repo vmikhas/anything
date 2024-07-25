@@ -1,5 +1,6 @@
-import { headerContent, navContent } from "../../constants/copyright";
+import { headerContent, introContent, navContent } from "../../constants/copyright";
 import Header from "../../header/Header";
+import Intro from "../../intro/Intro";
 import Nav from "../../nav/Nav";
 
 export default function NowPage() {
@@ -7,6 +8,7 @@ export default function NowPage() {
 		<>
 			<Header {...headerContent} />
 			<Nav {...navContent} />
+			<Intro {...introContent} />
 		</>
 	);
 }

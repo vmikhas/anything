@@ -1,0 +1,23 @@
+.intro {
+	position: relative;
+	top: -356rem;
+	left: 358rem;
+
+	&__title {
+		font-family: $RobotoCondensed;
+		font-style: italic;
+		@include option(font-size, 64rem);
+		@include option(font-weight, 700);
+		@include option(line-height, 100%);
+		@include option(letter-spacing, -0.03em);
+		color: $grey200;
+	}
+
+	&__image {
+		position: relative;
+		@include option(top, -53rem);
+		@include option(left, 589rem);
+
+		@include option(width, 908rem);
+	}
+}

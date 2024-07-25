@@ -274,3 +274,235 @@ export const storyContent = {
 		},
 	}
 }
+
+export const backgroundImage = {
+	nine: {
+		image: {
+			sources: [
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// },
+				{
+					srcSet: './images/background/bg1999_d@1.5x.webp',
+					type: 'image/webp'
+				},
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// }
+			],
+			imgAttr: {
+				src: './images/background/bg1999_d@1.5x.jpg',
+				alt: 'Фон слайда'
+			}
+		}
+	},
+	eight: {
+		image: {
+			sources: [
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// },
+				{
+					srcSet: './images/background/bg2007_d@1.5x.webp',
+					type: 'image/webp'
+				},
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// }
+			],
+			imgAttr: {
+				src: './images/background/bg2007_d@1.5x.jpg',
+				alt: 'Фон слайда'
+			}
+		}
+	},
+	seven: {
+		image: {
+			sources: [
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// },
+				{
+					srcSet: './images/background/bg2010_d@1.5x.webp',
+					type: 'image/webp'
+				},
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// }
+			],
+			imgAttr: {
+				src: './images/background/bg2010_d@1.5x.jpg',
+				alt: 'Фон слайда'
+			}
+		}
+	},
+	six: {
+		image: {
+			sources: [
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// },
+				{
+					srcSet: './images/background/bg2014_d@1.5x.webp',
+					type: 'image/webp'
+				},
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// }
+			],
+			imgAttr: {
+				src: './images/background/bg2014_d@1.5x.jpg',
+				alt: 'Фон слайда'
+			}
+		}
+	},
+	five: {
+		image: {
+			sources: [
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// },
+				{
+					srcSet: './images/background/bg2017_d@1.5x.webp',
+					type: 'image/webp'
+				},
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// }
+			],
+			imgAttr: {
+				src: './images/background/bg2017_d@1.5x.jpg',
+				alt: 'Фон слайда'
+			}
+		}
+	},
+	four: {
+		image: {
+			sources: [
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// },
+				{
+					srcSet: './images/background/bg2019_d@1.5x.webp',
+					type: 'image/webp'
+				},
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// }
+			],
+			imgAttr: {
+				src: './images/background/bg2019_d@1.5x.jpg',
+				alt: 'Фон слайда'
+			}
+		}
+	},
+	three: {
+		image: {
+			sources: [
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// },
+				{
+					srcSet: './images/background/bg2020_d@1.5x.webp',
+					type: 'image/webp'
+				},
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// }
+			],
+			imgAttr: {
+				src: './images/background/bg2020_d@1.5x.jpg',
+				alt: 'Фон слайда'
+			}
+		}
+	},
+	two: {
+		image: {
+			sources: [
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// },
+				{
+					srcSet: './images/background/bg2021_d@1.5x.webp',
+					type: 'image/webp'
+				},
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// }
+			],
+			imgAttr: {
+				src: './images/background/bg2021_d@1.5x.jpg',
+				alt: 'Фон слайда'
+			}
+		}
+	},
+	one: {
+		image: {
+			sources: [
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// },
+				{
+					srcSet: './images/background/bg2022_d@1.5x.webp',
+					type: 'image/webp'
+				},
+				// {
+				// 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
+				// 	type: 'image/jpeg',
+				// 	media: '(max-width: 999px)'
+				// }
+			],
+			imgAttr: {
+				src: './images/background/bg2022_d@1.5x.jpg',
+				alt: 'Фон слайда'
+			}
+		}
+	}
+}
+
+export const introContent = {
+	title: 'LD сегодня —<br /> международный бренд,<br /> доступный более чем<br /> в 50 странах мира',
+	image: {
+		sources: [
+
+		],
+		imgAttr: {
+			src: './images/pack/ldnow_d@1.5x.png',
+			alt: 'Радуга из пачек LD'
+		}
+	}
+}

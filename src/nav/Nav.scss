@@ -17,7 +17,34 @@
 		color: $crimson;
 		fill: currentColor;
 		--color-rhombus: #b7c7df;
-		;
+
+		&_eight {
+			color: $violet-red;
+		}
+
+		&_seven {
+			color: $manatee;
+			--color-rhombus: #626771;
+		}
+
+		&_six {
+			color: $blue-steel;
+		}
+
+		&_five {
+			color: $dark-tangerine;
+			--color-rhombus: #575970;
+		}
+
+		&_four {
+			color: $select-yellow;
+			--color-rhombus: #575970;
+		}
+
+		&_one {
+			color: $chocolate;
+			--color-rhombus: #353535;
+		}
 	}
 
 	&__list {
@@ -64,6 +91,54 @@
 				border: 12rem solid $grey200;
 				top: 2rem;
 				left: -37rem;
+			}
+		}
+
+		&_one {
+			&::before {
+				background-color: $white;
+			}
+
+			&.nav__link_active {
+				&::before {
+					border: 12rem solid $chocolate;
+				}
+			}
+		}
+
+		&_four {
+			&::before {
+				background-color: $white;
+			}
+
+			&.nav__link_active {
+				&::before {
+					border: 12rem solid $select-yellow;
+				}
+			}
+		}
+
+		&_five {
+			&::before {
+				background-color: $white;
+			}
+
+			&.nav__link_active {
+				&::before {
+					border: 12rem solid $dark-tangerine;
+				}
+			}
+		}
+
+		&_seven {
+			&::before {
+				background-color: $white;
+			}
+
+			&.nav__link_active {
+				&::before {
+					border: 12rem solid $grey-squirrel;
+				}
 			}
 		}
 	}
