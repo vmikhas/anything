@@ -5,14 +5,57 @@
 	&__container {
 		display: flex;
 		justify-content: space-between;
-		@include option(padding, 14rem 50rem 13rem);
+		@include option(padding, 14rem 50rem 13rem, 11rem 21rem 9rem);
 
 		background-color: $black900;
+	}
+
+	&__toggle {
+		position: relative;
+		bottom: 4rem;
+
+		width: 27rem;
+		height: 20px;
+		padding: 0;
+
+		background-color: transparent;
+
+		border: 0;
+
+		cursor: pointer;
+
+		span {
+			display: block;
+			width: 27rem;
+			height: 3rem;
+
+			background-color: $white;
+
+			position: relative;
+
+			&::before {
+				content: "";
+				width: 27rem;
+				height: 3rem;
+
+				background-color: $white;
+
+				position: absolute;
+				top: 6rem;
+				left: 0;
+
+				transition: all 0.3s ease 0s;
+			}
+		}
 	}
 
 	&__site-list {
 		display: flex;
 		gap: 43rem;
+
+		@media (max-width: $MIN-DESKTOP - 1) {
+			display: none;
+		}
 	}
 
 	&__site-link {
@@ -52,25 +95,27 @@
 		@include option(width, 22rem);
 		@include option(height, 20rem);
 
-		&::before,
-		&::after {
-			content: "";
-			display: block;
-			@include option(width, 86rem);
-			@include option(height, 4rem);
+		@media (min-width: $MIN-DESKTOP) {
+			&::before,
+			&::after {
+				content: "";
+				display: block;
+				@include option(width, 86rem);
+				@include option(height, 4rem);
 
-			background-color: $grey700;
-			border-radius: 20rem;
+				background-color: $grey700;
+				border-radius: 20rem;
 
-			position: absolute;
-			top: 7rem;
-			left: 29rem;
-		}
+				position: absolute;
+				top: 7rem;
+				left: 29rem;
+			}
 
-		&::after {
-			@include option(width, 23rem);
+			&::after {
+				@include option(width, 23rem);
 
-			background-color: $white;
+				background-color: $white;
+			}
 		}
 	}
 

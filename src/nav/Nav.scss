@@ -13,7 +13,6 @@
 		@include option(height, 101rem);
 		@include option(padding, 0 6rem 0 0);
 
-
 		color: $crimson;
 		fill: currentColor;
 		--color-rhombus: #b7c7df;
@@ -54,6 +53,12 @@
 			@include option(width, 275rem);
 			@include option(height, 180rem);
 
+			color: $crimson;
+			fill: currentColor;
+			--color-rhombus: #b7c7df;
+		}
+
+		&_history {
 			color: $crimson;
 			fill: currentColor;
 			--color-rhombus: #b7c7df;
@@ -108,6 +113,8 @@
 		}
 
 		&_one {
+			color: $white;
+
 			&::before {
 				background-color: $white;
 			}
@@ -120,6 +127,8 @@
 		}
 
 		&_four {
+			color: $white;
+
 			&::before {
 				background-color: $white;
 			}
@@ -132,6 +141,8 @@
 		}
 
 		&_five {
+			color: $white;
+
 			&::before {
 				background-color: $white;
 			}
@@ -144,6 +155,8 @@
 		}
 
 		&_seven {
+			color: $white;
+
 			&::before {
 				background-color: $white;
 			}
@@ -151,6 +164,34 @@
 			&.nav__link_active {
 				&::before {
 					border: 12rem solid $grey-squirrel;
+				}
+			}
+		}
+
+		&_now {
+			color: $grey900;
+
+			&::before {
+				background-color: $grey400;
+			}
+
+			&.nav__link_active {
+				&::before {
+					border: 12rem solid $white;
+				}
+			}
+		}
+
+		&_history {
+			color: $grey900;
+
+			&::before {
+				background-color: $grey400;
+			}
+
+			&.nav__link_active {
+				&::before {
+					border: 12rem solid $grey200;
 				}
 			}
 		}
@@ -168,8 +209,38 @@
 		@include option(width, 48rem);
 		@include option(height, 48rem);
 
+		text-decoration: none;
+
 		background-color: $white;
-		border-radius: 100%
+		border-radius: 100%;
+
+		&_history {
+			@include option(top, 930rem);
+			transform: translateX(-50%) rotate(180deg);
+		}
+	}
+
+	&__button-text {
+		position: absolute;
+		@include option(top, 60rem);
+
+		@include option(width, 65rem);
+
+		font-family: $RobotoCondensed;
+		font-style: italic;
+		@include option(font-size, 16rem);
+		@include option(font-weight, 700);
+		@include option(line-height, 120%);
+		@include option(letter-spacing, -0.03em);
+		text-transform: uppercase;
+		color: $white;
+
+		transform: rotate(180deg);
+
+		&_main,
+		&_now {
+			display: none;
+		}
 	}
 
 	&__image {

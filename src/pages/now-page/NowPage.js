@@ -1,7 +1,8 @@
-import { headerContent, introContent, navContent } from "../../constants/copyright";
+import {backgroundImageNow, headerContent, introContent, navContent} from "../../constants/copyright";
 import Header from "../../header/Header";
 import Intro from "../../intro/Intro";
 import Nav from "../../nav/Nav";
+import Background from "../../background/Background";
 
 export default function NowPage() {
 	return (
@@ -9,6 +10,7 @@ export default function NowPage() {
 			<Header {...headerContent} />
 			<Nav {...navContent} />
 			<Intro {...introContent} />
+			<Background background={backgroundImageNow} />
 		</>
 	);
 }

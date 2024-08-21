@@ -1,0 +1,30 @@
+.factory {
+    position: relative;
+    top: -292rem;
+    left: 283rem;
+
+    &__text {
+        @include option(width, 620rem);
+
+        font-family: $Roboto;
+        @include option(font-size, 20rem);
+        @include option(font-weight, 400);
+        @include option(line-height, 140%);
+        color: $grey800;
+
+        p:not(:last-child) {
+            @include option(padding, 0 0 27rem);
+        }
+    }
+
+    &__image {
+        position: relative;
+        @include option(top, -558rem);
+        @include option(left, 677rem);
+
+        @include option(width, 900rem);
+        @include option(height, 586rem);
+
+        box-shadow: 10rem 34rem 94rem rgba(57, 84, 123, 0.3);
+    }
+}

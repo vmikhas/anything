@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setActiveScreen } from "../redux/reducers/contentSlice";
 
-export default function Nav({ mainPage, nowPage, historyPage }) {
+export default function Nav({ mainPage, nowPage, historyPage, text }) {
 	const slideIndex = useSelector((state) => state.content.slideIndex);
 	const active = useSelector((state) => state.content.activeScreen);
 	const dispatch = useDispatch();
@@ -34,13 +34,15 @@ export default function Nav({ mainPage, nowPage, historyPage }) {
 			</a>
 			<nav className={"nav__list"}>
 				{navLinks.map(({ name, page, route }) => (
-					<a className={`nav__link nav__link_${slideIndex} ${active === name ? 'nav__link_active' : ''}`} href={`#${name}`} key={name} onClick={() => navigate(route)}>
+					<a className={`nav__link nav__link_${slideIndex} nav__link_${active} ${active === name ? 'nav__link_active' : ''}`}
+					   href={`#${name}`} key={name} onClick={() => navigate(route)}>
 						{parse(page)}
 					</a>
 				))}
 			</nav>
-			<a className="nav__button" href={"#1"} aria-label={"Перейти к следующему слайду"}>
-				<div className="nav__image"><Arrow /></div>
+			<a className={`nav__button nav__button_${active}`} href={"#1"} aria-label={"Перейти к следующему слайду"}>
+				<p className={`nav__button-text nav__button-text_${active}`}>{text}</p>
+				<div className={"nav__image"}><Arrow /></div>
 			</a>
 		</section>
 	);
