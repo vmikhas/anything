@@ -1,17 +1,21 @@
 .nav {
 	position: relative;
-	@include option(padding, 268rem 0 0);
+	@include option(padding, 268rem 0 0, 20rem 0 0);
 
 	&__logo {
 		display: block;
-		@include option(width, 158rem);
-		@include option(height, 101rem);
+		@include option(width, 158rem, 90rem);
+		@include option(height, 101rem, 65rem);
 	}
 
 	&__logo-image {
-		@include option(width, 158rem);
-		@include option(height, 101rem);
-		@include option(padding, 0 6rem 0 0);
+		position: relative;
+		@include option(top, 0);
+		@include option(left, 0, -33rem);
+
+		@include option(width, 158rem, 118rem);
+		@include option(height, 101rem, 80rem);
+		@include option(padding, 0 6rem 0 0, 0);
 
 		color: $crimson;
 		fill: currentColor;
@@ -47,11 +51,12 @@
 
 		&_now {
 			position: relative;
-			@include option(top, -231rem);
-			@include option(left, -75rem);
+			@include option(top, -231rem ,0);
+			@include option(left, -75rem, -33rem);
 
-			@include option(width, 275rem);
-			@include option(height, 180rem);
+			@include option(width, 275rem, 119rem);
+			@include option(height, 180rem, 80rem);
+
 
 			color: $crimson;
 			fill: currentColor;
@@ -67,9 +72,60 @@
 
 	&__list {
 		display: flex;
-		flex-direction: column;
-		@include option(gap, 21rem);
-		@include option(padding, 33rem 0 0 81rem);
+		@include option(flex-direction, column, row);
+		@include option(justify-content, start,center);
+		@include option(gap, 21rem, 16rem);
+		@include option(padding, 33rem 0 0 81rem, 0);
+
+		@media (max-width: $MIN-DESKTOP - 1) {
+			position: absolute;
+			top: 730rem;
+			z-index: 4;
+
+			width: 100%;
+
+			background-color: $white;
+
+			&_eight {
+				top: 845rem;
+			}
+
+			&_seven {
+				top: 892rem;
+			}
+
+			&_six {
+				top: 754rem;
+			}
+
+			&_five {
+				top: 822rem;
+			}
+
+			&_four {
+				top: 824rem;
+			}
+
+			&_three {
+				top: 809rem;
+			}
+
+			&_two {
+				top: 709rem;
+			}
+
+			&_one {
+				top: 920rem;
+			}
+
+			&_now {
+				top: 678rem;
+			}
+
+			&_history {
+				top: 889rem;
+			}
+		}
 	}
 
 	&__link {
@@ -83,25 +139,29 @@
 		font-style: italic;
 		@include option(font-size, 16rem);
 		@include option(font-weight, 500);
-		@include option(line-height, 91%);
+		@include option(line-height, 91%, 120%);
+		@include option(letter-spacing, 0, -0.02em);
+		@include option(text-align, start, center);
 		text-transform: uppercase;
 		text-decoration: none;
 		color: $grey900;
 
-		&::before {
-			box-sizing: content-box;
+		@media (min-width: $MIN-DESKTOP) {
+			&::before {
+				box-sizing: content-box;
 
-			content: "";
-			display: block;
-			@include option(width, 8rem);
-			@include option(height, 8rem);
+				content: "";
+				display: block;
+				@include option(width, 8rem);
+				@include option(height, 8rem);
 
-			background-color: $grey400;
-			border-radius: 50%;
+				background-color: $grey400;
+				border-radius: 50%;
 
-			position: absolute;
-			top: 13rem;
-			left: -25rem;
+				position: absolute;
+				top: 13rem;
+				left: -25rem;
+			}
 		}
 
 		&_active {
@@ -110,10 +170,20 @@
 				top: 2rem;
 				left: -37rem;
 			}
+
+			@media (max-width: $MIN-DESKTOP - 1) {
+				border-bottom: 3px solid $crimson;
+			}
+		}
+
+		@media (max-width: $MIN-DESKTOP - 1) {
+			&:nth-child(2) {
+				margin: 0 0 0 14rem;
+			}
 		}
 
 		&_one {
-			color: $white;
+			@include option(color, $white, $grey900);
 
 			&::before {
 				background-color: $white;
@@ -127,7 +197,7 @@
 		}
 
 		&_four {
-			color: $white;
+			@include option(color, $white, $grey900);
 
 			&::before {
 				background-color: $white;
@@ -141,7 +211,7 @@
 		}
 
 		&_five {
-			color: $white;
+			@include option(color, $white, $grey900);
 
 			&::before {
 				background-color: $white;
@@ -155,7 +225,7 @@
 		}
 
 		&_seven {
-			color: $white;
+			@include option(color, $white, $grey900);
 
 			&::before {
 				background-color: $white;
@@ -199,8 +269,9 @@
 
 	&__button {
 		position: absolute;
-		@include option(top, 932rem);
+		@include option(top, 932rem, 663rem);
 		@include option(left, 50%);
+		z-index: 4;
 		transform: translateX(-50%);
 
 		display: flex;
@@ -214,8 +285,44 @@
 		background-color: $white;
 		border-radius: 100%;
 
+		&_eight {
+			@include option(top, 932rem, 779rem);
+		}
+
+		&_seven {
+			@include option(top, 932rem, 826rem);
+		}
+
+		&_six {
+			@include option(top, 932rem, 687rem);
+		}
+
+		&_five {
+			@include option(top, 932rem, 756rem);
+		}
+
+		&_four {
+			@include option(top, 932rem, 758rem);
+		}
+
+		&_three {
+			@include option(top, 932rem, 743rem);
+		}
+
+		&_two {
+			@include option(top, 932rem, 642rem);
+		}
+
+		&_one {
+			@include option(top, 932rem, 854rem);
+		}
+
+		&_now {
+			top: 606rem;
+		}
+
 		&_history {
-			@include option(top, 930rem);
+			@include option(top, 930rem, 629rem);
 			transform: translateX(-50%) rotate(180deg);
 		}
 	}

@@ -1,7 +1,7 @@
 .story {
 	position: relative;
-	bottom: 400rem;
-	left: 272rem;
+	@include option(bottom, 400rem, 14rem);
+	@include option(left, 272rem, 8rem);
 
 	width: max-content;
 
@@ -23,18 +23,19 @@
 	}
 
 	&__title {
-		@include option(padding, 41rem 0 0 10rem);
+		@include option(padding, 41rem 0 0 10rem, 0);
 
 		font-family: $RobotoCondensed;
 		font-style: italic;
-		@include option(font-size, 128rem);
+		@include option(font-size, 128rem, 48rem);
 		@include option(font-weight, 700);
 		@include option(line-height, 100%);
 		@include option(letter-spacing, -0.06em);
+		@include option(text-align, start, right);
 		color: $crimson;
 
 		&_1999 {
-			@include option(padding, 41rem 0 0);
+			@include option(padding, 41rem 0 0, 0 19rem 0 0);
 		}
 
 		&_2007 {
@@ -42,6 +43,8 @@
 		}
 
 		&_2010 {
+			@include option(padding, 41rem 0 0 10rem, 0 5rem 0 0);
+
 			background: linear-gradient(180deg, #989ca3 0%, #c9ced7 50%, #424750 100%);
 			background-clip: text;
 			-webkit-background-clip: text;
@@ -57,6 +60,8 @@
 		}
 
 		&_2019 {
+			@include option(padding, 41rem 0 0 10rem, 0 10rem 0 0);
+
 			color: $select-yellow;
 		}
 
@@ -66,60 +71,121 @@
 	}
 
 	&__subtitle {
-		@include option(padding, 50rem 0 0 13rem);
+		@include option(padding, 50rem 0 0 13rem, 13rem 0 0 15rem);
 
 		font-family: $RobotoCondensed;
 		font-style: italic;
-		@include option(font-size, 36rem);
+		@include option(font-size, 36rem, 24rem);
 		@include option(font-weight, 700);
-		@include option(line-height, 130%);
+		@include option(line-height, 130%, 100%);
 		@include option(letter-spacing, -0.03em);
 		color: $grey600;
 
 		&_1999 {
-			@include option(padding, 54rem 0 0 13rem);
+			@include option(padding, 54rem 0 0 13rem, 13rem 0 0 15rem);
 		}
 
 		&_2014 {
-			@include option(padding, 35rem 0 0 13rem);
+			@include option(padding, 35rem 0 0 13rem, 13rem 0 0 15rem);
 		}
 
 		&_2019 {
-			@include option(padding, 55rem 0 0 13rem);
+			@include option(padding, 55rem 0 0 13rem, 13rem 0 0 15rem);
 			@include option(line-height, 100%);
+
 			color: $white;
-			// color: black;
 		}
 
 		&_2020 {
-			@include option(width, 600rem);
-			@include option(padding, 55rem 0 0 13rem);
+			@include option(width, 600rem, 315rem);
+			@include option(padding, 55rem 0 0 13rem, 13rem 0 0 15rem);
 			@include option(line-height, 100%);
 		}
 
-		&_2010,
-		&_2017,
 		&_2022 {
+			@include option(width, 640rem, 295rem);
+
 			color: $white;
-			// color: yellowgreen;
+		}
+
+		&_2010,
+		&_2017 {
+			color: $white;
 		}
 	}
 
 	&__desc {
-		@include option(width, 631rem);
-		@include option(padding, 31rem 0 0 11rem);
+		@include option(width, 631rem, 350rem);
+		@include option(padding, 31rem 0 0 11rem, 16rem 0 0 15rem);
 
-		@include option(font-size, 20rem);
+		@include option(font-size, 20rem, 14rem);
 		@include option(font-weight, 400);
 		@include option(line-height, 140%);
 		color: $grey800;
 
 		&_p {
-			@include option(padding, 0 0 27rem);
+			@include option(padding, 0 0 27rem, 0 0 22rem);
+		}
+
+		&_1999 {
+			@include option(padding, 27rem 0 0 15rem, 16rem 0 0 15rem);
+		}
+
+		&_2007 {
+			@include option(width, 600rem, 330rem);
+			@include option(padding, 31rem 0 0 11rem, 13rem 0 0 12rem);
+		}
+
+		&_2010 {
+			@include option(width, 640rem, 335rem);
+			@include option(padding, 31rem 0 0 11rem, 21rem 0 0 19rem);
+
+			@include option(color, $grideperleft, $light-grey);
+		}
+
+		&_2014 {
+			@include option(width, 610rem, 330rem);
+			@include option(padding, 13rem 0 0 11rem, 14rem 0 0 12rem);
+		}
+
+		&_br2014 {
+			@media (max-width: $MIN-DESKTOP - 1) {
+				display: none;
+			}
+		}
+
+		&_2017 {
+			@include option(width, 603rem, 330rem);
+			@include option(padding, 31rem 0 0 11rem, 23rem 0 0 19rem);
+
+			color: $light-grey;
+		}
+
+		&_2019 {
+			@include option(width, 610rem, 325rem);
+			@include option(padding, 31rem 0 0 11rem, 29rem 0 0 19rem);
+
+			color: $light-grey;
+		}
+
+		&_2020 {
+			@include option(width, 625rem, 330rem);
+			@include option(padding, 37rem 0 0 11rem, 23rem 0 0 12rem);
+		}
+
+		&_2021 {
+			@include option(width, 560rem, 330rem);
+			@include option(padding, 31rem 0 0 11rem, 13rem 0 0 12rem);
+		}
+
+		&_2022 {
+			@include option(width, 625rem, 330rem);
+			@include option(padding, 66rem 0 0 55rem, 29rem 0 0 46rem);
+			color: $light-grey;
 		}
 
 		&_p2022:not(:last-child) {
-			@include option(padding, 0 0 28rem);
+			@include option(padding, 0 0 28rem, 0 0 22rem);
 		}
 
 		&_p2022 {
@@ -134,48 +200,9 @@
 				background: url("../assest/images/icons/bullet.svg") no-repeat center;
 
 				position: absolute;
-				top: 7rem;
-				left: -42rem;
+				@include option(top, 7rem, 1rem);
+				@include option(left, -42rem, -34rem);
 			}
-		}
-
-		&_1999 {
-			@include option(padding, 27rem 0 0 15rem);
-		}
-
-		&_2007 {
-			@include option(width, 600rem);
-		}
-
-		&_2010 {
-			@include option(width, 640rem);
-			color: $grideperleft;
-		}
-
-		&_2014 {
-			@include option(width, 610rem);
-			@include option(padding, 13rem 0 0 11rem);
-		}
-
-		&_2017 {
-			@include option(width, 603rem);
-			color: $light-grey;
-		}
-
-		&_2019 {
-			@include option(width, 610rem);
-			color: $light-grey;
-		}
-
-		&_2020 {
-			@include option(width, 625rem);
-			@include option(padding, 37rem 0 0 11rem);
-		}
-
-		&_2022 {
-			@include option(width, 625rem);
-			@include option(padding, 66rem 0 0 55rem);
-			color: $light-grey;
 		}
 	}
 
@@ -183,75 +210,75 @@
 		position: absolute;
 
 		&_1999 {
-			@include option(top, 59rem);
-			@include option(left, 908rem);
+			@include option(top, 59rem, 150rem);
+			@include option(left, 908rem, -7rem);
 
-			@include option(width, 530rem);
-			@include option(height, 735rem);
+			@include option(width, 530rem, 358rem);
+			@include option(height, 735rem, 535rem);
 		}
 
 		&_2007 {
-			@include option(top, 66rem);
-			@include option(left, 936rem);
+			@include option(top, 66rem, 241rem);
+			@include option(left, 936rem, -6rem);
 
-			@include option(width, 530rem);
-			@include option(height, 736rem);
+			@include option(width, 530rem, 357rem);
+			@include option(height, 736rem, 546rem);
 		}
 
 		&_2010 {
-			@include option(top, 127rem);
-			@include option(left, 995rem);
+			@include option(top, 127rem, 371rem);
+			@include option(left, 995rem, 53rem);
 
-			@include option(width, 366rem);
-			@include option(height, 549rem);
+			@include option(width, 366rem, 240rem);
+			@include option(height, 549rem, 360rem);
 		}
 
 		&_2014 {
-			@include option(top, 127rem);
-			@include option(left, 808rem);
+			@include option(top, 127rem, 304rem);
+			@include option(left, 808rem, -8rem);
 
-			@include option(width, 720rem);
-			@include option(height, 678rem);
+			@include option(width, 720rem, 357rem);
+			@include option(height, 678rem, 322rem);
 		}
 
 		&_2017 {
-			@include option(top, 125rem);
-			@include option(left, 608rem);
+			@include option(top, 125rem, 296rem);
+			@include option(left, 608rem, -8rem);
 
-			@include option(width, 1039rem);
-			@include option(height, 734rem);
+			@include option(width, 1039rem, 360rem);
+			@include option(height, 734rem, 507rem);
 		}
 
 		&_2019 {
-			@include option(top, 103rem);
-			@include option(left, 823rem);
+			@include option(top, 104rem, 308rem);
+			@include option(left, 823rem, 2rem);
 
-			@include option(width, 598rem);
-			@include option(height, 757rem);
+			@include option(width, 598rem, 325rem);
+			@include option(height, 755rem, 496rem);
 		}
 
 		&_2020 {
-			@include option(top, 105rem);
-			@include option(left, 602rem);
+			@include option(top, 105rem, 392rem);
+			@include option(left, 602rem, 7rem);
 
-			@include option(width, 1045rem);
-			@include option(height, 626rem);
+			@include option(width, 1045rem, 345rem);
+			@include option(height, 626rem, 233rem);
 		}
 
 		&_2021 {
-			@include option(top, 225rem);
-			@include option(left, 896rem);
+			@include option(top, 225rem, 260rem);
+			@include option(left, 896rem, 13rem);
 
-			@include option(width, 535rem);
-			@include option(height, 634rem);
+			@include option(width, 535rem, 320rem);
+			@include option(height, 634rem, 429rem);
 		}
 
 		&_2022 {
-			@include option(top, 8rem);
-			@include option(left, 713rem);
+			@include option(top, 8rem, 283rem);
+			@include option(left, 713rem, -8rem);
 
-			@include option(width, 867rem);
-			@include option(height, 851rem);
+			@include option(width, 867rem, 360rem);
+			@include option(height, 851rem, 617rem);
 		}
 	}
 }

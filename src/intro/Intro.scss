@@ -1,12 +1,16 @@
 .intro {
 	position: relative;
-	top: -356rem;
-	left: 358rem;
+	@include option(top, -356rem, 56rem);
+	@include option(left, 358rem, 0);
+
+	width: min-content;
 
 	&__title {
+		@include option(padding, 0, 0 0 0 42rem);
+
 		font-family: $RobotoCondensed;
 		font-style: italic;
-		@include option(font-size, 64rem);
+		@include option(font-size, 64rem, 28rem);
 		@include option(font-weight, 700);
 		@include option(line-height, 100%);
 		@include option(letter-spacing, -0.03em);
@@ -15,9 +19,9 @@
 
 	&__image {
 		position: relative;
-		@include option(top, -53rem);
-		@include option(left, 589rem);
+		@include option(top, -53rem, 187rem);
+		@include option(left, 589rem, 9rem);
 
-		@include option(width, 908rem);
+		@include option(width, 908rem, 351rem);
 	}
 }

@@ -5,14 +5,16 @@
 	&__container {
 		display: flex;
 		justify-content: space-between;
-		@include option(padding, 14rem 50rem 13rem, 11rem 21rem 9rem);
+		align-items: center;
+		@include option(padding, 14rem 50rem 13rem, 11rem 20rem 9rem);
 
 		background-color: $black900;
 	}
 
 	&__toggle {
+		//display: none;
+
 		position: relative;
-		bottom: 4rem;
 
 		width: 27rem;
 		height: 20px;
@@ -29,10 +31,11 @@
 			width: 27rem;
 			height: 3rem;
 
-			background-color: $white;
+			background-color: transparent;
 
 			position: relative;
 
+			&::after,
 			&::before {
 				content: "";
 				width: 27rem;
@@ -41,10 +44,17 @@
 				background-color: $white;
 
 				position: absolute;
-				top: 6rem;
 				left: 0;
 
 				transition: all 0.3s ease 0s;
+			}
+
+			&::after {
+				top: 2rem;
+			}
+
+			&::before {
+				top: -4rem;
 			}
 		}
 	}
@@ -73,11 +83,12 @@
 	}
 
 	&__button {
-		@include option(width, 7rem);
+		@include option(width, 7rem, 10rem);
 		@include option(height, 7rem);
 
 		background: url("../assest/images/icons/header_arrow.svg") no-repeat center;
-		background-size: 7rem 7 rem;
+		//background-size: 7rem 7rem;
+		@include option(background-size, 7rem 7rem, 10rem 7rem);
 		background-color: transparent;
 
 		border: none;
@@ -86,7 +97,7 @@
 	&__user-list {
 		display: flex;
 		align-items: center;
-		@include option(gap, 153rem);
+		@include option(gap, 153rem, 60rem);
 	}
 
 	&__image {
@@ -125,7 +136,7 @@
 		display: flex;
 		align-items: center;
 		@include option(gap, 12rem);
-		@include option(padding, 0 9rem 0 0);
+		@include option(padding, 0 9rem 0 0, 0);
 		
 		@include option(font-size, 14rem);
 		@include option(font-weight, 600);
@@ -143,7 +154,7 @@
 
 			position: absolute;
 			top: -5rem;
-			left: -31rem;
+			@include option(left, -31rem, -30rem);
 		}
 	}
 }

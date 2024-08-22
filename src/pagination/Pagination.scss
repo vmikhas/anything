@@ -1,4 +1,7 @@
 .pagination {
+	@media (max-width: $MIN-DESKTOP - 1) {
+		display: none;
+	}
 
 	&__list {
 		display: flex;
@@ -57,7 +60,7 @@
 
 				position: absolute;
 				top: -22rem;
-				left: -15rem;
+				left: -17rem;
 				z-index: 1;
 			}
 
