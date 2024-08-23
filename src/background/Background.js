@@ -1,17 +1,23 @@
 import {useSelector} from 'react-redux';
 import Picture from '../constants/Picture';
+import {useMemo} from 'react';
 
-export default function Background({ background }) {
-	const slideIndex = useSelector((state) => state.content.slideIndex);
-	const currentBackground= background[slideIndex];
+export default function Background({background}) {
+    const {currentPage, slideIndex, activeScreen} = useSelector((state) => state.content);
 
-	if (!currentBackground || !currentBackground.image) {
-		return null;
-	}
+    const currentBackground = useMemo(() => {
+        const prop = activeScreen === 'main' ? slideIndex
+            : activeScreen === 'now' ? currentPage : "history";
+        return background[prop];
+    }, [background, activeScreen, slideIndex, currentPage]);
 
-	return (
-		<div className={`background background_${slideIndex}`}>
-			<Picture {...currentBackground.image} />
-		</div>
-	);
+    if (!currentBackground || !currentBackground.image) {
+        return null;
+    }
+
+    return (
+        <div className={`background background_${slideIndex}`}>
+            <Picture {...currentBackground.image} />
+        </div>
+    );
 }

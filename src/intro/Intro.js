@@ -7,10 +7,6 @@ export default function Intro({ contents }) {
 
 	let currentContent = contents[currentPage];
 
-	// if (!currentContent || !currentContent.text) {
-	// 	currentContent = contents[1];
-	// }
-
 	return (
 		<section className={"intro"}>
 			<h2 className={`intro__title intro__title_${slideIndex}`}>{parse(currentContent.title)}</h2>

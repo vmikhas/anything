@@ -1,10 +1,10 @@
 export const headerContent = {
     navigations: [
-        'Главная',
-        'О продукте <button class="header__button"></button>',
+        { name: 'Главная', link: '/'},
+        { name: 'О продукте <button class="header__button"></button>', link: '/#'}
     ],
-    name: 'Ekaterina <button class="header__button"></button>'
-}
+    user: 'Ekaterina <button class="header__button"></button>'
+};
 
 export const navContent = {
     mainPage: 'Развитие<br /> бренда LD',
@@ -15,7 +15,7 @@ export const navContent = {
     //     {text: 'Скрольте вниз', type: 'now'},
     //     {text: 'В начало', type: 'history'},
     // ]
-}
+};
 
 export const paginationContent = {
     years: [
@@ -29,7 +29,7 @@ export const paginationContent = {
         {number: '2007', type: 'eight'},
         {number: '1999', type: 'nine'}
     ]
-}
+};
 
 export const storyContent = {
     nine: {
@@ -278,25 +278,26 @@ export const storyContent = {
             }
         },
     }
-}
+};
 
 export const backgroundImageMain = {
     nine: {
         image: {
             sources: [
                 {
-                	srcSet: './images/background/bg_main/bg1999_m@1.5x.webp 1.5x, ./images/background/bg_main/bg1999_m@2x.webp 2x',
-                	type: 'image/webp',
-                	media: '(max-width: 1023px)'
+                    srcSet: './images/background/bg_main/bg1999_m@1.5x.webp 1.5x, ./images/background/bg_main/bg1999_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_main/bg1999_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg1999_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
                 },
                 {
                     srcSet: './images/background/bg_main/bg1999_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
-                	srcSet: './images/background/bg_main/bg1999_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg1999_m@2x.jpg 2x',
-                	type: 'image/jpeg',
-                	media: '(max-width: 1023px)'
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -314,13 +315,14 @@ export const backgroundImageMain = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_main/bg2007_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_main/bg2007_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2007_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_main/bg2007_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -338,13 +340,14 @@ export const backgroundImageMain = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_main/bg2010_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_main/bg2010_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2010_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_main/bg2010_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -362,13 +365,14 @@ export const backgroundImageMain = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_main/bg2014_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_main/bg2014_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2014_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_main/bg2014_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -386,13 +390,14 @@ export const backgroundImageMain = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_main/bg2017_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_main/bg2017_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2017_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_main/bg2017_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -410,13 +415,14 @@ export const backgroundImageMain = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_main/bg2019_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_main/bg2019_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2019_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_main/bg2019_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -434,13 +440,14 @@ export const backgroundImageMain = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_main/bg2020_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_main/bg2020_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2020_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_main/bg2020_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -458,13 +465,14 @@ export const backgroundImageMain = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_main/bg2021_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_main/bg2021_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2021_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_main/bg2021_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -482,13 +490,14 @@ export const backgroundImageMain = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_main/bg2022_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_main/bg2022_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2022_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_main/bg2022_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -497,10 +506,10 @@ export const backgroundImageMain = {
             }
         }
     }
-}
+};
 
 export const backgroundImageNow = {
-    one: {
+    start: {
         image: {
             sources: [
                 {
@@ -509,13 +518,14 @@ export const backgroundImageNow = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_now/bg1_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_now/bg1_m@1.5x.jpg 1.5x, ./images/background/bg_now/bg1_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_now/bg1_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -524,7 +534,7 @@ export const backgroundImageNow = {
             }
         }
     },
-    two: {
+    end: {
         image: {
             sources: [
                 {
@@ -533,13 +543,14 @@ export const backgroundImageNow = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_now/bg2_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_now/bg2_m@1.5x.jpg 1.5x, ./images/background/bg_now/bg2_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_now/bg2_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -548,10 +559,10 @@ export const backgroundImageNow = {
             }
         }
     }
-}
+};
 
 export const backgroundImageHistory = {
-    one: {
+    history: {
         image: {
             sources: [
                 {
@@ -560,13 +571,14 @@ export const backgroundImageHistory = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/background/bg_history/bg1_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/background/bg_history/bg1_m@1.5x.jpg 1.5x, ./images/background/bg_history/bg1_m@2x.jpg 2x',
                     type: 'image/jpeg',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/background/bg_history/bg1_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr:
@@ -577,7 +589,7 @@ export const backgroundImageHistory = {
                 }
         }
     }
-}
+};
 
 export const introContent = {
     start: {
@@ -591,13 +603,14 @@ export const introContent = {
                     media: '(max-width: 1023px)'
                 },
                 {
-                    srcSet: './images/pack/ldnow_d@1.5x.webp',
-                    type: 'image/webp'
-                },
-                {
                     srcSet: './images/pack/ldnow_m@1.5x.png 1.5x, ./images/pack/ldnow_m@2x.png 2x',
                     type: 'image/png',
                     media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ldnow_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(min-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -614,7 +627,7 @@ export const introContent = {
             imgAttr: {}
         }
     }
-}
+};
 
 export const factoryContent = {
     text: '<p>Фабрика «Лиггетт-Дукат» была основана купцом Ильей Пигитом в 1891 в Москве.</p>' +
@@ -623,18 +636,19 @@ export const factoryContent = {
     image: {
         sources: [
             {
-            	srcSet: './images/factory_m@1.5x.webp 1.5x, ./images/factory_m@2x.webp 2x',
-            	type: 'image/webp',
-            	media: '(max-width: 1023px)'
+                srcSet: './images/factory_m@1.5x.webp 1.5x, ./images/factory_m@2x.webp 2x',
+                type: 'image/webp',
+                media: '(max-width: 1023px)'
+            },
+            {
+                srcSet: './images/factory_m@1.5x.png 1.5x, ./images/factory_m@2x.png 2x',
+                type: 'image/png',
+                media: '(max-width: 1023px)'
             },
             {
                 srcSet: './images/factory_d@1.5x.webp',
-                type: 'image/webp'
-            },
-            {
-            	srcSet: './images/factory_m@1.5x.png 1.5x, ./images/factory_m@2x.png 2x',
-            	type: 'image/png',
-            	media: '(max-width: 1023px)'
+                type: 'image/webp',
+                media: '(min-width: 1023px)'
             }
         ],
         imgAttr: {
@@ -642,4 +656,4 @@ export const factoryContent = {
             alt: 'Фото фабрики сигарет LD'
         }
     }
-}
+};

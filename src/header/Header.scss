@@ -1,7 +1,7 @@
 .header {
 	position: relative;
 	z-index: 2;
-	
+
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -12,8 +12,6 @@
 	}
 
 	&__toggle {
-		//display: none;
-
 		position: relative;
 
 		width: 27rem;
@@ -27,13 +25,13 @@
 		cursor: pointer;
 
 		span {
+			position: absolute;
+
 			display: block;
 			width: 27rem;
 			height: 3rem;
 
 			background-color: transparent;
-
-			position: relative;
 
 			&::after,
 			&::before {
@@ -57,14 +55,66 @@
 				top: -4rem;
 			}
 		}
+
+		&_open {
+			span {
+				&::after,
+				&::before {
+					width: 22rem;
+				}
+
+				&::after {
+					top: 0;
+
+					transform: rotate(-45deg);
+				}
+
+				&::before {
+					top: 0;
+
+					transform: rotate(45deg);
+				}
+			}
+		}
+
+		@media (min-width: $MIN-DESKTOP) {
+			display: none;
+		}
 	}
 
-	&__site-list {
+	&__sitelist {
 		display: flex;
 		gap: 43rem;
 
 		@media (max-width: $MIN-DESKTOP - 1) {
-			display: none;
+			position: absolute;
+			top: 40rem;
+			left: 0;
+            z-index: -1;
+
+			flex-direction: column;
+			gap: 0;
+			width: 100%;
+
+			background-color: $black900;
+
+            transform: translateY(-100%);
+            transition: all 0.4s ease;
+		}
+
+		&_open {
+            transform: translateY(0);
+		}
+	}
+
+	&__site-item {
+		@media (max-width: $MIN-DESKTOP - 1) {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			height: 40rem;
+
+			border-top: 1rem solid $grey800;
 		}
 	}
 
@@ -83,12 +133,12 @@
 	}
 
 	&__button {
+        @include option(display, block, none);
 		@include option(width, 7rem, 10rem);
 		@include option(height, 7rem);
 
 		background: url("../assest/images/icons/header_arrow.svg") no-repeat center;
-		//background-size: 7rem 7rem;
-		@include option(background-size, 7rem 7rem, 10rem 7rem);
+		@include option(background-size, 12rem 9rem, 10rem 7rem);
 		background-color: transparent;
 
 		border: none;
@@ -137,7 +187,7 @@
 		align-items: center;
 		@include option(gap, 12rem);
 		@include option(padding, 0 9rem 0 0, 0);
-		
+
 		@include option(font-size, 14rem);
 		@include option(font-weight, 600);
 		@include option(line-height, 90%);
