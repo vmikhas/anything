@@ -1,9 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit';
+import {createSlice} from '@reduxjs/toolkit';
 
 export const contentSlice = createSlice({
 	name: 'content',
 	initialState: {
-		currentPage: 0,
+		currentPage: 'start',
 		slideIndex: 'nine',
 		activeScreen: '',
 	},
@@ -13,10 +13,17 @@ export const contentSlice = createSlice({
 		},
 		setActiveScreen: (state, action) => {
 			state.activeScreen = action.payload;
-		}
+		},
+		setCurrentPage: (state, action) => {
+			state.currentPage = action.payload;
+		},
 	},
 })
 
-export const { setSlideIndex, setActiveScreen } = contentSlice.actions
+export const {
+	setSlideIndex,
+	setActiveScreen,
+	setCurrentPage
+} = contentSlice.actions
 
 export default contentSlice.reducer;

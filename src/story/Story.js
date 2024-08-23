@@ -1,9 +1,9 @@
-import parse from "html-react-parser";
-import Picture from "../constants/Picture";
-import Pagination from "../pagination/Pagination";
-import { paginationContent } from "../constants/copyright";
-import { useSelector } from "react-redux";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
+import parse from 'html-react-parser';
+import Picture from '../constants/Picture';
+import Pagination from '../pagination/Pagination';
+import {paginationContent} from '../constants/copyright';
+import {useSelector} from 'react-redux';
+import {CSSTransition, SwitchTransition} from 'react-transition-group';
 
 export default function Story({ content }) {
 	const slideIndex = useSelector((state) => state.content.slideIndex);

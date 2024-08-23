@@ -10,7 +10,11 @@ export const navContent = {
     mainPage: 'Развитие<br /> бренда LD',
     nowPage: 'LD<br /> сегодня',
     historyPage: 'История фабрики<br /> Liggett Ducat',
-    text: 'В начало'
+    text: 'В начало',
+    // clue: [
+    //     {text: 'Скрольте вниз', type: 'now'},
+    //     {text: 'В начало', type: 'history'},
+    // ]
 }
 
 export const paginationContent = {
@@ -280,20 +284,20 @@ export const backgroundImageMain = {
     nine: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                	srcSet: './images/background/bg_main/bg1999_m@1.5x.webp 1.5x, ./images/background/bg_main/bg1999_m@2x.webp 2x',
+                	type: 'image/webp',
+                	media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_main/bg1999_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                	srcSet: './images/background/bg_main/bg1999_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg1999_m@2x.jpg 2x',
+                	type: 'image/jpeg',
+                	media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_main/bg1999_d@1.5x.jpg',
@@ -304,20 +308,20 @@ export const backgroundImageMain = {
     eight: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_main/bg2007_m@1.5x.webp 1.5x, ./images/background/bg_main/bg2007_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_main/bg2007_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_main/bg2007_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2007_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_main/bg2007_d@1.5x.jpg',
@@ -328,20 +332,20 @@ export const backgroundImageMain = {
     seven: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_main/bg2010_m@1.5x.webp 1.5x, ./images/background/bg_main/bg2010_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_main/bg2010_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_main/bg2010_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2010_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_main/bg2010_d@1.5x.jpg',
@@ -352,20 +356,20 @@ export const backgroundImageMain = {
     six: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_main/bg2014_m@1.5x.webp 1.5x, ./images/background/bg_main/bg2014_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_main/bg2014_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_main/bg2014_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2014_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_main/bg2014_d@1.5x.jpg',
@@ -376,20 +380,20 @@ export const backgroundImageMain = {
     five: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_main/bg2017_m@1.5x.webp 1.5x, ./images/background/bg_main/bg2017_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_main/bg2017_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_main/bg2017_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2017_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_main/bg2017_d@1.5x.jpg',
@@ -400,20 +404,20 @@ export const backgroundImageMain = {
     four: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_main/bg2019_m@1.5x.webp 1.5x, ./images/background/bg_main/bg2019_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_main/bg2019_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_main/bg2019_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2019_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_main/bg2019_d@1.5x.jpg',
@@ -424,20 +428,20 @@ export const backgroundImageMain = {
     three: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_main/bg2020_m@1.5x.webp 1.5x, ./images/background/bg_main/bg2020_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_main/bg2020_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_main/bg2020_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2020_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_main/bg2020_d@1.5x.jpg',
@@ -448,20 +452,20 @@ export const backgroundImageMain = {
     two: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_main/bg2021_m@1.5x.webp 1.5x, ./images/background/bg_main/bg2021_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_main/bg2021_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_main/bg2021_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2021_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_main/bg2021_d@1.5x.jpg',
@@ -472,20 +476,20 @@ export const backgroundImageMain = {
     one: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_main/bg2022_m@1.5x.webp 1.5x, ./images/background/bg_main/bg2022_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_main/bg2022_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_main/bg2022_m@1.5x.jpg 1.5x, ./images/background/bg_main/bg2022_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_main/bg2022_d@1.5x.jpg',
@@ -499,20 +503,20 @@ export const backgroundImageNow = {
     one: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_now/bg1_m@1.5x.webp 1.5x, ./images/background/bg_now/bg1_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_now/bg1_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_now/bg1_m@1.5x.jpg 1.5x, ./images/background/bg_now/bg1_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_now/bg1_d@1.5x.jpg',
@@ -523,20 +527,20 @@ export const backgroundImageNow = {
     two: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_now/bg2_m@1.5x.webp 1.5x, ./images/background/bg_now/bg2_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_now/bg2_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_now/bg2_m@1.5x.jpg 1.5x, ./images/background/bg_now/bg2_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr: {
                 src: './images/background/bg_now/bg2_d@1.5x.jpg',
@@ -550,20 +554,20 @@ export const backgroundImageHistory = {
     one: {
         image: {
             sources: [
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // },
+                {
+                    srcSet: './images/background/bg_history/bg1_m@1.5x.webp 1.5x, ./images/background/bg_history/bg1_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
                 {
                     srcSet: './images/background/bg_history/bg1_d@1.5x.webp',
                     type: 'image/webp'
                 },
-                // {
-                // 	srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                // 	type: 'image/jpeg',
-                // 	media: '(max-width: 999px)'
-                // }
+                {
+                    srcSet: './images/background/bg_history/bg1_m@1.5x.jpg 1.5x, ./images/background/bg_history/bg1_m@2x.jpg 2x',
+                    type: 'image/jpeg',
+                    media: '(max-width: 1023px)'
+                }
             ],
             imgAttr:
                 {
@@ -576,27 +580,38 @@ export const backgroundImageHistory = {
 }
 
 export const introContent = {
-    title: 'LD сегодня —<br /> международный бренд,<br /> доступный более чем<br /> в 50 странах мира',
-    image: {
-        sources: [
-            {
-                srcSet: './images/pack/ldnow_m@1.5x.webp 1.5x, ./images/pack/ldnow_m@2x.webp 2x',
-                type: 'image/webp',
-                media: '(max-width: 1023px)'
-            },
-            {
-                srcSet: './images/pack/ldnow_d@1.5x.webp',
-                type: 'image/webp'
-            },
-            {
-                srcSet: './images/pack/ldnow_m@1.5x.png 1.5x, ./images/pack/ldnow_m@2x.png 2x',
-                type: 'image/png',
-                media: '(max-width: 1023px)'
+    start: {
+        title: 'LD сегодня —<br /> международный бренд,<br /> доступный более чем<br /> в 50 странах мира',
+        text: '',
+        image: {
+            sources: [
+                {
+                    srcSet: './images/pack/ldnow_m@1.5x.webp 1.5x, ./images/pack/ldnow_m@2x.webp 2x',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ldnow_d@1.5x.webp',
+                    type: 'image/webp'
+                },
+                {
+                    srcSet: './images/pack/ldnow_m@1.5x.png 1.5x, ./images/pack/ldnow_m@2x.png 2x',
+                    type: 'image/png',
+                    media: '(max-width: 1023px)'
+                }
+            ],
+            imgAttr: {
+                src: './images/pack/ldnow_d@1.5x.png',
+                alt: 'Радуга из пачек LD'
             }
-        ],
-        imgAttr: {
-            src: './images/pack/ldnow_d@1.5x.png',
-            alt: 'Радуга из пачек LD'
+        }
+    },
+    end: {
+        title: 'LD сегодня —<br /> международный бренд,<br /> доступный более чем<br /> в 50 странах мира',
+        text: '<p>На протяжении всего времени существования марки, сигареты LD развиваются в соответствии с передовыми трендами табачного рынка, чтобы соответствовать вкусам и&nbsp;предпочтениям потребителей.</p>' +
+            'Бренд LD не останавливается на достигнутом и продолжает работать над тем, чтобы завоевать доверие потребителей, предоставляя возможность выбрать высококачественные продукты, а также совершенствуя и дополняя каждую пачку сигарет различными инновациями.',
+        image: {
+            imgAttr: {}
         }
     }
 }

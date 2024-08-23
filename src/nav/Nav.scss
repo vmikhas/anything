@@ -120,6 +120,10 @@
 
 			&_now {
 				top: 678rem;
+
+				&.nav__list_two {
+					top: 787rem;
+				}
 			}
 
 			&_history {
@@ -318,7 +322,12 @@
 		}
 
 		&_now {
-			top: 606rem;
+			@include option(top, 932rem, 605rem);
+
+			&.nav__button_two {
+				@include option(top, 843rem, 717rem);
+				@include option(left, 19.76%, 50%);
+			}
 		}
 
 		&_history {
@@ -346,6 +355,10 @@
 
 		&_main,
 		&_now {
+			display: none;
+		}
+
+		@media (max-width: $MIN-DESKTOP - 1) {
 			display: none;
 		}
 	}

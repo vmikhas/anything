@@ -1,12 +1,22 @@
-import parse from "html-react-parser";
-import Picture from "../constants/Picture";
+import parse from 'html-react-parser';
+import Picture from '../constants/Picture';
+import {useSelector} from 'react-redux';
 
-export default function Intro({ title, image }) {
+export default function Intro({ contents }) {
+	const {slideIndex, currentPage} = useSelector((state) => state.content);
+
+	let currentContent = contents[currentPage];
+
+	// if (!currentContent || !currentContent.text) {
+	// 	currentContent = contents[1];
+	// }
+
 	return (
 		<section className={"intro"}>
-			<h2 className={"intro__title"}>{parse(title)}</h2>
+			<h2 className={`intro__title intro__title_${slideIndex}`}>{parse(currentContent.title)}</h2>
+			<p className={"intro__text"}>{parse(currentContent.text)}</p>
 			<div className={"intro__image"}>
-				<Picture {...image} />
+				<Picture {...currentContent.image} />
 			</div>
 		</section>
 	);

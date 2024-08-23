@@ -15,6 +15,24 @@
 		@include option(line-height, 100%);
 		@include option(letter-spacing, -0.03em);
 		color: $grey200;
+
+		&_two {
+			@include option(padding, 26rem 0 0);
+		}
+	}
+
+	&__text {
+		@include option(width, 610rem);
+		@include option(padding, 27rem 0 0);
+
+		@include option(font-size, 20rem, 14rem);
+		@include option(font-weight, 400);
+		@include option(line-height, 140%);
+		color: $white;
+
+		& p {
+			@include option(padding, 0 0 28rem);
+		}
 	}
 
 	&__image {
