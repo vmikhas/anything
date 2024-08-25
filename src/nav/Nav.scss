@@ -21,30 +21,30 @@
 		fill: currentColor;
 		--color-rhombus: #b7c7df;
 
-		&_eight {
+		&_8 {
 			color: $violet-red;
 		}
 
-		&_seven {
+		&_7 {
 			color: $manatee;
 			--color-rhombus: #626771;
 		}
 
-		&_six {
+		&_6 {
 			color: $blue-steel;
 		}
 
-		&_five {
+		&_5 {
 			color: $dark-tangerine;
 			--color-rhombus: #575970;
 		}
 
-		&_four {
+		&_4 {
 			color: $select-yellow;
 			--color-rhombus: #575970;
 		}
 
-		&_one {
+		&_1 {
 			color: $chocolate;
 			--color-rhombus: #353535;
 		}
@@ -86,42 +86,42 @@
 
 			background-color: $white;
 
-			&_eight {
+			&_8 {
 				top: 845rem;
 			}
 
-			&_seven {
+			&_7 {
 				top: 892rem;
 			}
 
-			&_six {
+			&_6 {
 				top: 754rem;
 			}
 
-			&_five {
+			&_5 {
 				top: 822rem;
 			}
 
-			&_four {
+			&_4 {
 				top: 824rem;
 			}
 
-			&_three {
+			&_3 {
 				top: 809rem;
 			}
 
-			&_two {
+			&_2 {
 				top: 709rem;
 			}
 
-			&_one {
+			&_1 {
 				top: 920rem;
 			}
 
 			&_now {
 				top: 678rem;
 
-				&.nav__list_two {
+				&.nav__list_2 {
 					top: 787rem;
 				}
 			}
@@ -186,7 +186,7 @@
 			}
 		}
 
-		&_one {
+		&_1 {
 			@include option(color, $white, $grey900);
 
 			&::before {
@@ -200,7 +200,7 @@
 			}
 		}
 
-		&_four {
+		&_4 {
 			@include option(color, $white, $grey900);
 
 			&::before {
@@ -214,7 +214,7 @@
 			}
 		}
 
-		&_five {
+		&_5 {
 			@include option(color, $white, $grey900);
 
 			&::before {
@@ -228,7 +228,7 @@
 			}
 		}
 
-		&_seven {
+		&_7 {
 			@include option(color, $white, $grey900);
 
 			&::before {
@@ -289,42 +289,42 @@
 		background-color: $white;
 		border-radius: 100%;
 
-		&_eight {
+		&_8 {
 			@include option(top, 932rem, 779rem);
 		}
 
-		&_seven {
+		&_7 {
 			@include option(top, 932rem, 826rem);
 		}
 
-		&_six {
+		&_6 {
 			@include option(top, 932rem, 687rem);
 		}
 
-		&_five {
+		&_5 {
 			@include option(top, 932rem, 756rem);
 		}
 
-		&_four {
+		&_4 {
 			@include option(top, 932rem, 758rem);
 		}
 
-		&_three {
+		&_3 {
 			@include option(top, 932rem, 743rem);
 		}
 
-		&_two {
+		&_2 {
 			@include option(top, 932rem, 642rem);
 		}
 
-		&_one {
+		&_1 {
 			@include option(top, 932rem, 854rem);
 		}
 
 		&_now {
 			@include option(top, 932rem, 605rem);
 
-			&.nav__button_two {
+			&.nav__button_2 {
 				@include option(top, 843rem, 717rem);
 				@include option(left, 19.76%, 50%);
 			}

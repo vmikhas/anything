@@ -19,20 +19,20 @@ export const navContent = {
 
 export const paginationContent = {
     years: [
-        {number: '2022', type: 'one'},
-        {number: '2021', type: 'two'},
-        {number: '2020', type: 'three'},
-        {number: '2019', type: 'four'},
-        {number: '2017', type: 'five'},
-        {number: '2014', type: 'six'},
-        {number: '2010', type: 'seven'},
-        {number: '2007', type: 'eight'},
-        {number: '1999', type: 'nine'}
+        {number: '2022', type: 1},
+        {number: '2021', type: 2},
+        {number: '2020', type: 3},
+        {number: '2019', type: 4},
+        {number: '2017', type: 5},
+        {number: '2014', type: 6},
+        {number: '2010', type: 7},
+        {number: '2007', type: 8},
+        {number: '1999', type: 9}
     ]
 };
 
 export const storyContent = {
-    nine: {
+    9: {
         title: '1999',
         subtitle: 'История марки LD',
         desc: 'История марки LD началась в России<br /> в 1999 году на фабрике Лиггетт-Дукат в Москве,<br /> где была произведена первая пачка сигарет<br /> классического формата.',
@@ -59,7 +59,7 @@ export const storyContent = {
             }
         }
     },
-    eight: {
+    8: {
         title: '2007',
         subtitle: 'LD Pink Super Slims',
         desc: 'За годы работы на российском рынке марка LD завоевала себе&nbsp;имя настоящего новатора. И&nbsp;в&nbsp;2007 году появились сигареты LD в&nbsp;потенциальном и набирающим оборот в&nbsp;то&nbsp;время&nbsp;супертонком формате — LD Pink Super&nbsp;Slims.&nbsp;Новинка&nbsp;была выпущена в&nbsp;сегменте сигарет по&nbsp;доступной цене, сделав их доступными для&nbsp;широкого&nbsp;круга потребителей.',
@@ -86,7 +86,7 @@ export const storyContent = {
             }
         }
     },
-    seven: {
+    7: {
         title: '2010',
         subtitle: 'LD Club Platinum',
         desc: '<p class="story__desc_p">Подтверждая статус новатора, в 2010 году под маркой LD запускаются новые сигареты LD Club Platinum — первый в&nbsp;среднеценовом сегменте продукт формата King Size Super Slims.</p>' +
@@ -114,7 +114,7 @@ export const storyContent = {
             }
         }
     },
-    six: {
+    6: {
         title: '2014',
         subtitle: 'LD Compact',
         desc: 'Сосредоточившись на производстве столь популярных сигарет компактного формата, в 2014 году LD выпустили очередную новинку уже в компактном формате - LD Club Compact.<br /> А годом позже именно LD первым открыл эру компактного удлиненного формата, выпустив сигареты LD Compact 100’s Blue, в которых на 25% больше табака по сравнению<br class="story__desc_br2014" /> с компактным предложением.',
@@ -141,7 +141,7 @@ export const storyContent = {
             }
         }
     },
-    five: {
+    5: {
         title: '2017',
         subtitle: 'Сигареты с капсулой',
         desc: 'Задачей марки LD с момента ее основания было предлагать совершеннолетним потребителям табачной продукции современные новинки, оставляя при этом качество неизменным. Следуя&nbsp;этому&nbsp;принципу, в 2017 году вышли первые сигареты с капсулой со вкусом лайма LD Autograph Impulse Compact, которые положили начало яркой капсульной линейке&nbsp;LD.',
@@ -168,7 +168,7 @@ export const storyContent = {
             }
         }
     },
-    four: {
+    4: {
         title: '2019',
         subtitle: '2019 год стал одним из важнейших<br /> в эволюции бренда',
         desc: 'Рынок увидели новинки LD Sunny и LD Breezy с новыми вкусами капсул по доступной цене. Расширение капсульной линейки сигарет LD&nbsp;позволило сделать новый продукт интересным широкому кругу потребителей, давая возможность приобрести сигареты по&nbsp;доступной цене с&nbsp;новыми вкусами.',
@@ -195,7 +195,7 @@ export const storyContent = {
             }
         }
     },
-    three: {
+    3: {
         title: '2020',
         subtitle: 'В 2020 году произошло обновление дизайна всей линейки сигарет LD',
         desc: '<p class="story__desc_p">Эта новая ступень в развитии марки позволила создать продукт, соответствующий текущим запросам потребителей — были запущены сигареты в современном динамичном дизайне пачки и с новыми вкусами капсул, которые стали одними из&nbsp;самых популярных среди потребителей.</p>' +
@@ -223,7 +223,7 @@ export const storyContent = {
             }
         }
     },
-    two: {
+    2: {
         title: '2021',
         subtitle: 'Знак качества',
         desc: 'В 2021 году на задней стороне пачек появились знаки качества Quality+, призванные рассказать потребителю об основных технологиях продукта.',
@@ -250,7 +250,7 @@ export const storyContent = {
             }
         }
     },
-    one: {
+    1: {
         title: '2022',
         subtitle: '2022 год – год экспериментов для бренда LD',
         desc: '<p class="story__desc_p2022">Впервые в линейке LD появляются продукты с двумя уровнями вкуса: капсулой и ароматизированной табачной мешкой.</p>' +
@@ -281,7 +281,7 @@ export const storyContent = {
 };
 
 export const backgroundImageMain = {
-    nine: {
+    9: {
         image: {
             sources: [
                 {
@@ -306,7 +306,7 @@ export const backgroundImageMain = {
             }
         }
     },
-    eight: {
+    8: {
         image: {
             sources: [
                 {
@@ -331,7 +331,7 @@ export const backgroundImageMain = {
             }
         }
     },
-    seven: {
+    7: {
         image: {
             sources: [
                 {
@@ -356,7 +356,7 @@ export const backgroundImageMain = {
             }
         }
     },
-    six: {
+    6: {
         image: {
             sources: [
                 {
@@ -381,7 +381,7 @@ export const backgroundImageMain = {
             }
         }
     },
-    five: {
+    5: {
         image: {
             sources: [
                 {
@@ -406,7 +406,7 @@ export const backgroundImageMain = {
             }
         }
     },
-    four: {
+    4: {
         image: {
             sources: [
                 {
@@ -431,7 +431,7 @@ export const backgroundImageMain = {
             }
         }
     },
-    three: {
+    3: {
         image: {
             sources: [
                 {
@@ -456,7 +456,7 @@ export const backgroundImageMain = {
             }
         }
     },
-    two: {
+    2: {
         image: {
             sources: [
                 {
@@ -481,7 +481,7 @@ export const backgroundImageMain = {
             }
         }
     },
-    one: {
+    1: {
         image: {
             sources: [
                 {

@@ -26,19 +26,19 @@
 			left: 54rem;
 		}
 
-		&_one {
+		&_1 {
 			&:not(:last-child)::before {
 				background-color: $chocolate;
 			}
 		}
 
-		&_four {
+		&_4 {
 			&:not(:last-child)::before {
 				background-color: $select-yellow;
 			}
 		}
 
-		&_five {
+		&_5 {
 			&:not(:last-child)::before {
 				background-color: $dark-tangerine;
 			}
@@ -117,18 +117,18 @@
 			}
 		}
 
-		&_one,
-		&_four,
-		&_five {
+		&_1,
+		&_4,
+		&_5 {
 			color: $white;
 		}
 
-		&_two,
-		&_three,
-		&_six,
-		&_seven,
-		&_eight,
-		&_nine {
+		&_2,
+		&_3,
+		&_6,
+		&_7,
+		&_8,
+		&_9 {
 			color: $grey300;
 		}
 	}

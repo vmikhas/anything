@@ -4,7 +4,7 @@ export const contentSlice = createSlice({
 	name: 'content',
 	initialState: {
 		currentPage: 'start',
-		slideIndex: 'nine',
+		slideIndex: 9,
 		activeScreen: '',
 	},
 	reducers: {
