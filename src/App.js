@@ -1,19 +1,17 @@
-import {BrowserRouter} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './router/router';
 import './style.scss';
-import {Router} from './router/router';
-import {CSSTransition, SwitchTransition} from 'react-transition-group';
-
+// import { CSSTransition, SwitchTransition } from 'react-transition-group';
 
 function App() {
-
 	return (
 		<div className={'app'} style={{ maxHeight: '1080rem', height: '100%' }}>
 			<BrowserRouter>
-				<SwitchTransition>
-					<CSSTransition className={'app'} key={{key: 'app'}} timeout={300}>
+				{/*<SwitchTransition>*/}
+				{/*	<CSSTransition key={'id'} classNames="app" timeout={300} unmountOnExit>*/}
 						<Router />
-					</CSSTransition>
-				</SwitchTransition>
+				{/*	</CSSTransition>*/}
+				{/*</SwitchTransition>*/}
 			</BrowserRouter>
 		</div>
 	);

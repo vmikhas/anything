@@ -98,6 +98,22 @@ a:focus {
 	outline: none;
 }
 
+.app {
+	&-enter {
+		opacity: 0;
+	}
+	&-enter-active,
+	&-enter-done,
+	&-exit {
+		opacity: 1;
+		transition: 0.3s ease-in-out;
+	}
+	&-exit-active {
+		opacity: 0;
+		transition: 0.3s ease-in-out;
+	}
+}
+
 //* {
 //	outline: 1px solid tomato;
 //}

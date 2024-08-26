@@ -16,20 +16,3 @@
 @import './background/Background.scss';
 @import './intro/Intro.scss';
 @import './factory/Factory.scss';
-
-
-.page {
-    &-enter {
-        opacity: 0;
-    }
-    &-enter-active,
-    &-enter-done,
-    &-exit {
-        opacity: 1;
-        transition: 0.3s ease-in-out;
-    }
-    &-exit-active {
-        opacity: 0;
-        transition: 0.3s ease-in-out;
-    }
-}
