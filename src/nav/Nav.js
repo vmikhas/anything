@@ -5,7 +5,8 @@ import {ReactComponent as Arrow} from '../assest/images/icons/arrow.svg';
 import parse from 'html-react-parser';
 import {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {setActiveScreen} from '../redux/reducers/contentSlice';
+import {setActiveScreen, setSlideIndex} from '../redux/reducers/contentSlice';
+import {backgroundImageMain, storyContent} from '../constants/copyright';
 
 export default function Nav({mainPage, nowPage, historyPage, text}) {
     const slideIndex = useSelector((state) => state.content.slideIndex);
@@ -27,6 +28,27 @@ export default function Nav({mainPage, nowPage, historyPage, text}) {
         {name: 'history', page: historyPage, route: routes.history}
     ];
 
+    let toggleHandle = () => {
+        const currentIndex = slideIndex;
+
+        const nextIndex = currentIndex === 1 ? Object.keys(storyContent).length : currentIndex - 1;
+        dispatch(setSlideIndex(nextIndex));
+
+        const activeScreen = location.pathname === routes.main ? 'main'
+            : location.pathname === routes.now ? 'now'
+                : 'history';
+        dispatch(setActiveScreen(activeScreen));
+
+        const selectedContent = storyContent[nextIndex];
+        const selectedBackground = backgroundImageMain[nextIndex];
+
+        return (
+            selectedContent,
+            selectedBackground
+        );
+    };
+
+
     return (
         <section className={'nav'}>
             <a className={'nav__logo'} href={'/'} onClick={() => navigate(routes.main)}>
@@ -41,7 +63,7 @@ export default function Nav({mainPage, nowPage, historyPage, text}) {
                 ))}
             </nav>
             <button className={`nav__button nav__button_${active} nav__button_${slideIndex}`}
-
+                    onClick={toggleHandle}
                     aria-label={'Перейти к следующему слайду'}>
                 <p className={`nav__button-text nav__button-text_${active}`}>{text}</p>
                 <div className={'nav__image'}><Arrow/></div>

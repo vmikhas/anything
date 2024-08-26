@@ -284,10 +284,11 @@
 		@include option(width, 48rem);
 		@include option(height, 48rem);
 
-		text-decoration: none;
-
 		background-color: $white;
+		border: none;
 		border-radius: 100%;
+
+		cursor: pointer;
 
 		&_8 {
 			@include option(top, 932rem, 779rem);

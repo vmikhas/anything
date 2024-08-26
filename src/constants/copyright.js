@@ -41,16 +41,17 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld1999_m@1.5x.webp 1.5x, ./images/pack/ld1999_m@2x.webp 2x',
                     type: 'image/webp',
-                    media: '(max-width: 999px)'
-                },
-                {
-                    srcSet: './images/pack/ld1999_d@1.5x.webp',
-                    type: 'image/webp'
+                    media: '(max-width: 1023px)'
                 },
                 {
                     srcSet: './images/pack/ld1999_m@1.5x.png 1.5x, ./images/pack/ld1999_m@2x.png 2x',
                     type: 'image/png',
-                    media: '(max-width: 999px)'
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ld1999_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -68,16 +69,17 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2007_m@1.5x.webp 1.5x, ./images/pack/ld2007_m@2x.webp 2x',
                     type: 'image/webp',
-                    media: '(max-width: 999px)'
-                },
-                {
-                    srcSet: './images/pack/ld2007_d@1.5x.webp',
-                    type: 'image/webp'
+                    media: '(max-width: 1023px)'
                 },
                 {
                     srcSet: './images/pack/ld2007_m@1.5x.png 1.5x, ./images/pack/ld2007_m@2x.png 2x',
                     type: 'image/png',
-                    media: '(max-width: 999px)'
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ld2007_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -96,16 +98,17 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2010_m@1.5x.webp 1.5x, ./images/pack/ld2010_m@2x.webp 2x',
                     type: 'image/webp',
-                    media: '(max-width: 999px)'
-                },
-                {
-                    srcSet: './images/pack/ld2010_d@1.5x.webp',
-                    type: 'image/webp'
+                    media: '(max-width: 1023px)'
                 },
                 {
                     srcSet: './images/pack/ld2010_m@1.5x.png 1.5x, ./images/pack/ld2010_m@2x.png 2x',
                     type: 'image/png',
-                    media: '(max-width: 999px)'
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ld2010_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -123,16 +126,17 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2014_m@1.5x.webp 1.5x, ./images/pack/ld2014_m@2x.webp 2x',
                     type: 'image/webp',
-                    media: '(max-width: 999px)'
-                },
-                {
-                    srcSet: './images/pack/ld2014_d@1.5x.webp',
-                    type: 'image/webp'
+                    media: '(max-width: 1023px)'
                 },
                 {
                     srcSet: './images/pack/ld2014_m@1.5x.png 1.5x, ./images/pack/ld2014_m@2x.png 2x',
                     type: 'image/png',
-                    media: '(max-width: 999px)'
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ld2014_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -150,16 +154,17 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2017_m@1.5x.webp 1.5x, ./images/pack/ld2017_m@2x.webp 2x',
                     type: 'image/webp',
-                    media: '(max-width: 999px)'
-                },
-                {
-                    srcSet: './images/pack/ld2017_d@1.5x.webp',
-                    type: 'image/webp'
+                    media: '(max-width: 1023px)'
                 },
                 {
                     srcSet: './images/pack/ld2017_m@1.5x.png 1.5x, ./images/pack/ld2017_m@2x.png 2x',
                     type: 'image/png',
-                    media: '(max-width: 999px)'
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ld2017_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -177,16 +182,17 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2019_m@1.5x.webp 1.5x, ./images/pack/ld2019_m@2x.webp 2x',
                     type: 'image/webp',
-                    media: '(max-width: 999px)'
-                },
-                {
-                    srcSet: './images/pack/ld2019_d@1.5x.webp',
-                    type: 'image/webp'
+                    media: '(max-width: 1023px)'
                 },
                 {
                     srcSet: './images/pack/ld2019_m@1.5x.png 1.5x, ./images/pack/ld2019_m@2x.png 2x',
                     type: 'image/png',
-                    media: '(max-width: 999px)'
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ld2019_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -205,16 +211,17 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2020_m@1.5x.webp 1.5x, ./images/pack/ld2020_m@2x.webp 2x',
                     type: 'image/webp',
-                    media: '(max-width: 999px)'
-                },
-                {
-                    srcSet: './images/pack/ld2020_d@1.5x.webp',
-                    type: 'image/webp'
+                    media: '(max-width: 1023px)'
                 },
                 {
                     srcSet: './images/pack/ld2020_m@1.5x.png 1.5x, ./images/pack/ld2020_m@2x.png 2x',
                     type: 'image/png',
-                    media: '(max-width: 999px)'
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ld2020_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -232,16 +239,17 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2021_m@1.5x.webp 1.5x, ./images/pack/ld2021_m@2x.webp 2x',
                     type: 'image/webp',
-                    media: '(max-width: 999px)'
-                },
-                {
-                    srcSet: './images/pack/ld2021_d@1.5x.webp',
-                    type: 'image/webp'
+                    media: '(max-width: 1023px)'
                 },
                 {
                     srcSet: './images/pack/ld2021_m@1.5x.png 1.5x, ./images/pack/ld2021_m@2x.png 2x',
                     type: 'image/png',
-                    media: '(max-width: 999px)'
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ld2021_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
                 }
             ],
             imgAttr: {
@@ -260,16 +268,17 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
                     type: 'image/webp',
-                    media: '(max-width: 999px)'
-                },
-                {
-                    srcSet: './images/pack/ld2022_d@1.5x.webp',
-                    type: 'image/webp'
+                    media: '(max-width: 1023px)'
                 },
                 {
                     srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
                     type: 'image/png',
-                    media: '(max-width: 999px)'
+                    media: '(max-width: 1023px)'
+                },
+                {
+                    srcSet: './images/pack/ld2022_d@1.5x.webp',
+                    type: 'image/webp',
+                    media: '(max-width: 1023px)'
                 }
             ],
             imgAttr: {
