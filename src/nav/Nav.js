@@ -5,12 +5,11 @@ import {ReactComponent as Arrow} from '../assest/images/icons/arrow.svg';
 import parse from 'html-react-parser';
 import {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {setActiveScreen, setSlideIndex} from '../redux/reducers/contentSlice';
-import {backgroundImageMain, storyContent} from '../constants/copyright';
+import {setActiveScreen, setCurrentPage, setSlideIndex} from '../redux/reducers/contentSlice';
+import {storyContent} from '../constants/copyright';
 
-export default function Nav({mainPage, nowPage, historyPage, text}) {
-    const slideIndex = useSelector((state) => state.content.slideIndex);
-    const active = useSelector((state) => state.content.activeScreen);
+export default function Nav({mainPage, nowPage, historyPage, clue}) {
+    const {slideIndex, activeScreen: active, currentPage} = useSelector((state) => state.content);
     const dispatch = useDispatch();
 
     const navigate = useNavigate();
@@ -28,33 +27,38 @@ export default function Nav({mainPage, nowPage, historyPage, text}) {
         {name: 'history', page: historyPage, route: routes.history}
     ];
 
-    let toggleHandle = () => {
-        const currentIndex = slideIndex;
+    const toggleHandle = () => {
+        let nextSlideIndex = slideIndex - 1;
+        const totalSlidesMain = Object.keys(storyContent).length;
 
-        const nextIndex = currentIndex === 1 ? Object.keys(storyContent).length : currentIndex - 1;
-        dispatch(setSlideIndex(nextIndex));
+        if (location.pathname === routes.main) {
+            if ((nextSlideIndex < totalSlidesMain) && (nextSlideIndex === 0)) {
+                navigate(routes.now);
+                nextSlideIndex = 'start';
+            }
+        } else if (location.pathname === routes.now) {
+            if (currentPage === 'start') {
+                dispatch(setCurrentPage('end'));
+            } else {
+                navigate(routes.history);
+                nextSlideIndex = 1;
+            }
+        } else if (location.pathname === routes.history) {
+            navigate(routes.main);
+            nextSlideIndex = 9;
+        }
 
-        const activeScreen = location.pathname === routes.main ? 'main'
-            : location.pathname === routes.now ? 'now'
-                : 'history';
-        dispatch(setActiveScreen(activeScreen));
-
-        const selectedContent = storyContent[nextIndex];
-        const selectedBackground = backgroundImageMain[nextIndex];
-
-        return (
-            selectedContent,
-            selectedBackground
-        );
+        dispatch(setSlideIndex(nextSlideIndex));
+        dispatch(setActiveScreen(location.pathname === routes.main ? 'main'
+            : location.pathname === routes.now ? 'now' : 'history'));
     };
-
 
     return (
         <section className={'nav'}>
             <a className={'nav__logo'} href={'/'} onClick={() => navigate(routes.main)}>
                 <Logo className={`nav__logo-image nav__logo-image_${slideIndex} nav__logo-image_${active}`}/>
             </a>
-            <nav className={`nav__list nav__list_${active} nav__list_${slideIndex}`}>
+            <nav className={`nav__list nav__list_${active} nav__list_${slideIndex} nav__list_${currentPage}`}>
                 {navLinks.map(({name, page, route}) => (
                     <a className={`nav__link nav__link_${slideIndex} nav__link_${active} ${active === name ? 'nav__link_active' : ''}`}
                        href={`#${name}`} key={name} onClick={() => navigate(route)}>
@@ -62,10 +66,10 @@ export default function Nav({mainPage, nowPage, historyPage, text}) {
                     </a>
                 ))}
             </nav>
-            <button className={`nav__button nav__button_${active} nav__button_${slideIndex}`}
+            <button className={`nav__button nav__button_${active} nav__button_${slideIndex} nav__button_${currentPage}`}
                     onClick={toggleHandle}
                     aria-label={'Перейти к следующему слайду'}>
-                <p className={`nav__button-text nav__button-text_${active}`}>{text}</p>
+                <p className={`nav__button-text nav__button-text_${active} nav__button-text_${currentPage}`}>{clue[active]}</p>
                 <div className={'nav__image'}><Arrow/></div>
             </button>
         </section>

@@ -1,7 +1,7 @@
 export const headerContent = {
     navigations: [
         { name: 'Главная', link: '/'},
-        { name: 'О продукте <button class="header__button"></button>', link: '/#'}
+        { name: 'О продукте <button class="header__button header__button_nav"></button>', link: '/#'}
     ],
     user: 'Ekaterina <button class="header__button"></button>'
 };
@@ -10,11 +10,10 @@ export const navContent = {
     mainPage: 'Развитие<br /> бренда LD',
     nowPage: 'LD<br /> сегодня',
     historyPage: 'История фабрики<br /> Liggett Ducat',
-    text: 'В начало',
-    // clue: [
-    //     {text: 'Скрольте вниз', type: 'now'},
-    //     {text: 'В начало', type: 'history'},
-    // ]
+    clue: {
+        now: 'Скрольте вниз',
+        history: 'В начало'
+    }
 };
 
 export const paginationContent = {

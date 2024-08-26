@@ -96,6 +96,8 @@
 		@include option(letter-spacing, -0.06em);
 		text-decoration: none;
 
+		transition: .3s ease-in-out;
+
 		&_active {
 			.pagination__link {
 				color: $white;
@@ -130,6 +132,11 @@
 		&_8,
 		&_9 {
 			color: $grey300;
+		}
+
+		&:hover,
+		&:focus {
+			opacity: 0.7;
 		}
 	}
 }

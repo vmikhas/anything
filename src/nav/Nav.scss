@@ -1,371 +1,419 @@
 .nav {
-	position: relative;
-	@include option(padding, 268rem 0 0, 20rem 0 0);
-
-	&__logo {
-		display: block;
-		@include option(width, 158rem, 90rem);
-		@include option(height, 101rem, 65rem);
-	}
-
-	&__logo-image {
-		position: relative;
-		@include option(top, 0);
-		@include option(left, 0, -33rem);
-
-		@include option(width, 158rem, 118rem);
-		@include option(height, 101rem, 80rem);
-		@include option(padding, 0 6rem 0 0, 0);
-
-		color: $crimson;
-		fill: currentColor;
-		--color-rhombus: #b7c7df;
-
-		&_8 {
-			color: $violet-red;
-		}
-
-		&_7 {
-			color: $manatee;
-			--color-rhombus: #626771;
-		}
-
-		&_6 {
-			color: $blue-steel;
-		}
-
-		&_5 {
-			color: $dark-tangerine;
-			--color-rhombus: #575970;
-		}
-
-		&_4 {
-			color: $select-yellow;
-			--color-rhombus: #575970;
-		}
-
-		&_1 {
-			color: $chocolate;
-			--color-rhombus: #353535;
-		}
-
-		&_now {
-			position: relative;
-			@include option(top, -231rem ,0);
-			@include option(left, -75rem, -33rem);
-
-			@include option(width, 275rem, 119rem);
-			@include option(height, 180rem, 80rem);
-
-
-			color: $crimson;
-			fill: currentColor;
-			--color-rhombus: #b7c7df;
-		}
-
-		&_history {
-			color: $crimson;
-			fill: currentColor;
-			--color-rhombus: #b7c7df;
-		}
-	}
-
-	&__list {
-		display: flex;
-		@include option(flex-direction, column, row);
-		@include option(justify-content, start,center);
-		@include option(gap, 21rem, 16rem);
-		@include option(padding, 33rem 0 0 81rem, 0);
-
-		@media (max-width: $MIN-DESKTOP - 1) {
-			position: absolute;
-			top: 730rem;
-			z-index: 4;
-
-			width: 100%;
-
-			background-color: $white;
-
-			&_8 {
-				top: 845rem;
-			}
-
-			&_7 {
-				top: 892rem;
-			}
-
-			&_6 {
-				top: 754rem;
-			}
-
-			&_5 {
-				top: 822rem;
-			}
-
-			&_4 {
-				top: 824rem;
-			}
-
-			&_3 {
-				top: 809rem;
-			}
-
-			&_2 {
-				top: 709rem;
-			}
-
-			&_1 {
-				top: 920rem;
-			}
-
-			&_now {
-				top: 678rem;
-
-				&.nav__list_2 {
-					top: 787rem;
-				}
-			}
-
-			&_history {
-				top: 889rem;
-			}
-		}
-	}
-
-	&__link {
-		position: relative;
-
-		display: block;
-		width: max-content;
-		@include option(padding, 5rem);
-
-		font-family: $RobotoCondensed;
-		font-style: italic;
-		@include option(font-size, 16rem);
-		@include option(font-weight, 500);
-		@include option(line-height, 91%, 120%);
-		@include option(letter-spacing, 0, -0.02em);
-		@include option(text-align, start, center);
-		text-transform: uppercase;
-		text-decoration: none;
-		color: $grey900;
-
-		@media (min-width: $MIN-DESKTOP) {
-			&::before {
-				box-sizing: content-box;
-
-				content: "";
-				display: block;
-				@include option(width, 8rem);
-				@include option(height, 8rem);
-
-				background-color: $grey400;
-				border-radius: 50%;
-
-				position: absolute;
-				top: 13rem;
-				left: -25rem;
-			}
-		}
-
-		&_active {
-			&::before {
-				border: 12rem solid $grey200;
-				top: 2rem;
-				left: -37rem;
-			}
-
-			@media (max-width: $MIN-DESKTOP - 1) {
-				border-bottom: 3px solid $crimson;
-			}
-		}
-
-		@media (max-width: $MIN-DESKTOP - 1) {
-			&:nth-child(2) {
-				margin: 0 0 0 14rem;
-			}
-		}
-
-		&_1 {
-			@include option(color, $white, $grey900);
-
-			&::before {
-				background-color: $white;
-			}
-
-			&.nav__link_active {
-				&::before {
-					border: 12rem solid $chocolate;
-				}
-			}
-		}
-
-		&_4 {
-			@include option(color, $white, $grey900);
-
-			&::before {
-				background-color: $white;
-			}
-
-			&.nav__link_active {
-				&::before {
-					border: 12rem solid $select-yellow;
-				}
-			}
-		}
-
-		&_5 {
-			@include option(color, $white, $grey900);
-
-			&::before {
-				background-color: $white;
-			}
-
-			&.nav__link_active {
-				&::before {
-					border: 12rem solid $dark-tangerine;
-				}
-			}
-		}
-
-		&_7 {
-			@include option(color, $white, $grey900);
-
-			&::before {
-				background-color: $white;
-			}
-
-			&.nav__link_active {
-				&::before {
-					border: 12rem solid $grey-squirrel;
-				}
-			}
-		}
-
-		&_now {
-			color: $grey900;
-
-			&::before {
-				background-color: $grey400;
-			}
-
-			&.nav__link_active {
-				&::before {
-					border: 12rem solid $white;
-				}
-			}
-		}
-
-		&_history {
-			color: $grey900;
-
-			&::before {
-				background-color: $grey400;
-			}
-
-			&.nav__link_active {
-				&::before {
-					border: 12rem solid $grey200;
-				}
-			}
-		}
-	}
-
-	&__button {
-		position: absolute;
-		@include option(top, 932rem, 663rem);
-		@include option(left, 50%);
-		z-index: 4;
-		transform: translateX(-50%);
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		@include option(width, 48rem);
-		@include option(height, 48rem);
-
-		background-color: $white;
-		border: none;
-		border-radius: 100%;
-
-		cursor: pointer;
-
-		&_8 {
-			@include option(top, 932rem, 779rem);
-		}
-
-		&_7 {
-			@include option(top, 932rem, 826rem);
-		}
-
-		&_6 {
-			@include option(top, 932rem, 687rem);
-		}
-
-		&_5 {
-			@include option(top, 932rem, 756rem);
-		}
-
-		&_4 {
-			@include option(top, 932rem, 758rem);
-		}
-
-		&_3 {
-			@include option(top, 932rem, 743rem);
-		}
-
-		&_2 {
-			@include option(top, 932rem, 642rem);
-		}
-
-		&_1 {
-			@include option(top, 932rem, 854rem);
-		}
-
-		&_now {
-			@include option(top, 932rem, 605rem);
-
-			&.nav__button_2 {
-				@include option(top, 843rem, 717rem);
-				@include option(left, 19.76%, 50%);
-			}
-		}
-
-		&_history {
-			@include option(top, 930rem, 629rem);
-			transform: translateX(-50%) rotate(180deg);
-		}
-	}
-
-	&__button-text {
-		position: absolute;
-		@include option(top, 60rem);
-
-		@include option(width, 65rem);
-
-		font-family: $RobotoCondensed;
-		font-style: italic;
-		@include option(font-size, 16rem);
-		@include option(font-weight, 700);
-		@include option(line-height, 120%);
-		@include option(letter-spacing, -0.03em);
-		text-transform: uppercase;
-		color: $white;
-
-		transform: rotate(180deg);
-
-		&_main,
-		&_now {
-			display: none;
-		}
-
-		@media (max-width: $MIN-DESKTOP - 1) {
-			display: none;
-		}
-	}
-
-	&__image {
-		@include option(width, 20rem);
-		@include option(height, 26rem);
-	}
+    position: relative;
+    @include option(padding, 268rem 0 0, 20rem 0 0);
+
+    &__logo {
+        display: block;
+        @include option(width, 158rem, 90rem);
+        @include option(height, 101rem, 65rem);
+    }
+
+    &__logo-image {
+        position: relative;
+        @include option(top, 0);
+        @include option(left, 0, -33rem);
+
+        @include option(width, 158rem, 118rem);
+        @include option(height, 101rem, 80rem);
+        @include option(padding, 0 6rem 0 0, 0);
+
+        color: $crimson;
+        fill: currentColor;
+        --color-rhombus: #b7c7df;
+
+        transition: .3s ease-in-out;
+
+        &_8 {
+            color: $violet-red;
+        }
+
+        &_7 {
+            color: $manatee;
+            --color-rhombus: #626771;
+        }
+
+        &_6 {
+            color: $blue-steel;
+        }
+
+        &_5 {
+            color: $dark-tangerine;
+            --color-rhombus: #575970;
+        }
+
+        &_4 {
+            color: $select-yellow;
+            --color-rhombus: #575970;
+        }
+
+        &_1 {
+            color: $chocolate;
+            --color-rhombus: #353535;
+        }
+
+        &_now {
+            position: relative;
+            @include option(top, -231rem, 0);
+            @include option(left, -75rem, -33rem);
+
+            @include option(width, 275rem, 119rem);
+            @include option(height, 180rem, 80rem);
+
+
+            color: $crimson;
+            fill: currentColor;
+            --color-rhombus: #b7c7df;
+        }
+
+        &_history {
+            color: $crimson;
+            fill: currentColor;
+            --color-rhombus: #b7c7df;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 0.7;
+        }
+    }
+
+    &__list {
+        display: flex;
+        @include option(flex-direction, column, row);
+        @include option(justify-content, start, center);
+        @include option(gap, 21rem, 16rem);
+        @include option(padding, 33rem 0 0 81rem, 0);
+
+        @media (max-width: $MIN-DESKTOP - 1) {
+            position: absolute;
+            top: 730rem;
+            z-index: 4;
+
+            width: 100%;
+
+            background-color: $white;
+
+            &_8 {
+                top: 845rem;
+            }
+
+            &_7 {
+                top: 892rem;
+            }
+
+            &_6 {
+                top: 754rem;
+            }
+
+            &_5 {
+                top: 822rem;
+            }
+
+            &_4 {
+                top: 824rem;
+            }
+
+            &_3 {
+                top: 809rem;
+            }
+
+            &_2 {
+                top: 709rem;
+            }
+
+            &_1 {
+                top: 920rem;
+            }
+
+            &_now {
+                &.nav__list_start {
+                    top: 678rem;
+                }
+
+                &.nav__list_end {
+                    top: 786rem;
+                }
+            }
+
+            &_history {
+                top: 889rem;
+            }
+        }
+    }
+
+    &__link {
+        position: relative;
+
+        display: block;
+        width: max-content;
+        @include option(padding, 5rem);
+
+        font-family: $RobotoCondensed;
+        font-style: italic;
+        @include option(font-size, 16rem);
+        @include option(font-weight, 500);
+        @include option(line-height, 91%, 120%);
+        @include option(letter-spacing, 0, -0.02em);
+        @include option(text-align, start, center);
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $grey900;
+
+        transition: .3s ease-in-out;
+
+        @media (min-width: $MIN-DESKTOP) {
+            &::before {
+                box-sizing: content-box;
+
+                content: "";
+                display: block;
+                @include option(width, 8rem);
+                @include option(height, 8rem);
+
+                background-color: $grey400;
+                border-radius: 50%;
+
+                position: absolute;
+                top: 13rem;
+                left: -25rem;
+            }
+        }
+
+        &_active {
+            &::before {
+                border: 12rem solid $grey200;
+                top: 2rem;
+                left: -37rem;
+            }
+
+            @media (max-width: $MIN-DESKTOP - 1) {
+                border-bottom: 3px solid $crimson;
+            }
+        }
+
+        @media (max-width: $MIN-DESKTOP - 1) {
+            &:nth-child(2) {
+                margin: 0 0 0 14rem;
+            }
+        }
+
+        &_1 {
+            @include option(color, $white, $grey900);
+
+            &::before {
+                background-color: $white;
+            }
+
+            &.nav__link_active {
+                &::before {
+                    border: 12rem solid $chocolate;
+                }
+            }
+        }
+
+        &_4 {
+            @include option(color, $white, $grey900);
+
+            &::before {
+                background-color: $white;
+            }
+
+            &.nav__link_active {
+                &::before {
+                    border: 12rem solid $select-yellow;
+                }
+            }
+        }
+
+        &_5 {
+            @include option(color, $white, $grey900);
+
+            &::before {
+                background-color: $white;
+            }
+
+            &.nav__link_active {
+                &::before {
+                    border: 12rem solid $dark-tangerine;
+                }
+            }
+        }
+
+        &_7 {
+            @include option(color, $white, $grey900);
+
+            &::before {
+                background-color: $white;
+            }
+
+            &.nav__link_active {
+                &::before {
+                    border: 12rem solid $grey-squirrel;
+                }
+            }
+        }
+
+        &_now {
+            color: $grey900;
+
+            &::before {
+                background-color: $grey400;
+            }
+
+            &.nav__link_active {
+                &::before {
+                    border: 12rem solid $white;
+                }
+            }
+        }
+
+        &_history {
+            color: $grey900;
+
+            &::before {
+                background-color: $grey400;
+            }
+
+            &.nav__link_active {
+                &::before {
+                    border: 12rem solid $grey200;
+                }
+            }
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 0.7;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        @include option(top, 932rem, 663rem);
+        @include option(left, 50%);
+        z-index: 4;
+        transform: translateX(-50%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include option(width, 48rem);
+        @include option(height, 48rem);
+
+        background-color: $white;
+        border: none;
+        border-radius: 100%;
+
+        cursor: pointer;
+
+        &_8 {
+            @include option(top, 932rem, 779rem);
+        }
+
+        &_7 {
+            @include option(top, 932rem, 826rem);
+        }
+
+        &_6 {
+            @include option(top, 932rem, 687rem);
+        }
+
+        &_5 {
+            @include option(top, 932rem, 756rem);
+        }
+
+        &_4 {
+            @include option(top, 932rem, 758rem);
+        }
+
+        &_3 {
+            @include option(top, 932rem, 743rem);
+        }
+
+        &_2 {
+            @include option(top, 932rem, 642rem);
+        }
+
+        &_1 {
+            @include option(top, 932rem, 854rem);
+        }
+
+        &_now {
+            &.nav__button_start {
+                @include option(top, 932rem, 605rem);
+            }
+
+            &.nav__button_end {
+                @include option(top, 843rem, 717rem);
+                @include option(left, 19.76%, 50%);
+            }
+        }
+
+        &_history {
+            @include option(top, 930rem, 629rem);
+            transform: translateX(-50%) rotate(180deg);
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 0.7;
+        }
+
+        animation: buttonNext 2s infinite;
+    }
+
+    @keyframes buttonNext {
+        0%{
+            bottom: 10rem;
+        }
+        50%{
+            bottom: 0;
+        }
+        100%{
+            bottom: 10rem;
+        }
+    }
+
+    &__button-text {
+        position: absolute;
+        @include option(top, 60rem);
+
+        @include option(width, 65rem);
+
+        font-family: $RobotoCondensed;
+        font-style: italic;
+        @include option(font-size, 16rem);
+        @include option(font-weight, 700);
+        @include option(line-height, 120%);
+        @include option(letter-spacing, -0.03em);
+        text-transform: uppercase;
+        color: $white;
+
+        transform: rotate(180deg);
+
+        &_main,
+        &_now {
+            display: none;
+        }
+
+        &_now {
+            &.nav__button-text_end {
+                @include option(display, block, none);
+                @include option(width, 120rem);
+                @include option(top, 14rem);
+                @include option(left, 60rem);
+
+                transform: rotate(0);
+            }
+        }
+
+        @media (max-width: $MIN-DESKTOP - 1) {
+            display: none;
+        }
+    }
+
+    &__image {
+        @include option(width, 20rem);
+        @include option(height, 26rem);
+    }
 }

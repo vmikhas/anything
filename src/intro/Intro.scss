@@ -6,6 +6,7 @@
 	width: min-content;
 
 	&__title {
+		@include option(width, max-content);
 		@include option(padding, 0, 0 0 0 42rem);
 
 		font-family: $RobotoCondensed;
@@ -16,14 +17,14 @@
 		@include option(letter-spacing, -0.03em);
 		color: $grey200;
 
-		&_two {
-			@include option(padding, 26rem 0 0);
+		&_end {
+			@include option(padding, 26rem 0 0, 0 0 0 42rem);
 		}
 	}
 
 	&__text {
-		@include option(width, 610rem);
-		@include option(padding, 27rem 0 0);
+		@include option(width, 610rem, 313rem);
+		@include option(padding, 27rem 0 0, 18rem 0 0 42rem);
 
 		@include option(font-size, 20rem, 14rem);
 		@include option(font-weight, 400);
@@ -31,13 +32,13 @@
 		color: $white;
 
 		& p {
-			@include option(padding, 0 0 28rem);
+			@include option(padding, 0 0 28rem, 0 0 23rem);
 		}
 	}
 
 	&__image {
 		position: relative;
-		@include option(top, -53rem, 187rem);
+		@include option(top, -81rem, 169rem);
 		@include option(left, 589rem, 9rem);
 
 		@include option(width, 908rem, 351rem);

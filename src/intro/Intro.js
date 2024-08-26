@@ -9,9 +9,9 @@ export default function Intro({ contents }) {
 
 	return (
 		<section className={"intro"}>
-			<h2 className={`intro__title intro__title_${slideIndex}`}>{parse(currentContent.title)}</h2>
+			<h2 className={`intro__title intro__title_${currentPage}`}>{parse(currentContent.title)}</h2>
 			<p className={"intro__text"}>{parse(currentContent.text)}</p>
-			<div className={"intro__image"}>
+			<div className={`intro__image intro__image_${currentPage}`}>
 				<Picture {...currentContent.image} />
 			</div>
 		</section>

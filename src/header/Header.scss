@@ -121,7 +121,9 @@
 	&__site-link {
 		display: flex;
 		align-items: center;
+		@include option(justify-content, flex-start, center);
 		@include option(gap, 12rem);
+		@include option(width, 100%);
 		@include option(padding, 10rem);
 
 		@include option(font-size, 14rem);
@@ -133,7 +135,6 @@
 	}
 
 	&__button {
-        @include option(display, block, none);
 		@include option(width, 7rem, 10rem);
 		@include option(height, 7rem);
 
@@ -142,6 +143,10 @@
 		background-color: transparent;
 
 		border: none;
+
+		&_nav {
+			@include option(display, block, none);
+		}
 	}
 
 	&__user-list {
