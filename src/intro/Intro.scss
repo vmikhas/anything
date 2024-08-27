@@ -42,5 +42,13 @@
 		@include option(left, 589rem, 9rem);
 
 		@include option(width, 908rem, 351rem);
+
+		&_end {
+			display: none;
+		}
+
+		img {
+			width: 100%;
+		}
 	}
 }

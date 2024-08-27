@@ -292,7 +292,6 @@
         @include option(top, 932rem, 663rem);
         @include option(left, 50%);
         z-index: 4;
-        transform: translateX(-50%);
 
         display: flex;
         justify-content: center;
@@ -351,26 +350,20 @@
 
         &_history {
             @include option(top, 930rem, 629rem);
-            transform: translateX(-50%) rotate(180deg);
-        }
-
-        &:hover,
-        &:focus {
-            opacity: 0.7;
         }
 
         animation: buttonNext 2s infinite;
     }
 
     @keyframes buttonNext {
-        0%{
-            bottom: 10rem;
+        0% {
+            transform: translate(-50%, 5rem);
         }
-        50%{
-            bottom: 0;
+        50% {
+            transform: translate(-50%, -5rem);
         }
-        100%{
-            bottom: 10rem;
+        100% {
+            transform: translate(-50%, 5rem);
         }
     }
 
@@ -389,8 +382,6 @@
         text-transform: uppercase;
         color: $white;
 
-        transform: rotate(180deg);
-
         &_main,
         &_now {
             display: none;
@@ -402,9 +393,11 @@
                 @include option(width, 120rem);
                 @include option(top, 14rem);
                 @include option(left, 60rem);
-
-                transform: rotate(0);
             }
+        }
+
+        &_history {
+            top: -31rem;
         }
 
         @media (max-width: $MIN-DESKTOP - 1) {
@@ -415,5 +408,9 @@
     &__image {
         @include option(width, 20rem);
         @include option(height, 26rem);
+
+        &_history {
+            transform: rotate(180deg);
+        }
     }
 }

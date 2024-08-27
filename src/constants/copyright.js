@@ -1,7 +1,7 @@
 export const headerContent = {
     navigations: [
-        { name: 'Главная', link: '/'},
-        { name: 'О продукте <button class="header__button header__button_nav"></button>', link: '/#'}
+        { name: 'Главная', link: '/' },
+        { name: 'О продукте <button class="header__button header__button_nav"></button>', link: '/#' }
     ],
     user: 'Ekaterina <button class="header__button"></button>'
 };
@@ -18,15 +18,15 @@ export const navContent = {
 
 export const paginationContent = {
     years: [
-        {number: '2022', type: 1},
-        {number: '2021', type: 2},
-        {number: '2020', type: 3},
-        {number: '2019', type: 4},
-        {number: '2017', type: 5},
-        {number: '2014', type: 6},
-        {number: '2010', type: 7},
-        {number: '2007', type: 8},
-        {number: '1999', type: 9}
+        { number: '2022', type: 1 },
+        { number: '2021', type: 2 },
+        { number: '2020', type: 3 },
+        { number: '2019', type: 4 },
+        { number: '2017', type: 5 },
+        { number: '2014', type: 6 },
+        { number: '2010', type: 7 },
+        { number: '2007', type: 8 },
+        { number: '1999', type: 9 }
     ]
 };
 
@@ -284,7 +284,7 @@ export const storyContent = {
                 src: './images/pack/ld2022_d@1.5x.png',
                 alt: 'Пачка сигарет LD 2022 года'
             }
-        },
+        }
     }
 };
 
