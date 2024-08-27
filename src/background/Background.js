@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import Picture from '../constants/Picture';
 import { useMemo } from 'react';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
 
 export default function Background({ background }) {
     const { currentPage, slideIndex, activeScreen } = useSelector((state) => state.content);
@@ -16,8 +17,12 @@ export default function Background({ background }) {
     }
 
     return (
-        <div className={`background background_${slideIndex}`}>
-            <Picture {...currentBackground.image} />
-        </div>
+        <SwitchTransition>
+            <CSSTransition key={slideIndex} classNames={'background'} timeout={200} unmountOnExit>
+                <div className={`background background_${slideIndex}`}>
+                    <Picture {...currentBackground.image} />
+                </div>
+            </CSSTransition>
+        </SwitchTransition>
     );
 }

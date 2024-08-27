@@ -2,6 +2,7 @@
     position: relative;
     @include option(top, -292rem, 45rem);
     @include option(left, 283rem, 20rem);
+    z-index: 2;
 
     @include option(width, 620rem, 320rem);
 

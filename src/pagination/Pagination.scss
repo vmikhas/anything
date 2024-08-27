@@ -1,142 +1,130 @@
 .pagination {
-	@media (max-width: $MIN-DESKTOP - 1) {
-		display: none;
-	}
+    @media (max-width: $MIN-DESKTOP - 1) {
+        display: none;
+    }
 
-	&__list {
-		display: flex;
-		@include option(gap, 149rem);
-		@include option(padding, 0 0 0 19rem);
-	}
+    &__list {
+        display: flex;
+        @include option(gap, 129rem);
+        @include option(padding, 0 0 0 9rem);
+    }
 
-	&__item {
-		position: relative;
-		z-index: 2;
+    &__item {
+        position: relative;
+        z-index: 2;
 
-		&:not(:last-child)::before {
-			content: "";
-			display: block;
-			@include option(width, 127rem);
-			@include option(height, 1rem);
+        &:not(:last-child)::before {
+            content: "";
+            display: block;
+            @include option(width, 127rem);
+            @include option(height, 1rem);
 
-			background-color: $grey300;
+            background-color: $grey300;
 
-			position: absolute;
-			top: 11rem;
-			left: 54rem;
-		}
+            position: absolute;
+            top: 11rem;
+            left: 63rem;
+            transition: .2s ease-in-out;
+        }
 
-		&_1 {
-			&:not(:last-child)::before {
-				background-color: $chocolate;
-			}
-		}
+        &_1 {
+            &:not(:last-child)::before {
+                background-color: $chocolate;
+            }
+        }
 
-		&_4 {
-			&:not(:last-child)::before {
-				background-color: $select-yellow;
-			}
-		}
+        &_4 {
+            &:not(:last-child)::before {
+                background-color: $select-yellow;
+            }
+        }
 
-		&_5 {
-			&:not(:last-child)::before {
-				background-color: $dark-tangerine;
-			}
-		}
+        &_5 {
+            &:not(:last-child)::before {
+                background-color: $dark-tangerine;
+            }
+        }
 
-		&_active {
-			.pagination__link {
-				color: $white;
-			}
+        &_active {
+            .pagination__link {
+                color: $white;
+            }
 
-			&::after {
-				content: "";
-				display: block;
-				@include option(width, 75rem);
-				@include option(height, 68rem);
+            &::after {
+                content: "";
+                display: block;
+                @include option(width, 75rem);
+                @include option(height, 68rem);
 
-				mask: url("../assest/images/icons/rhombus.svg") no-repeat center;
-				background-color: $grey300;
+                mask: url("../assest/images/icons/rhombus.svg") no-repeat center;
+                background-color: $grey300;
 
-				position: absolute;
-				top: -22rem;
-				left: -17rem;
-				z-index: 1;
-			}
+                position: absolute;
+                top: -22rem;
+                left: -5rem;
+                z-index: 1;
+            }
 
-			&:nth-child(1) {
-				&::after {
-					background-color: $chocolate;
-				}
-			}
+            &:nth-child(1) {
+                &::after {
+                    background-color: $chocolate;
+                }
+            }
 
-			&:nth-child(4) {
-				&::after {
-					background-color: $select-yellow;
-				}
-			}
+            &:nth-child(4) {
+                &::after {
+                    background-color: $select-yellow;
+                }
+            }
 
-			&:nth-child(5) {
-				&::after {
-					background-color: $dark-tangerine;
-				}
-			}
-		}
-	}
+            &:nth-child(5) {
+                &::after {
+                    background-color: $dark-tangerine;
+                }
+            }
+        }
+    }
 
-	&__link {
-		position: relative;
-		z-index: 2;
+    &__link {
+        position: relative;
+        z-index: 2;
 
-		font-family: $RobotoCondensed;
-		font-style: italic;
-		@include option(font-size, 24rem);
-		@include option(font-weight, 500);
-		@include option(line-height, 100%);
-		@include option(letter-spacing, -0.06em);
-		text-decoration: none;
+        padding: 10rem;
 
-		transition: .3s ease-in-out;
+        font-family: $RobotoCondensed;
+        font-style: italic;
+        @include option(font-size, 24rem);
+        @include option(font-weight, 500);
+        @include option(line-height, 100%);
+        @include option(letter-spacing, -0.06em);
+        text-decoration: none;
 
-		&_active {
-			.pagination__link {
-				color: $white;
-			}
+        transition: .3s ease-in-out;
 
-			&::after {
-				content: "";
-				display: block;
-				@include option(width, 75rem);
-				@include option(height, 68rem);
+        &_active {
+            .pagination__link {
+                color: $white;
+            }
+        }
 
-				mask: url("../assest/images/icons/rhombus.svg") no-repeat center;
-				background-color: $grey300;
+        &_1,
+        &_4,
+        &_5 {
+            color: $white;
+        }
 
-				position: absolute;
-				top: -22rem;
-				left: -15rem;
-				z-index: 1;
-			}
-		}
+        &_2,
+        &_3,
+        &_6,
+        &_7,
+        &_8,
+        &_9 {
+            color: $grey300;
+        }
 
-		&_1,
-		&_4,
-		&_5 {
-			color: $white;
-		}
-
-		&_2,
-		&_3,
-		&_6,
-		&_7,
-		&_8,
-		&_9 {
-			color: $grey300;
-		}
-
-		&:hover,
-		&:focus {
-			opacity: 0.7;
-		}
-	}
+        &:hover,
+        &:focus {
+            opacity: 0.7;
+        }
+    }
 }

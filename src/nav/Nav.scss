@@ -1,5 +1,7 @@
 .nav {
     position: relative;
+    z-index: 6;
+
     @include option(padding, 268rem 0 0, 20rem 0 0);
 
     &__logo {

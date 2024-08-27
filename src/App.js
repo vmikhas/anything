@@ -1,9 +1,14 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Router } from './router/router';
 import './style.scss';
+
 // import { CSSTransition, SwitchTransition } from 'react-transition-group';
 
 function App() {
+
+	// const pages = {
+	// 	main: <MainPage />,
+	// }
 	return (
 		<div className={'app'} style={{ maxHeight: '1080rem', height: '100%' }}>
 			<BrowserRouter>

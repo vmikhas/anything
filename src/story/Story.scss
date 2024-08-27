@@ -2,6 +2,7 @@
 	position: relative;
 	@include option(bottom, 400rem, 14rem);
 	@include option(left, 272rem, 8rem);
+	z-index: 2;
 
 	width: max-content;
 
@@ -11,7 +12,8 @@
 		}
 	
 		&-enter-active,
-		&-enter-done {
+		&-enter-done,
+		&-exit {
 			opacity: 1;
 			transition: 0.3s ease-in-out;
 		}

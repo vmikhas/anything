@@ -2,9 +2,26 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -1;
+	z-index: 1;
+	background: #B7C7DF;
 
 	img {
 		width: 100vw;
+	}
+
+	&-enter {
+		opacity: 0;
+	}
+
+	&-enter-active,
+	&-enter-done,
+	&-exit {
+		opacity: 1;
+		transition: 0.2s ease-in-out;
+	}
+
+	&-exit-active {
+		opacity: 0;
+		transition: 0.2s ease-in-out;
 	}
 }
