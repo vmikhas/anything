@@ -31,3 +31,10 @@
 	padding: $padding;
 	margin: 0 auto;
 }
+
+@mixin bg-enter {
+	.background-enter-active &,
+	.background-enter-done & {
+		@content;
+	}
+}

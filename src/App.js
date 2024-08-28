@@ -10,7 +10,7 @@ function App() {
 	// 	main: <MainPage />,
 	// }
 	return (
-		<div className={'app'} style={{ maxHeight: '1080rem', height: '100%' }}>
+		<div className={'app'}>
 			<BrowserRouter>
 				{/*<SwitchTransition>*/}
 				{/*	<CSSTransition key={'id'} classNames="app" timeout={300} unmountOnExit>*/}
@@ -23,3 +23,5 @@ function App() {
 }
 
 export default App;
+
+// style={{ maxHeight: '1080rem', height: '100%' }}

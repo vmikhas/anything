@@ -1,27 +1,191 @@
 .background {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	background: #B7C7DF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    height: 100vh;
 
-	img {
-		width: 100vw;
-	}
+    img {
+        width: 100vw;
+    }
 
-	&-enter {
-		opacity: 0;
-	}
+    &__top-part {
+        position: absolute;
+        @include option(top, -18.8%);
+        @include option(left, -6.4%);
 
-	&-enter-active,
-	&-enter-done,
-	&-exit {
-		opacity: 1;
-		transition: 0.2s ease-in-out;
-	}
+        transform: translate(-100%, 50%);
+        transition: .5s .2s ease-in-out;
 
-	&-exit-active {
-		opacity: 0;
-		transition: 0.2s ease-in-out;
-	}
+        @include bg-enter {
+            transform: translate(0%, 0%);
+        }
+    }
+
+    &__stars {
+        @include option(width, 760rem);
+        @include option(height, 460rem);
+
+        &_9,
+        &_8,
+        &_6,
+        &_3,
+        &_2, {
+            fill: $grey300;
+        }
+
+        &_7 {
+            fill: $grey1000;
+        }
+
+        &_5 {
+            fill: $medium-blue;
+        }
+
+        &_4 {
+            fill: $brown;
+        }
+
+        &_1 {
+            fill: $light-olive;
+        }
+    }
+
+    &__bottom-part {
+        position: absolute;
+        z-index: 3;
+        left: 70rem;
+
+        width: 110vw;
+        height: 100vh;
+
+        transform: rotate(-17.1deg);
+
+        &_9,
+        &_5,
+        &_4,
+        &_3,
+        &_1 {
+            display: none;
+        }
+
+        &_8 {
+            @include option(top, 58%);
+
+            background-color: $violet-red;
+            //background-image: url('./../../public/images/background/bg_main/');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+
+            transform: translate(0%, 100%) rotate(-17.1deg);
+            transition: .5s .2s ease-in-out;
+
+            @include bg-enter {
+                transform: translate(0%, 0%) rotate(-17.1deg);
+            }
+        }
+
+        &_7 {
+            @include option(bottom, 0);
+            @include option(left, -92rem);
+
+            background-image: url('./../../public/images/background/bg_main/gradient2010_d@1.5x.png');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            transform: translate(0%, 100%);
+            transition: .5s .2s ease-in-out;
+
+            @include bg-enter {
+                transform: translate(0%, 4%);
+            }
+        }
+
+        &_6 {
+            @include option(top, 59.4%);
+
+            background: linear-gradient(170deg, #aab5d1 0%, rgba(194, 203, 226, 0) 100%);
+        }
+
+        &_2 {
+            @include option(top, -90rem);
+        }
+    }
+
+    &__thin-stick-part {
+        position: absolute;
+        @include option(top, 23.6%);
+        @include option(left, 52.75%);
+        z-index: 4;
+
+        &_8,
+        &_7,
+        &_6{
+            display: none;
+        }
+    }
+
+    &__thin-stick {
+        @include option(width, 1502rem);
+        @include option(height, 470rem);
+    }
+
+    &__stick-part-1 {
+        position: absolute;
+        @include option(top, 25.4%);
+        @include option(left, 25%);
+        z-index: 4;
+
+        &_8,
+        &_7,
+        &_6{
+            display: none;
+        }
+    }
+
+    &__stick-part-2 {
+        position: absolute;
+        @include option(top, 45.4%);
+        @include option(left, 35%);
+
+        &_8,
+        &_7,
+        &_6{
+            display: none;
+        }
+    }
+
+    &__stick_1 {
+        @include option(width, 1248rem);
+        @include option(height, 486rem);
+
+        fill: $crimson;
+    }
+
+    &__stick_2 {
+        @include option(width, 1248rem);
+        @include option(height, 486rem);
+
+        fill: $grey300;
+    }
+
+    &-enter {
+        opacity: 0;
+    }
+
+    &-enter-active,
+    &-enter-done,
+    &-exit {
+        opacity: 1;
+        transition: 0.2s ease-in-out;
+    }
+
+    &-exit-active {
+        opacity: 0;
+        transition: 0.2s ease-in-out;
+    }
 }
