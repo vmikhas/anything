@@ -50,7 +50,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld1999_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(mix-width: 1024px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -78,7 +78,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2007_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(mix-width: 1024px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -107,7 +107,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2010_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(mix-width: 1024px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -135,7 +135,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2014_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(mix-width: 1024px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -163,7 +163,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2017_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(mix-width: 1024px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -191,7 +191,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2019_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(mix-width: 1024px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -220,7 +220,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2020_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(mix-width: 1024px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -248,7 +248,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2021_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(mix-width: 1024px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -277,7 +277,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2022_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(mix-width: 1024px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -391,6 +391,109 @@ export const backgroundImageMain = {
             {
                 svgSrc: './icons/stars.svg'
             },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/star2010_d@1.5x.webp 1.5x, ./images/background/bg_main/star2010_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/star2010_d@1.5x.png 1.5x, ./images/background/bg_main/star2010_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/star2010_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/star2010_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/gradient2010_d@1.5x.webp 1.5x, ./images/background/bg_main/gradient2010_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/gradient2010_d@1.5x.png 1.5x, ./images/background/bg_main/gradient2010_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/gradient2010_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/gradient2010_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            },
+            {
+                svgSrc: './icons/stripes.svg'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.webp 1.5x, ./images/background/bg_main/dots_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.png 1.5x, ./images/background/bg_main/dots_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/dots_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.webp 1.5x, ./images/background/bg_main/dots_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.png 1.5x, ./images/background/bg_main/dots_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/dots_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            }
         ],
         image: {
             sources: [

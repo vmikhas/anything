@@ -111,6 +111,21 @@
                 fill: $grey300;
             }
         }
+
+        &_8-2 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 0);
+                @include option(left, 0);
+
+                transform: translate(0%, 0%);
+                transition: .5s .3s ease-in-out;
+
+                @include bg-enter {
+                    transform: translate(0%, 100%);
+                }
+            }
+        }
     }
 
     //&__top-part {
