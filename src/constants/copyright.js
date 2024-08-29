@@ -50,7 +50,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld1999_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(max-width: 1023px)'
+                    media: '(mix-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -78,7 +78,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2007_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(max-width: 1023px)'
+                    media: '(mix-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -107,7 +107,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2010_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(max-width: 1023px)'
+                    media: '(mix-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -135,7 +135,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2014_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(max-width: 1023px)'
+                    media: '(mix-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -163,7 +163,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2017_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(max-width: 1023px)'
+                    media: '(mix-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -191,7 +191,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2019_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(max-width: 1023px)'
+                    media: '(mix-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -220,7 +220,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2020_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(max-width: 1023px)'
+                    media: '(mix-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -248,7 +248,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2021_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(max-width: 1023px)'
+                    media: '(mix-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -277,7 +277,7 @@ export const storyContent = {
                 {
                     srcSet: './images/pack/ld2022_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(max-width: 1023px)'
+                    media: '(mix-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -290,6 +290,23 @@ export const storyContent = {
 
 export const backgroundImageMain = {
     9: {
+        list: [
+            {
+                svgSrc: './icons/stars.svg'
+            },
+            {
+              svgSrc: './icons/thin_stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/dots.svg'
+            }
+        ],
         image: {
             sources: [
                 {
@@ -305,7 +322,7 @@ export const backgroundImageMain = {
                 {
                     srcSet: './images/background/bg_main/bg1999_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -315,6 +332,36 @@ export const backgroundImageMain = {
         }
     },
     8: {
+        list: [
+            {
+                svgSrc: './icons/stars.svg'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/smoke_m@1.5x.webp 1.5x, ./images/background/bg_main/smoke_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/smoke_m@1.5x.png 1.5x, ./images/background/bg_main/smoke_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/smoke_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/smoke_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            }
+        ],
         image: {
             sources: [
                 {
@@ -330,7 +377,7 @@ export const backgroundImageMain = {
                 {
                     srcSet: './images/background/bg_main/bg2007_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -340,6 +387,11 @@ export const backgroundImageMain = {
         }
     },
     7: {
+        list: [
+            {
+                svgSrc: './icons/stars.svg'
+            },
+        ],
         image: {
             sources: [
                 {
@@ -355,7 +407,7 @@ export const backgroundImageMain = {
                 {
                     srcSet: './images/background/bg_main/bg2010_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -365,6 +417,11 @@ export const backgroundImageMain = {
         }
     },
     6: {
+        list: [
+            {
+                svgSrc: './icons/stars.svg'
+            },
+        ],
         image: {
             sources: [
                 {
@@ -380,7 +437,7 @@ export const backgroundImageMain = {
                 {
                     srcSet: './images/background/bg_main/bg2014_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -390,6 +447,11 @@ export const backgroundImageMain = {
         }
     },
     5: {
+        list: [
+            {
+                svgSrc: './icons/stars.svg'
+            },
+        ],
         image: {
             sources: [
                 {
@@ -405,7 +467,7 @@ export const backgroundImageMain = {
                 {
                     srcSet: './images/background/bg_main/bg2017_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -415,6 +477,11 @@ export const backgroundImageMain = {
         }
     },
     4: {
+        list: [
+            {
+                svgSrc: './icons/stars.svg'
+            },
+        ],
         image: {
             sources: [
                 {
@@ -430,7 +497,7 @@ export const backgroundImageMain = {
                 {
                     srcSet: './images/background/bg_main/bg2019_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -440,6 +507,11 @@ export const backgroundImageMain = {
         }
     },
     3: {
+        list: [
+            {
+                svgSrc: './icons/stars.svg'
+            },
+        ],
         image: {
             sources: [
                 {
@@ -455,7 +527,7 @@ export const backgroundImageMain = {
                 {
                     srcSet: './images/background/bg_main/bg2020_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -465,6 +537,11 @@ export const backgroundImageMain = {
         }
     },
     2: {
+        list: [
+            {
+                svgSrc: './icons/stars.svg'
+            },
+        ],
         image: {
             sources: [
                 {
@@ -480,7 +557,7 @@ export const backgroundImageMain = {
                 {
                     srcSet: './images/background/bg_main/bg2021_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -490,6 +567,11 @@ export const backgroundImageMain = {
         }
     },
     1: {
+        list: [
+            {
+                svgSrc: './icons/stars.svg'
+            },
+        ],
         image: {
             sources: [
                 {
@@ -505,7 +587,7 @@ export const backgroundImageMain = {
                 {
                     srcSet: './images/background/bg_main/bg2022_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -533,7 +615,7 @@ export const backgroundImageNow = {
                 {
                     srcSet: './images/background/bg_now/bg1_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -558,7 +640,7 @@ export const backgroundImageNow = {
                 {
                     srcSet: './images/background/bg_now/bg2_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -586,7 +668,7 @@ export const backgroundImageHistory = {
                 {
                     srcSet: './images/background/bg_history/bg1_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr:
@@ -618,7 +700,7 @@ export const introContent = {
                 {
                     srcSet: './images/pack/ldnow_d@1.5x.webp',
                     type: 'image/webp',
-                    media: '(min-width: 1023px)'
+                    media: '(min-width: 1024px)'
                 }
             ],
             imgAttr: {
@@ -656,7 +738,7 @@ export const factoryContent = {
             {
                 srcSet: './images/factory_d@1.5x.webp',
                 type: 'image/webp',
-                media: '(min-width: 1023px)'
+                media: '(min-width: 1024px)'
             }
         ],
         imgAttr: {

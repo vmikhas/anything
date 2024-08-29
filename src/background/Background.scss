@@ -4,174 +4,356 @@
     left: 0;
     z-index: 0;
     overflow: hidden;
-    height: 100vh;
+    //height: 100vh;
 
     img {
         width: 100vw;
     }
 
-    &__top-part {
-        position: absolute;
-        @include option(top, -18.8%);
-        @include option(left, -6.4%);
+    &_main {
 
-        transform: translate(-100%, 50%);
-        transition: .5s .2s ease-in-out;
-
-        @include bg-enter {
-            transform: translate(0%, 0%);
-        }
     }
 
-    &__stars {
-        @include option(width, 760rem);
-        @include option(height, 460rem);
-
-        &_9,
-        &_8,
-        &_6,
-        &_3,
-        &_2, {
-            fill: $grey300;
+    &__item {
+        div,
+        svg {
+            height: 100%;
         }
 
-        &_7 {
-            fill: $grey1000;
-        }
+        &_9-1,
+        &_8-1,
+        &_7-1,
+        &_6-1,
+        &_5-1,
+        &_4-1,
+        &_3-1,
+        &_2-1,
+        &_1-1 {
+            .background_main & {
+                position: absolute;
+                @include option(top, -203rem);
+                @include option(left, -123rem);
+                @include option(height, 471rem);
 
-        &_5 {
-            fill: $medium-blue;
-        }
+                fill: $grey300;
 
-        &_4 {
-            fill: $brown;
-        }
+                //transform: translate(-100%, 50%);
+                transition: .5s .2s ease-in-out;
 
-        &_1 {
-            fill: $light-olive;
-        }
-    }
-
-    &__bottom-part {
-        position: absolute;
-        z-index: 3;
-        left: 70rem;
-
-        width: 110vw;
-        height: 100vh;
-
-        transform: rotate(-17.1deg);
-
-        &_9,
-        &_5,
-        &_4,
-        &_3,
-        &_1 {
-            display: none;
-        }
-
-        &_8 {
-            @include option(top, 58%);
-
-            background-color: $violet-red;
-            //background-image: url('./../../public/images/background/bg_main/');
-            background-position: bottom;
-            background-repeat: no-repeat;
-            background-size: contain;
-
-
-            transform: translate(0%, 100%) rotate(-17.1deg);
-            transition: .5s .2s ease-in-out;
-
-            @include bg-enter {
-                transform: translate(0%, 0%) rotate(-17.1deg);
+                @include bg-enter() {
+                    transform: translate(0%, 0%);
+                }
             }
         }
 
-        &_7 {
-            @include option(bottom, 0);
-            @include option(left, -92rem);
-
-            background-image: url('./../../public/images/background/bg_main/gradient2010_d@1.5x.png');
-            background-position: bottom;
-            background-repeat: no-repeat;
-            background-size: contain;
-
-            transform: translate(0%, 100%);
-            transition: .5s .2s ease-in-out;
-
-            @include bg-enter {
-                transform: translate(0%, 4%);
+        &_7-1 {
+            .background_main & {
+                fill: $grey1000;
             }
         }
 
-        &_6 {
-            @include option(top, 59.4%);
-
-            background: linear-gradient(170deg, #aab5d1 0%, rgba(194, 203, 226, 0) 100%);
+        &_5-1 {
+            .background_main & {
+                fill: $medium-blue;
+            }
         }
 
-        &_2 {
-            @include option(top, -90rem);
+        &_4-1 {
+            .background_main & {
+                fill: $brown;
+            }
+        }
+
+        &_1-1 {
+            .background_main & {
+                fill: $light-olive;
+            }
+        }
+
+        &_9-2 {
+            .background_main & {
+                position: absolute;
+                @include option(top, 255rem);
+                @include option(left, 1013rem);
+                @include option(height, 470rem);
+            }
+        }
+
+        &_9-3 {
+            .background_main & {
+                position: absolute;
+                @include option(top, 705rem);
+                @include option(left, 588rem);
+                @include option(height, 223rem);
+
+                fill: $crimson;
+            }
+        }
+
+        &_9-4 {
+            .background_main & {
+                position: absolute;
+                @include option(top, 490rem);
+                @include option(left, 673rem);
+                @include option(height, 486rem);
+
+                fill: $grey300;
+            }
+        }
+
+        &_9-5 {
+            .background_main & {
+                position: absolute;
+                @include option(top, 839rem);
+                @include option(left, 1131rem);
+                @include option(height, 392rem);
+
+                fill: $grey300;
+            }
         }
     }
 
-    &__thin-stick-part {
-        position: absolute;
-        @include option(top, 23.6%);
-        @include option(left, 52.75%);
-        z-index: 4;
-
-        &_8,
-        &_7,
-        &_6{
-            display: none;
-        }
-    }
-
-    &__thin-stick {
-        @include option(width, 1502rem);
-        @include option(height, 470rem);
-    }
-
-    &__stick-part-1 {
-        position: absolute;
-        @include option(top, 25.4%);
-        @include option(left, 25%);
-        z-index: 4;
-
-        &_8,
-        &_7,
-        &_6{
-            display: none;
-        }
-    }
-
-    &__stick-part-2 {
-        position: absolute;
-        @include option(top, 45.4%);
-        @include option(left, 35%);
-
-        &_8,
-        &_7,
-        &_6{
-            display: none;
-        }
-    }
-
-    &__stick_1 {
-        @include option(width, 573rem);
-        @include option(height, 196rem);
-
-        fill: $crimson;
-    }
-
-    &__stick_2 {
-        @include option(width, 1248rem);
-        @include option(height, 486rem);
-
-        fill: $grey300;
-    }
+    //&__top-part {
+    //    position: absolute;
+    //    @include option(top, -203rem);
+    //    @include option(left, -123rem);
+    //
+    //    transform: translate(-100%, 50%);
+    //    transition: .5s .2s ease-in-out;
+    //
+    //    @include bg-enter {
+    //        transform: translate(0%, 0%);
+    //    }
+    //}
+    //
+    //&__stars {
+    //    @include option(width, 754rem);
+    //    @include option(height, 471rem);
+    //
+    //    &_9,
+    //    &_8,
+    //    &_6,
+    //    &_3,
+    //    &_2, {
+    //        fill: $grey300;
+    //    }
+    //
+    //    &_7 {
+    //        fill: $grey1000;
+    //    }
+    //
+    //    &_5 {
+    //        fill: $medium-blue;
+    //    }
+    //
+    //    &_4 {
+    //        fill: $brown;
+    //    }
+    //
+    //    &_1 {
+    //        fill: $light-olive;
+    //    }
+    //}
+    //
+    //&__bottom-part {
+    //    position: absolute;
+    //    z-index: 3;
+    //    left: 70rem;
+    //
+    //    width: 110vw;
+    //    height: 100vh;
+    //
+    //    transform: rotate(-17.1deg);
+    //
+    //    &_9,
+    //    &_5,
+    //    &_4,
+    //    &_3,
+    //    &_1 {
+    //        display: none;
+    //    }
+    //
+    //    &_8 {
+    //        @include option(top, 0);
+    //        @include option(left, -96rem);
+    //
+    //        //background-color: $violet-red;
+    //        background-image: url('./../../public/images/background/bg_main/smoke_d@1.5x.png');
+    //        background-position: bottom;
+    //        background-repeat: no-repeat;
+    //        background-size: 1920rem 723rem;
+    //
+    //
+    //        transform: translate(0%, 100%);
+    //        transition: .5s .2s ease-in-out;
+    //
+    //        @include bg-enter {
+    //            transform: translate(0%, 0%);
+    //        }
+    //    }
+    //
+    //    &_7 {
+    //        @include option(bottom, 0);
+    //        @include option(left, -92rem);
+    //
+    //        background-image:
+    //                image-set(
+    //                        url('./../../public/images/background/bg_main/gradient2010_d@1.5x.webp') type("image/webp") 1x,
+    //                        url('./../../public/images/background/bg_main/gradient2010_d@1.5x.png')
+    //                ),
+    //                image-set(
+    //                        url('./../../public/images/background/bg_main/dots_d@1.5x.webp') type('image/webp') 1x,
+    //                        url('./../../public/images/background/bg_main/dots_d@1.5x.png')
+    //                ),
+    //                image-set(
+    //                        url('./../../public/images/background/bg_main/dots_d@1.5x.webp') type('image/webp') 1x,
+    //                        url('./../../public/images/background/bg_main/dots_d@1.5x.png')
+    //                );
+    //        background-position: bottom, 140rem 608em, 1713rem 111em;
+    //        background-repeat: no-repeat;
+    //        background-size: contain, 1226rem 724rem, 1226rem 724rem;
+    //
+    //        transform: translate(0%, 100%);
+    //        transition: .5s .2s ease-in-out;
+    //
+    //        @include bg-enter {
+    //            transform: translate(0%, 4%);
+    //        }
+    //    }
+    //
+    //    &_6 {
+    //        @include option(top, 59.4%);
+    //
+    //        background: linear-gradient(170deg, #aab5d1 0%, rgba(194, 203, 226, 0) 100%);
+    //    }
+    //
+    //    &_2 {
+    //        @include option(top, -90rem);
+    //    }
+    //}
+    //
+    //&__star2010 {
+    //    position: absolute;
+    //    top: 0;
+    //    left: 0;
+    //    z-index: 6;
+    //
+    //    width: 100%;
+    //    height: 100%;
+    //
+    //    background-image: url('./../../public/images/background/bg_main/star2010_d@1.5x.png');
+    //    background-position: bottom;
+    //    background-repeat: no-repeat;
+    //    background-size: contain;
+    //}
+    //
+    //&__thin-stick-part {
+    //    position: absolute;
+    //    @include option(top, 255rem);
+    //    @include option(left, 1013rem);
+    //    z-index: 4;
+    //
+    //    &_8,
+    //    &_7,
+    //    &_6 {
+    //        display: none;
+    //    }
+    //}
+    //
+    //&__thin-stick {
+    //    @include option(width, 1502rem);
+    //    @include option(height, 470rem);
+    //}
+    //
+    //&__stick-part-1 {
+    //    position: absolute;
+    //    @include option(top, 719rem);
+    //    @include option(left, 585rem);
+    //    z-index: 4;
+    //
+    //    &_8,
+    //    &_7,
+    //    &_6 {
+    //        display: none;
+    //    }
+    //}
+    //
+    //&__stick_1 {
+    //    @include option(width, 579rem);
+    //    @include option(height, 196rem);
+    //
+    //    fill: $crimson;
+    //
+    //    transform: rotate(-2deg);
+    //}
+    //
+    //&__stick-part-2 {
+    //    position: absolute;
+    //    @include option(top, 466rem);
+    //    @include option(left, 665rem);
+    //
+    //    &_8,
+    //    &_7,
+    //    &_6 {
+    //        display: none;
+    //    }
+    //}
+    //
+    //&__stick_2 {
+    //    @include option(width, 1419rem);
+    //    @include option(height, 486rem);
+    //
+    //    fill: $grey300;
+    //
+    //    transform: rotate(-2deg);
+    //}
+    //
+    //&__dots-part {
+    //    position: absolute;
+    //    @include option(top, 839rem);
+    //    @include option(left, 1131rem);
+    //
+    //    &_8,
+    //    &_7,
+    //    &_6,
+    //    &_5,
+    //    &_4,
+    //    &_1 {
+    //        display: none;
+    //    }
+    //}
+    //
+    //&__dots {
+    //    @include option(width, 957rem);
+    //    @include option(height, 392rem);
+    //
+    //    fill: $grey300;
+    //}
+    //
+    //&__stripes-part {
+    //    display: none;
+    //
+    //    &_7 {
+    //        position: absolute;
+    //        @include option(top, 348rem);
+    //        @include option(left, 0);
+    //        z-index: 3;
+    //
+    //        display: block;
+    //
+    //        opacity: 0;
+    //        transition: .3s 1s ease-in-out;
+    //
+    //        @include bg-enter {
+    //            opacity: 1;
+    //        }
+    //    }
+    //}
+    //
+    //&__stripes {
+    //    @include option(width, 2041rem);
+    //    @include option(height, 634rem);
+    //}
 
     &-enter {
         opacity: 0;
