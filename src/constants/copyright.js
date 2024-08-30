@@ -35,256 +35,467 @@ export const storyContent = {
         title: '1999',
         subtitle: 'История марки LD',
         desc: 'История марки LD началась в России<br /> в 1999 году на фабрике Лиггетт-Дукат в Москве,<br /> где была произведена первая пачка сигарет<br /> классического формата.',
-        image: {
-            sources: [
-                {
-                    srcSet: './images/pack/ld1999_m@1.5x.webp 1.5x, ./images/pack/ld1999_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld1999_m@1.5x.png 1.5x, ./images/pack/ld1999_m@2x.png 2x',
-                    type: 'image/png',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld1999_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
+        list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld1999_m@1.5x.webp 1.5x, ./images/pack/ld1999_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld1999_m@1.5x.png 1.5x, ./images/pack/ld1999_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld1999_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld1999_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 1999 года'
+                    }
                 }
-            ],
-            imgAttr: {
-                src: './images/pack/ld1999_d@1.5x.png',
-                alt: 'Пачка сигарет LD 1999 года'
             }
-        }
+        ]
     },
     8: {
         title: '2007',
         subtitle: 'LD Pink Super Slims',
         desc: 'За годы работы на российском рынке марка LD завоевала себе&nbsp;имя настоящего новатора. И&nbsp;в&nbsp;2007 году появились сигареты LD в&nbsp;потенциальном и набирающим оборот в&nbsp;то&nbsp;время&nbsp;супертонком формате — LD Pink Super&nbsp;Slims.&nbsp;Новинка&nbsp;была выпущена в&nbsp;сегменте сигарет по&nbsp;доступной цене, сделав их доступными для&nbsp;широкого&nbsp;круга потребителей.',
-        image: {
-            sources: [
-                {
-                    srcSet: './images/pack/ld2007_m@1.5x.webp 1.5x, ./images/pack/ld2007_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2007_m@1.5x.png 1.5x, ./images/pack/ld2007_m@2x.png 2x',
-                    type: 'image/png',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2007_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
+        list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2007_m@1.5x.webp 1.5x, ./images/pack/ld2007_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2007_m@1.5x.png 1.5x, ./images/pack/ld2007_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2007_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2007_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2007 года'
+                    }
                 }
-            ],
-            imgAttr: {
-                src: './images/pack/ld2007_d@1.5x.png',
-                alt: 'Пачка сигарет LD 2007 года'
             }
-        }
+        ]
     },
     7: {
         title: '2010',
         subtitle: 'LD Club Platinum',
         desc: '<p class="story__desc_p">Подтверждая статус новатора, в 2010 году под маркой LD запускаются новые сигареты LD Club Platinum — первый в&nbsp;среднеценовом сегменте продукт формата King Size Super Slims.</p>' +
             'Вскоре после запуска линейка LD Club уже вошла в топ 3 мест по&nbsp;уровню продаж среди всех марок формата King&nbsp;Size&nbsp;Super&nbsp;Slims в России.',
-        image: {
-            sources: [
-                {
-                    srcSet: './images/pack/ld2010_m@1.5x.webp 1.5x, ./images/pack/ld2010_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2010_m@1.5x.png 1.5x, ./images/pack/ld2010_m@2x.png 2x',
-                    type: 'image/png',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2010_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
+        list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2010_m@1.5x.webp 1.5x, ./images/pack/ld2010_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2010_m@1.5x.png 1.5x, ./images/pack/ld2010_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2010_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2010_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2010 года'
+                    }
                 }
-            ],
-            imgAttr: {
-                src: './images/pack/ld2010_d@1.5x.png',
-                alt: 'Пачка сигарет LD 2010 года'
             }
-        }
+        ]
     },
     6: {
         title: '2014',
         subtitle: 'LD Compact',
         desc: 'Сосредоточившись на производстве столь популярных сигарет компактного формата, в 2014 году LD выпустили очередную новинку уже в компактном формате - LD Club Compact.<br /> А годом позже именно LD первым открыл эру компактного удлиненного формата, выпустив сигареты LD Compact 100’s Blue, в которых на 25% больше табака по сравнению<br class="story__desc_br2014" /> с компактным предложением.',
-        image: {
-            sources: [
-                {
-                    srcSet: './images/pack/ld2014_m@1.5x.webp 1.5x, ./images/pack/ld2014_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2014_m@1.5x.png 1.5x, ./images/pack/ld2014_m@2x.png 2x',
-                    type: 'image/png',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2014_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
+        list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2014_1_d@1.5x.webp 1.5x, ./images/pack/ld2014_1_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2014_1_d@1.5x.png 1.5x, ./images/pack/ld2014_1_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2014_1_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2014_1_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2014 года'
+                    }
                 }
-            ],
-            imgAttr: {
-                src: './images/pack/ld2014_d@1.5x.png',
-                alt: 'Пачка сигарет LD 2014 года'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2014_2_d@1.5x.webp 1.5x, ./images/pack/ld2014_2_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2014_2_d@1.5x.png 1.5x, ./images/pack/ld2014_2_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2014_2_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2014_2_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2014 года'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2014_3_d@1.5x.webp 1.5x, ./images/pack/ld2014_3_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2014_3_d@1.5x.png 1.5x, ./images/pack/ld2014_3_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2014_3_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2014_3_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2014 года'
+                    }
+                }
             }
-        }
+        ]
     },
     5: {
         title: '2017',
         subtitle: 'Сигареты с капсулой',
         desc: 'Задачей марки LD с момента ее основания было предлагать совершеннолетним потребителям табачной продукции современные новинки, оставляя при этом качество неизменным. Следуя&nbsp;этому&nbsp;принципу, в 2017 году вышли первые сигареты с капсулой со вкусом лайма LD Autograph Impulse Compact, которые положили начало яркой капсульной линейке&nbsp;LD.',
-        image: {
-            sources: [
-                {
-                    srcSet: './images/pack/ld2017_m@1.5x.webp 1.5x, ./images/pack/ld2017_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2017_m@1.5x.png 1.5x, ./images/pack/ld2017_m@2x.png 2x',
-                    type: 'image/png',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2017_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
+        list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2017_m@1.5x.webp 1.5x, ./images/pack/ld2017_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2017_m@1.5x.png 1.5x, ./images/pack/ld2017_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2017_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2017_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2017 года'
+                    }
                 }
-            ],
-            imgAttr: {
-                src: './images/pack/ld2017_d@1.5x.png',
-                alt: 'Пачка сигарет LD 2017 года'
             }
-        }
+        ]
     },
     4: {
         title: '2019',
         subtitle: '2019 год стал одним из важнейших<br /> в эволюции бренда',
         desc: 'Рынок увидели новинки LD Sunny и LD Breezy с новыми вкусами капсул по доступной цене. Расширение капсульной линейки сигарет LD&nbsp;позволило сделать новый продукт интересным широкому кругу потребителей, давая возможность приобрести сигареты по&nbsp;доступной цене с&nbsp;новыми вкусами.',
-        image: {
-            sources: [
-                {
-                    srcSet: './images/pack/ld2019_m@1.5x.webp 1.5x, ./images/pack/ld2019_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2019_m@1.5x.png 1.5x, ./images/pack/ld2019_m@2x.png 2x',
-                    type: 'image/png',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2019_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
+        list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2019_1_d@1.5x.webp 1.5x, ./images/pack/ld2019_1_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2019_1_d@1.5x.png 1.5x, ./images/pack/ld2019_1_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2019_1_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2019_1_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2019 года'
+                    }
                 }
-            ],
-            imgAttr: {
-                src: './images/pack/ld2019_d@1.5x.png',
-                alt: 'Пачка сигарет LD 2019 года'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2019_2_d@1.5x.webp 1.5x, ./images/pack/ld2019_2_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2019_2_d@1.5x.png 1.5x, ./images/pack/ld2019_2_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2019_2_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2019_2_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2019 года'
+                    }
+                }
             }
-        }
+        ]
     },
     3: {
         title: '2020',
         subtitle: 'В 2020 году произошло обновление дизайна всей линейки сигарет LD',
         desc: '<p class="story__desc_p">Эта новая ступень в развитии марки позволила создать продукт, соответствующий текущим запросам потребителей — были запущены сигареты в современном динамичном дизайне пачки и с новыми вкусами капсул, которые стали одними из&nbsp;самых популярных среди потребителей.</p>' +
             'А также свет увидела обновленная линейка LD&nbsp;Autograph по&nbsp;доступной цене и LD Regular 100 в удлиненном классическом&nbsp;формате.',
-        image: {
-            sources: [
-                {
-                    srcSet: './images/pack/ld2020_m@1.5x.webp 1.5x, ./images/pack/ld2020_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2020_m@1.5x.png 1.5x, ./images/pack/ld2020_m@2x.png 2x',
-                    type: 'image/png',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2020_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
+        list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2020_1_d@1.5x.webp 1.5x, ./images/pack/ld2020_1_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2020_1_d@1.5x.png 1.5x, ./images/pack/ld2020_1_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2020_1_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2020_1_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2020 года'
+                    }
                 }
-            ],
-            imgAttr: {
-                src: './images/pack/ld2020_d@1.5x.png',
-                alt: 'Пачка сигарет LD 2020 года'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2020_2_d@1.5x.webp 1.5x, ./images/pack/ld2020_2_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2020_2_d@1.5x.png 1.5x, ./images/pack/ld2020_2_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2020_2_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2020_2_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2020 года'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2020_3_d@1.5x.webp 1.5x, ./images/pack/ld2020_3_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2020_3_d@1.5x.png 1.5x, ./images/pack/ld2020_3_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2020_3_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2020_3_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2020 года'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2020_4_d@1.5x.webp 1.5x, ./images/pack/ld2020_4_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2020_4_d@1.5x.png 1.5x, ./images/pack/ld2020_4_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2020_4_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2020_4_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2020 года'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2020_5_d@1.5x.webp 1.5x, ./images/pack/ld2020_5_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2020_5_d@1.5x.png 1.5x, ./images/pack/ld2020_5_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2020_5_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2020_5_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2020 года'
+                    }
+                }
             }
-        }
+        ]
     },
     2: {
         title: '2021',
         subtitle: 'Знак качества',
         desc: 'В 2021 году на задней стороне пачек появились знаки качества Quality+, призванные рассказать потребителю об основных технологиях продукта.',
-        image: {
-            sources: [
-                {
-                    srcSet: './images/pack/ld2021_m@1.5x.webp 1.5x, ./images/pack/ld2021_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2021_m@1.5x.png 1.5x, ./images/pack/ld2021_m@2x.png 2x',
-                    type: 'image/png',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2021_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
+        list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2021_m@1.5x.webp 1.5x, ./images/pack/ld2021_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2021_m@1.5x.png 1.5x, ./images/pack/ld2021_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2021_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2021_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2021 года'
+                    }
                 }
-            ],
-            imgAttr: {
-                src: './images/pack/ld2021_d@1.5x.png',
-                alt: 'Пачка сигарет LD 2021 года'
             }
-        }
+        ]
     },
     1: {
         title: '2022',
         subtitle: '2022 год – год экспериментов для бренда LD',
         desc: '<p class="story__desc_p2022">Впервые в линейке LD появляются продукты с двумя уровнями вкуса: капсулой и ароматизированной табачной мешкой.</p>' +
             '<p class="story__desc_p2022">Новый продукт был создан в&nbsp;соответствии с&nbsp;меняющимися&nbsp;трендами табачного рынка, чтобы удовлетворить самых требовательных потребителей.</p>',
-        image: {
-            sources: [
-                {
-                    srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
-                    type: 'image/png',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ld2022_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
+        list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ld2022_m@1.5x.webp 1.5x, ./images/pack/ld2022_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2022_m@1.5x.png 1.5x, ./images/pack/ld2022_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ld2022_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ld2022_d@1.5x.png',
+                        alt: 'Пачка сигарет LD 2022 года'
+                    }
                 }
-            ],
-            imgAttr: {
-                src: './images/pack/ld2022_d@1.5x.png',
-                alt: 'Пачка сигарет LD 2022 года'
             }
-        }
+        ]
     }
 };
 
@@ -295,7 +506,7 @@ export const backgroundImageMain = {
                 svgSrc: './icons/stars.svg'
             },
             {
-              svgSrc: './icons/thin_stick.svg'
+                svgSrc: './icons/thin_stick.svg'
             },
             {
                 svgSrc: './icons/stick.svg'
@@ -524,6 +735,61 @@ export const backgroundImageMain = {
             {
                 svgSrc: './icons/stars.svg'
             },
+            {
+                image: {
+                    imgAttr: {}
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.webp 1.5x, ./images/background/bg_main/dots_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.png 1.5x, ./images/background/bg_main/dots_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/dots_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.webp 1.5x, ./images/background/bg_main/dots_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.png 1.5x, ./images/background/bg_main/dots_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/dots_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            }
         ],
         image: {
             sources: [
@@ -554,6 +820,65 @@ export const backgroundImageMain = {
             {
                 svgSrc: './icons/stars.svg'
             },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/extrathin_stick.svg'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/dots2017blue_d@1.5x.webp 1.5x, ./images/background/bg_main/dots2017blue_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots2017blue_d@1.5x.png 1.5x, ./images/background/bg_main/dots2017blue_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots2017blue_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/dots2017blue_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/dots2017yellow_d@1.5x.webp 1.5x, ./images/background/bg_main/dots2017yellow_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots2017yellow_d@1.5x.png 1.5x, ./images/background/bg_main/dots2017yellow_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots2017yellow_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/dots2017yellow_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            }
         ],
         image: {
             sources: [
@@ -584,6 +909,68 @@ export const backgroundImageMain = {
             {
                 svgSrc: './icons/stars.svg'
             },
+            {
+                svgSrc: './icons/extrathin_stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/extrabold_stick.svg'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/dots2019top_d@1.5x.webp 1.5x, ./images/background/bg_main/dots2019top_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots2019top_d@1.5x.png 1.5x, ./images/background/bg_main/dots2019top_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots2019top_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/dots2019top_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/dots2019bottom_d@1.5x.webp 1.5x, ./images/background/bg_main/dots2019bottom_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots2019bottom_d@1.5x.png 1.5x, ./images/background/bg_main/dots2019bottom_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/dots2019bottom_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/dots2019bottom_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            }
         ],
         image: {
             sources: [
@@ -614,6 +1001,49 @@ export const backgroundImageMain = {
             {
                 svgSrc: './icons/stars.svg'
             },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/thin_stick.svg'
+            },
+            {
+                svgSrc: './icons/dots.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/bold_stick.svg'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/triangle_d@1.5x.webp 1.5x, ./images/background/bg_main/triangle_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/triangle_d@1.5x.png 1.5x, ./images/background/bg_main/triangle_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/triangle_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/triangle_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            }
         ],
         image: {
             sources: [
@@ -644,6 +1074,72 @@ export const backgroundImageMain = {
             {
                 svgSrc: './icons/stars.svg'
             },
+            {
+                svgSrc: './icons/thin_stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/extrabold_stick.svg'
+            },
+            {
+                svgSrc: './icons/dots.svg'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/quality_d@1.5x.webp 1.5x, ./images/background/bg_main/quality_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/quality_d@1.5x.png 1.5x, ./images/background/bg_main/quality_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/quality_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/quality_d@1.5x.png',
+                        alt: 'Нижняя картинка'
+                    }
+                }
+            },
+            {
+
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/gradient2021_d@1.5x.webp 1.5x, ./images/background/bg_main/gradient2021_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/gradient2021_d@1.5x.png 1.5x, ./images/background/bg_main/gradient2021_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/gradient2021_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/gradient2021_d@1.5x.png',
+                        alt: 'Нижний градиент'
+                    }
+                }
+            }
         ],
         image: {
             sources: [
@@ -674,6 +1170,46 @@ export const backgroundImageMain = {
             {
                 svgSrc: './icons/stars.svg'
             },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/extrathin_stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/bold_stick.svg'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/circle_d@1.5x.webp 1.5x, ./images/background/bg_main/circle_d@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/circle_d@1.5x.png 1.5x, ./images/background/bg_main/circle_d@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_main/circle_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_main/circle_d@1.5x.png',
+                        alt: 'Круг'
+                    }
+                }
+            }
         ],
         image: {
             sources: [

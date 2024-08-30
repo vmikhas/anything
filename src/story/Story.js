@@ -20,7 +20,14 @@ export default function Story({ content }) {
                         <h2 className={`story__subtitle story__subtitle_${currentContent.title}`}>{parse(currentContent.subtitle)}</h2>
                         <p className={`story__desc story__desc_${currentContent.title}`}>{parse(currentContent.desc)}</p>
                         <div className={`story__image story__image_${currentContent.title}`}>
-                            <Picture {...currentContent.image} />
+                            {currentContent?.list &&
+                                currentContent.list.map((item, index) => (
+                                    item?.image &&
+                                        <div className={`story__item story__image_${currentContent.title}-${index + 1}`}>
+                                            <Picture {...item.image} />
+                                        </div>
+                                ))
+                            }
                         </div>
                     </div>
                 </CSSTransition>
@@ -28,3 +35,6 @@ export default function Story({ content }) {
         </section>
     );
 }
+
+
+{/*<Picture {...currentContent.image} />*/}

@@ -6,9 +6,9 @@
     overflow: hidden;
     //height: 100vh;
 
-    img {
-        width: 100vw;
-    }
+    //img {
+    //    width: 100vw;
+    //}
 
     &_main {
 
@@ -18,6 +18,10 @@
         div,
         svg {
             height: 100%;
+        }
+
+        img {
+            object-fit: contain;
         }
 
         &_9-1,
@@ -33,6 +37,7 @@
                 position: absolute;
                 @include option(top, -203rem);
                 @include option(left, -123rem);
+
                 @include option(height, 471rem);
 
                 fill: $grey300;
@@ -75,6 +80,7 @@
                 position: absolute;
                 @include option(top, 255rem);
                 @include option(left, 1013rem);
+
                 @include option(height, 470rem);
             }
         }
@@ -84,6 +90,7 @@
                 position: absolute;
                 @include option(top, 705rem);
                 @include option(left, 588rem);
+
                 @include option(height, 223rem);
 
                 fill: $crimson;
@@ -95,6 +102,7 @@
                 position: absolute;
                 @include option(top, 490rem);
                 @include option(left, 673rem);
+
                 @include option(height, 486rem);
 
                 fill: $grey300;
@@ -106,6 +114,7 @@
                 position: absolute;
                 @include option(top, 839rem);
                 @include option(left, 1131rem);
+
                 @include option(height, 392rem);
 
                 fill: $grey300;
@@ -126,249 +135,452 @@
                 }
             }
         }
-    }
 
-    //&__top-part {
-    //    position: absolute;
-    //    @include option(top, -203rem);
-    //    @include option(left, -123rem);
-    //
-    //    transform: translate(-100%, 50%);
-    //    transition: .5s .2s ease-in-out;
-    //
-    //    @include bg-enter {
-    //        transform: translate(0%, 0%);
-    //    }
-    //}
-    //
-    //&__stars {
-    //    @include option(width, 754rem);
-    //    @include option(height, 471rem);
-    //
-    //    &_9,
-    //    &_8,
-    //    &_6,
-    //    &_3,
-    //    &_2, {
-    //        fill: $grey300;
-    //    }
-    //
-    //    &_7 {
-    //        fill: $grey1000;
-    //    }
-    //
-    //    &_5 {
-    //        fill: $medium-blue;
-    //    }
-    //
-    //    &_4 {
-    //        fill: $brown;
-    //    }
-    //
-    //    &_1 {
-    //        fill: $light-olive;
-    //    }
-    //}
-    //
-    //&__bottom-part {
-    //    position: absolute;
-    //    z-index: 3;
-    //    left: 70rem;
-    //
-    //    width: 110vw;
-    //    height: 100vh;
-    //
-    //    transform: rotate(-17.1deg);
-    //
-    //    &_9,
-    //    &_5,
-    //    &_4,
-    //    &_3,
-    //    &_1 {
-    //        display: none;
-    //    }
-    //
-    //    &_8 {
-    //        @include option(top, 0);
-    //        @include option(left, -96rem);
-    //
-    //        //background-color: $violet-red;
-    //        background-image: url('./../../public/images/background/bg_main/smoke_d@1.5x.png');
-    //        background-position: bottom;
-    //        background-repeat: no-repeat;
-    //        background-size: 1920rem 723rem;
-    //
-    //
-    //        transform: translate(0%, 100%);
-    //        transition: .5s .2s ease-in-out;
-    //
-    //        @include bg-enter {
-    //            transform: translate(0%, 0%);
-    //        }
-    //    }
-    //
-    //    &_7 {
-    //        @include option(bottom, 0);
-    //        @include option(left, -92rem);
-    //
-    //        background-image:
-    //                image-set(
-    //                        url('./../../public/images/background/bg_main/gradient2010_d@1.5x.webp') type("image/webp") 1x,
-    //                        url('./../../public/images/background/bg_main/gradient2010_d@1.5x.png')
-    //                ),
-    //                image-set(
-    //                        url('./../../public/images/background/bg_main/dots_d@1.5x.webp') type('image/webp') 1x,
-    //                        url('./../../public/images/background/bg_main/dots_d@1.5x.png')
-    //                ),
-    //                image-set(
-    //                        url('./../../public/images/background/bg_main/dots_d@1.5x.webp') type('image/webp') 1x,
-    //                        url('./../../public/images/background/bg_main/dots_d@1.5x.png')
-    //                );
-    //        background-position: bottom, 140rem 608em, 1713rem 111em;
-    //        background-repeat: no-repeat;
-    //        background-size: contain, 1226rem 724rem, 1226rem 724rem;
-    //
-    //        transform: translate(0%, 100%);
-    //        transition: .5s .2s ease-in-out;
-    //
-    //        @include bg-enter {
-    //            transform: translate(0%, 4%);
-    //        }
-    //    }
-    //
-    //    &_6 {
-    //        @include option(top, 59.4%);
-    //
-    //        background: linear-gradient(170deg, #aab5d1 0%, rgba(194, 203, 226, 0) 100%);
-    //    }
-    //
-    //    &_2 {
-    //        @include option(top, -90rem);
-    //    }
-    //}
-    //
-    //&__star2010 {
-    //    position: absolute;
-    //    top: 0;
-    //    left: 0;
-    //    z-index: 6;
-    //
-    //    width: 100%;
-    //    height: 100%;
-    //
-    //    background-image: url('./../../public/images/background/bg_main/star2010_d@1.5x.png');
-    //    background-position: bottom;
-    //    background-repeat: no-repeat;
-    //    background-size: contain;
-    //}
-    //
-    //&__thin-stick-part {
-    //    position: absolute;
-    //    @include option(top, 255rem);
-    //    @include option(left, 1013rem);
-    //    z-index: 4;
-    //
-    //    &_8,
-    //    &_7,
-    //    &_6 {
-    //        display: none;
-    //    }
-    //}
-    //
-    //&__thin-stick {
-    //    @include option(width, 1502rem);
-    //    @include option(height, 470rem);
-    //}
-    //
-    //&__stick-part-1 {
-    //    position: absolute;
-    //    @include option(top, 719rem);
-    //    @include option(left, 585rem);
-    //    z-index: 4;
-    //
-    //    &_8,
-    //    &_7,
-    //    &_6 {
-    //        display: none;
-    //    }
-    //}
-    //
-    //&__stick_1 {
-    //    @include option(width, 579rem);
-    //    @include option(height, 196rem);
-    //
-    //    fill: $crimson;
-    //
-    //    transform: rotate(-2deg);
-    //}
-    //
-    //&__stick-part-2 {
-    //    position: absolute;
-    //    @include option(top, 466rem);
-    //    @include option(left, 665rem);
-    //
-    //    &_8,
-    //    &_7,
-    //    &_6 {
-    //        display: none;
-    //    }
-    //}
-    //
-    //&__stick_2 {
-    //    @include option(width, 1419rem);
-    //    @include option(height, 486rem);
-    //
-    //    fill: $grey300;
-    //
-    //    transform: rotate(-2deg);
-    //}
-    //
-    //&__dots-part {
-    //    position: absolute;
-    //    @include option(top, 839rem);
-    //    @include option(left, 1131rem);
-    //
-    //    &_8,
-    //    &_7,
-    //    &_6,
-    //    &_5,
-    //    &_4,
-    //    &_1 {
-    //        display: none;
-    //    }
-    //}
-    //
-    //&__dots {
-    //    @include option(width, 957rem);
-    //    @include option(height, 392rem);
-    //
-    //    fill: $grey300;
-    //}
-    //
-    //&__stripes-part {
-    //    display: none;
-    //
-    //    &_7 {
-    //        position: absolute;
-    //        @include option(top, 348rem);
-    //        @include option(left, 0);
-    //        z-index: 3;
-    //
-    //        display: block;
-    //
-    //        opacity: 0;
-    //        transition: .3s 1s ease-in-out;
-    //
-    //        @include bg-enter {
-    //            opacity: 1;
-    //        }
-    //    }
-    //}
-    //
-    //&__stripes {
-    //    @include option(width, 2041rem);
-    //    @include option(height, 634rem);
-    //}
+        &_7-2 {
+            .background_main & {
+                position: absolute;
+                @include option(top, -180rem);
+                @include option(left, 790rem);
+
+                @include option(width, 1298rem);
+            }
+        }
+
+        &_7-3 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 0rem);
+                @include option(left, 0rem);
+            }
+        }
+
+        &_7-4 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 99rem);
+                @include option(left, 0rem);
+
+                @include option(height, 634rem);
+            }
+        }
+
+        &_7-5 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -291rem);
+                @include option(left, 48rem);
+
+                @include option(width, 1226rem);
+            }
+        }
+
+        &_7-6 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 203rem);
+                @include option(left, 1621rem);
+
+                @include option(width, 1226rem);
+            }
+        }
+
+        &_6-2 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -657rem);
+                @include option(left, 15rem);
+
+                @include option(width, 110%);
+                @include option(height, 100%);
+
+                background: linear-gradient(170deg, #aab5d1 0%, rgba(194, 203, 226, 0) 100%);
+
+                transform: rotate(-17.1deg);
+            }
+        }
+
+        &_6-3 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -291rem);
+                @include option(left, 48rem);
+
+                @include option(width, 1226rem);
+            }
+        }
+
+        &_6-4 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 203rem);
+                @include option(left, 1621rem);
+
+                @include option(width, 1226rem);
+            }
+        }
+
+        &_5-2 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 15rem);
+                @include option(left, -47rem);
+
+                @include option(height, 218rem);
+
+                fill: $aqua;
+            }
+        }
+
+        &_5-3 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 95rem);
+                @include option(left, 286rem);
+
+                @include option(height, 100rem);
+
+                fill: $dark-tangerine;
+            }
+        }
+
+        &_5-4 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -97rem);
+                @include option(left, -305rem);
+
+                @include option(height, 211rem);
+
+                fill: $grey900;
+            }
+        }
+
+        &_5-5 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -49rem);
+                @include option(left, 391rem);
+
+                @include option(width, 893rem);
+            }
+        }
+
+        &_5-6 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 206rem);
+                @include option(left, 1217rem);
+
+                @include option(width, 893rem);
+            }
+        }
+
+        &_4-2 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 205rem);
+                @include option(left, 283rem);
+
+                @include option(height, 153rem);
+
+                fill: $grey900;
+            }
+        }
+
+        &_4-3 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 87rem);
+                @include option(left, 183rem);
+                z-index: 1;
+
+                @include option(height, 179rem);
+
+                fill: $sienna;
+            }
+        }
+
+        &_4-4 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 142rem);
+                @include option(left, 435rem);
+                z-index: 1;
+
+                @include option(height, 72rem);
+
+
+                fill: $white;
+            }
+        }
+
+        &_4-5 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 76rem);
+                @include option(left, 284rem);
+
+                @include option(height, 160rem);
+
+                fill: $select-yellow;
+            }
+        }
+
+        &_4-6 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 347rem);
+                @include option(left, 846rem);
+
+                @include option(width, 741rem);
+            }
+        }
+
+        &_4-7 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -72rem);
+                @include option(left, 771rem);
+
+                @include option(width, 1273rem);
+            }
+        }
+
+        &_3-2 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 11rem);
+                @include option(left, -55rem);
+
+                @include option(height, 250rem);
+
+                fill: $grey300;
+            }
+        }
+
+        &_3-3 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 117rem);
+                @include option(left, 360rem);
+
+                @include option(height, 100rem);
+
+                fill: $crimson;
+            }
+        }
+
+        &_3-4 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -75rem);
+                @include option(left, -231rem);
+
+                @include option(height, 211rem);
+            }
+        }
+
+        &_3-5 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -164rem);
+                @include option(left, 790rem);
+
+                @include option(height, 400rem);
+
+                fill: $white;
+
+                transform: rotate(33.5deg);
+            }
+        }
+
+        &_3-6 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 86rem);
+                @include option(right, -42rem);
+                z-index: 1;
+
+                @include option(height, 74rem);
+
+                fill: $grey300;
+            }
+        }
+
+        &_3-7 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 86rem);
+                @include option(right, -199rem);
+
+                @include option(height, 149rem);
+
+                fill: $crimson;
+            }
+        }
+
+        &_3-8 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -232rem);
+                @include option(left, 794rem);
+
+                @include option(width, 1734rem);
+            }
+        }
+
+        &_2-2 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 140rem);
+                @include option(left, 283rem);
+
+                @include option(height, 153rem);
+            }
+        }
+
+        &_2-3 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 21rem);
+                @include option(left, 183rem);
+                z-index: 1;
+
+                @include option(height, 179rem);
+
+                fill: $grey300;
+            }
+        }
+
+        &_2-4 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 76rem);
+                @include option(left, 434rem);
+                z-index: 1;
+
+                @include option(height, 72rem);
+
+                fill: $white;
+            }
+        }
+
+        &_2-5 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 10rem);
+                @include option(left, 284rem);
+
+                @include option(height, 160rem);
+
+                fill: $crimson;
+            }
+        }
+
+        &_2-6 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 38rem);
+                @include option(left, 676rem);
+                z-index: 1;
+
+                @include option(height, 530rem);
+
+                fill: $grey300;
+            }
+        }
+
+        &_2-7 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 257rem);
+                @include option(left, 284rem);
+
+                @include option(width, 913rem);
+            }
+        }
+
+        &_2-8 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 0);
+                @include option(left, 722rem);
+
+                @include option(width, 1199rem);
+            }
+        }
+
+        &_1-2 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 65rem);
+                @include option(left, -167rem);
+
+                @include option(height, 162rem);
+
+                fill: $granite;
+            }
+        }
+
+        &_1-3 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, 126rem);
+                @include option(left, 87rem);
+
+                @include option(height, 74rem);
+
+                fill: $white;
+            }
+        }
+
+        &_1-4 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -32rem);
+                @include option(left, -366rem);
+
+                @include option(height, 157rem);
+
+                fill: $chocolate;
+            }
+        }
+
+        &_1-5 {
+            .background_main & {
+                position: absolute;
+                @include option(top, 311rem);
+                @include option(right, 0);
+                z-index: 1;
+
+                @include option(height, 84rem);
+
+                fill: $white;
+            }
+        }
+
+        &_1-6 {
+            .background_main & {
+                position: absolute;
+                @include option(top, 246rem);
+                @include option(right, -132rem);
+
+                @include option(height, 149rem);
+
+                fill: $chocolate;
+            }
+        }
+
+        &_1-7 {
+            .background_main & {
+                position: absolute;
+                @include option(bottom, -134rem);
+                @include option(left, 788rem);
+
+                @include option(width, 1247rem);
+            }
+        }
+    }
 
     &-enter {
         opacity: 0;

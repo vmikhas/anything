@@ -1,8 +1,8 @@
-import {useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 import Picture from '../constants/Picture';
-import React, {useMemo} from 'react';
-import {CSSTransition, SwitchTransition} from 'react-transition-group';
-import {ReactSVG} from 'react-svg';
+import React, { useMemo } from 'react';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import { ReactSVG } from 'react-svg';
 
 export default function Background({background}) {
     const {currentPage, slideIndex, activeScreen} = useSelector((state) => state.content);
@@ -45,53 +45,4 @@ export default function Background({background}) {
             </CSSTransition>
         </SwitchTransition>
     );
-}
-
-
-{/*<div className={`background__top-part background__top-part_${slideIndex}`}>*/
-}
-{/*    <Stars className={`background__stars background__stars_${slideIndex}`}/>*/
-}
-{/*</div>*/
-}
-
-
-{/*<div className={`background__bottom-part background__bottom-part_${slideIndex}`}></div>*/
-}
-{/*<div className={'background__star2010'}></div>*/
-}
-
-{/*<div className={`background__thin-stick-part background__thin-stick-part_${slideIndex}`}>*/
-}
-{/*    <ThinStick className={`background__thin-stick background__thin-stick_${slideIndex}`}/>*/
-}
-{/*</div>*/
-}
-
-{/*<div className={`background__stick-part-1 background__stick-part-1_${slideIndex}`}>*/
-}
-{/*    <Stick className={`background__stick background__stick_1 background__stick_${slideIndex}`}/>*/
-}
-{/*</div>*/
-}
-
-{/*<div className={`background__stick-part-2 background__stick-part-2_${slideIndex}`}>*/
-}
-{/*    <Stick className={`background__stick background__stick_2 background__stick_${slideIndex}`}/>*/
-}
-{/*</div>*/
-}
-
-{/*<div className={`background__dots-part background__dots-part_${slideIndex}`}>*/
-}
-{/*    <Dots className={`background__dots background__dots_${slideIndex}`}/>*/
-}
-{/*</div>*/
-}
-
-{/*<div className={`background__stripes-part background__stripes-part_${slideIndex}`}>*/
-}
-{/*    <Stripes className={`background__stripes background__stripes_${slideIndex}`}/>*/
-}
-{/*</div>*/
 }
