@@ -1,286 +1,348 @@
 .story {
-	position: relative;
-	@include option(bottom, 400rem, 14rem);
-	@include option(left, 272rem, 8rem);
-	z-index: 6;
-
-	width: max-content;
-
-	&__container {
-		&-enter {
-			opacity: 0;
-		}
-	
-		&-enter-active,
-		&-enter-done,
-		&-exit {
-			opacity: 1;
-			transition: 0.3s ease-in-out;
-		}
-	
-		&-exit-active {
-			opacity: 0;
-			transition: 0.3s ease-in-out;
-		}
-	}
-
-	&__title {
-		@include option(padding, 41rem 0 0 10rem, 0);
-
-		font-family: $RobotoCondensed;
-		font-style: italic;
-		@include option(font-size, 128rem, 48rem);
-		@include option(font-weight, 700);
-		@include option(line-height, 100%);
-		@include option(letter-spacing, -0.06em);
-		@include option(text-align, start, right);
-		color: $crimson;
-
-		&_1999 {
-			@include option(padding, 41rem 0 0, 0 19rem 0 0);
-		}
-
-		&_2007 {
-			color: $violet-red;
-		}
-
-		&_2010 {
-			@include option(padding, 41rem 0 0 10rem, 0 5rem 0 0);
-
-			background: linear-gradient(180deg, #989ca3 0%, #c9ced7 50%, #424750 100%);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
-
-		&_2014 {
-			color: $blue-steel;
-		}
-
-		&_2017 {
-			color: $dark-tangerine;
-		}
-
-		&_2019 {
-			@include option(padding, 41rem 0 0 10rem, 0 10rem 0 0);
-
-			color: $select-yellow;
-		}
-
-		&_2022 {
-			color: $chocolate;
-		}
-	}
-
-	&__subtitle {
-		@include option(padding, 50rem 0 0 13rem, 13rem 0 0 15rem);
-
-		font-family: $RobotoCondensed;
-		font-style: italic;
-		@include option(font-size, 36rem, 24rem);
-		@include option(font-weight, 700);
-		@include option(line-height, 130%, 100%);
-		@include option(letter-spacing, -0.03em);
-		color: $grey600;
-
-		&_1999 {
-			@include option(padding, 54rem 0 0 13rem, 13rem 0 0 15rem);
-		}
-
-		&_2014 {
-			@include option(padding, 35rem 0 0 13rem, 13rem 0 0 15rem);
-		}
-
-		&_2019 {
-			@include option(padding, 55rem 0 0 13rem, 13rem 0 0 15rem);
-			@include option(line-height, 100%);
-
-			color: $white;
-		}
-
-		&_2020 {
-			@include option(width, 600rem, 315rem);
-			@include option(padding, 55rem 0 0 13rem, 13rem 0 0 15rem);
-			@include option(line-height, 100%);
-		}
-
-		&_2022 {
-			@include option(width, 640rem, 295rem);
-
-			color: $white;
-		}
-
-		&_2010,
-		&_2017 {
-			color: $white;
-		}
-	}
-
-	&__desc {
-		@include option(width, 631rem, 350rem);
-		@include option(padding, 31rem 0 0 11rem, 16rem 0 0 15rem);
-
-		@include option(font-size, 20rem, 14rem);
-		@include option(font-weight, 400);
-		@include option(line-height, 140%);
-		color: $grey800;
-
-		&_p {
-			@include option(padding, 0 0 27rem, 0 0 22rem);
-		}
-
-		&_1999 {
-			@include option(padding, 27rem 0 0 15rem, 16rem 0 0 15rem);
-		}
-
-		&_2007 {
-			@include option(width, 600rem, 330rem);
-			@include option(padding, 31rem 0 0 11rem, 13rem 0 0 12rem);
-		}
-
-		&_2010 {
-			@include option(width, 640rem, 335rem);
-			@include option(padding, 31rem 0 0 11rem, 21rem 0 0 19rem);
-
-			@include option(color, $grideperleft, $light-grey);
-		}
-
-		&_2014 {
-			@include option(width, 610rem, 330rem);
-			@include option(padding, 13rem 0 0 11rem, 14rem 0 0 12rem);
-		}
-
-		&_br2014 {
-			@media (max-width: $MIN-DESKTOP - 1) {
-				display: none;
-			}
-		}
-
-		&_2017 {
-			@include option(width, 603rem, 330rem);
-			@include option(padding, 31rem 0 0 11rem, 23rem 0 0 19rem);
-
-			color: $light-grey;
-		}
-
-		&_2019 {
-			@include option(width, 610rem, 325rem);
-			@include option(padding, 31rem 0 0 11rem, 29rem 0 0 19rem);
-
-			color: $light-grey;
-		}
-
-		&_2020 {
-			@include option(width, 625rem, 330rem);
-			@include option(padding, 37rem 0 0 11rem, 23rem 0 0 12rem);
-		}
-
-		&_2021 {
-			@include option(width, 560rem, 330rem);
-			@include option(padding, 31rem 0 0 11rem, 13rem 0 0 12rem);
-		}
-
-		&_2022 {
-			@include option(width, 625rem, 330rem);
-			@include option(padding, 66rem 0 0 55rem, 29rem 0 0 46rem);
-			color: $light-grey;
-		}
-
-		&_p2022:not(:last-child) {
-			@include option(padding, 0 0 28rem, 0 0 22rem);
-		}
-
-		&_p2022 {
-			position: relative;
-
-			&::before {
-				content: "";
-				display: block;
-				@include option(width, 24rem);
-				@include option(height, 18rem);
-
-				background: url("../assest/images/icons/bullet.svg") no-repeat center;
-
-				position: absolute;
-				@include option(top, 7rem, 1rem);
-				@include option(left, -42rem, -34rem);
-			}
-		}
-	}
-
-	&__image {
-		position: absolute;
-
-		&_1999 {
-			@include option(top, 118rem, 150rem);
-			@include option(left, 990rem, -7rem);
-
-			@include option(width, 345rem, 358rem);
-
-			box-shadow: 10px 34px 94px 0 rgba(57, 84, 123, 0.3);
-		}
-
-		&_2007 {
-			@include option(top, 130rem, 241rem);
-			@include option(left, 1010rem, -6rem);
-
-			@include option(width, 315rem, 357rem);
-
-			box-shadow: 9px 19px 84px 0 rgba(54, 16, 50, 0.15);
-		}
-
-		&_2010 {
-			@include option(top, 128rem, 371rem);
-			@include option(left, 965rem, 53rem);
-
-			@include option(width, 424rem, 240rem);
-		}
-
-		&_2014 {
-			@include option(top, 127rem, 304rem);
-			@include option(left, 808rem, -8rem);
-
-			@include option(width, 720rem, 357rem);
-			@include option(height, 678rem, 322rem);
-		}
-
-		&_2017 {
-			@include option(top, 131rem, 296rem);
-			@include option(left, 1038rem, -8rem);
-
-			@include option(width, 269rem, 360rem);
-		}
-
-		&_2019 {
-			@include option(top, 104rem, 308rem);
-			@include option(left, 823rem, 2rem);
-
-			@include option(width, 598rem, 325rem);
-			@include option(height, 755rem, 496rem);
-		}
-
-		&_2020 {
-			@include option(top, 105rem, 392rem);
-			@include option(left, 602rem, 7rem);
-
-			@include option(width, 1045rem, 345rem);
-			@include option(height, 626rem, 233rem);
-		}
-
-		&_2021 {
-			@include option(top, 225rem, 260rem);
-			@include option(left, 896rem, 13rem);
-
-			@include option(width, 535rem, 320rem);
-			@include option(height, 634rem, 429rem);
-		}
-
-		&_2022 {
-			@include option(top, 8rem, 283rem);
-			@include option(left, 713rem, -8rem);
-
-			@include option(width, 867rem, 360rem);
-			@include option(height, 851rem, 617rem);
-		}
-	}
+    position: relative;
+    @include option(bottom, 400rem, 14rem);
+    @include option(left, 272rem, 8rem);
+    z-index: 6;
+
+    width: max-content;
+
+    &__container {
+        &-enter {
+            opacity: 0;
+        }
+
+        &-enter-active,
+        &-enter-done,
+        &-exit {
+            opacity: 1;
+            transition: 0.3s ease-in-out;
+        }
+
+        &-exit-active {
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    &__title {
+        @include option(padding, 41rem 0 0 10rem, 0);
+
+        font-family: $RobotoCondensed;
+        font-style: italic;
+        @include option(font-size, 128rem, 48rem);
+        @include option(font-weight, 700);
+        @include option(line-height, 100%);
+        @include option(letter-spacing, -0.06em);
+        @include option(text-align, start, right);
+        color: $crimson;
+
+        &_1999 {
+            @include option(padding, 41rem 0 0, 0 19rem 0 0);
+        }
+
+        &_2007 {
+            color: $violet-red;
+        }
+
+        &_2010 {
+            @include option(padding, 41rem 0 0 10rem, 0 5rem 0 0);
+
+            background: linear-gradient(180deg, #989ca3 0%, #c9ced7 50%, #424750 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &_2014 {
+            color: $blue-steel;
+        }
+
+        &_2017 {
+            color: $dark-tangerine;
+        }
+
+        &_2019 {
+            @include option(padding, 41rem 0 0 10rem, 0 10rem 0 0);
+
+            color: $select-yellow;
+        }
+
+        &_2022 {
+            color: $chocolate;
+        }
+    }
+
+    &__subtitle {
+        @include option(padding, 50rem 0 0 13rem, 13rem 0 0 15rem);
+
+        font-family: $RobotoCondensed;
+        font-style: italic;
+        @include option(font-size, 36rem, 24rem);
+        @include option(font-weight, 700);
+        @include option(line-height, 130%, 100%);
+        @include option(letter-spacing, -0.03em);
+        color: $grey600;
+
+        &_1999 {
+            @include option(padding, 54rem 0 0 13rem, 13rem 0 0 15rem);
+        }
+
+        &_2014 {
+            @include option(padding, 35rem 0 0 13rem, 13rem 0 0 15rem);
+        }
+
+        &_2019 {
+            @include option(padding, 55rem 0 0 13rem, 13rem 0 0 15rem);
+            @include option(line-height, 100%);
+
+            color: $white;
+        }
+
+        &_2020 {
+            @include option(width, 600rem, 315rem);
+            @include option(padding, 55rem 0 0 13rem, 13rem 0 0 15rem);
+            @include option(line-height, 100%);
+        }
+
+        &_2022 {
+            @include option(width, 640rem, 295rem);
+
+            color: $white;
+        }
+
+        &_2010,
+        &_2017 {
+            color: $white;
+        }
+    }
+
+    &__desc {
+        @include option(width, 631rem, 350rem);
+        @include option(padding, 31rem 0 0 11rem, 16rem 0 0 15rem);
+
+        @include option(font-size, 20rem, 14rem);
+        @include option(font-weight, 400);
+        @include option(line-height, 140%);
+        color: $grey800;
+
+        &_p {
+            @include option(padding, 0 0 27rem, 0 0 22rem);
+        }
+
+        &_1999 {
+            @include option(padding, 27rem 0 0 15rem, 16rem 0 0 15rem);
+        }
+
+        &_2007 {
+            @include option(width, 600rem, 330rem);
+            @include option(padding, 31rem 0 0 11rem, 13rem 0 0 12rem);
+        }
+
+        &_2010 {
+            @include option(width, 640rem, 335rem);
+            @include option(padding, 31rem 0 0 11rem, 21rem 0 0 19rem);
+
+            @include option(color, $grideperleft, $light-grey);
+        }
+
+        &_2014 {
+            @include option(width, 610rem, 330rem);
+            @include option(padding, 13rem 0 0 11rem, 14rem 0 0 12rem);
+        }
+
+        &_br2014 {
+            @media (max-width: $MIN-DESKTOP - 1) {
+                display: none;
+            }
+        }
+
+        &_2017 {
+            @include option(width, 603rem, 330rem);
+            @include option(padding, 31rem 0 0 11rem, 23rem 0 0 19rem);
+
+            color: $light-grey;
+        }
+
+        &_2019 {
+            @include option(width, 610rem, 325rem);
+            @include option(padding, 31rem 0 0 11rem, 29rem 0 0 19rem);
+
+            color: $light-grey;
+        }
+
+        &_2020 {
+            @include option(width, 625rem, 330rem);
+            @include option(padding, 37rem 0 0 11rem, 23rem 0 0 12rem);
+        }
+
+        &_2021 {
+            @include option(width, 560rem, 330rem);
+            @include option(padding, 31rem 0 0 11rem, 13rem 0 0 12rem);
+        }
+
+        &_2022 {
+            @include option(width, 625rem, 330rem);
+            @include option(padding, 66rem 0 0 55rem, 29rem 0 0 46rem);
+            color: $light-grey;
+        }
+
+        &_p2022:not(:last-child) {
+            @include option(padding, 0 0 28rem, 0 0 22rem);
+        }
+
+        &_p2022 {
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                @include option(width, 24rem);
+                @include option(height, 18rem);
+
+                background: url("../assest/images/icons/bullet.svg") no-repeat center;
+
+                position: absolute;
+                @include option(top, 7rem, 1rem);
+                @include option(left, -42rem, -34rem);
+            }
+        }
+    }
+
+    &__image {
+        &_1999-1 {
+            position: absolute;
+            @include option(top, 118rem, 210rem);
+            @include option(left, 990rem, 64rem);
+
+            @include option(width, 345rem, 217rem);
+
+            box-shadow: 10px 34px 94px 0 rgba(57, 84, 123, 0.3);
+        }
+
+        &_2007-1 {
+            position: absolute;
+            @include option(top, 130rem, 306rem);
+            @include option(left, 1010rem, 68rem);
+
+            @include option(width, 315rem, 209rem);
+
+            box-shadow: 9px 19px 84px 0 rgba(54, 16, 50, 0.15);
+        }
+
+        &_2010-1 {
+            position: absolute;
+            @include option(top, 128rem, 371rem);
+            @include option(left, 965rem, 53rem);
+
+            @include option(width, 424rem, 240rem);
+        }
+
+        &_2014-1 {
+            position: absolute;
+            @include option(top, 174rem, 327rem);
+            @include option(left, 808rem, -8rem);
+
+            @include option(width, 342rem, 170rem);
+        }
+
+        &_2014-2 {
+            position: absolute;
+            @include option(top, 126rem, 304rem);
+            @include option(left, 1003rem, 91rem);
+            z-index: 2;
+
+            @include option(width, 337rem, 164rem);
+        }
+
+        &_2014-3 {
+            position: absolute;
+            @include option(top, 174rem, 327rem);
+            @include option(left, 1185rem, 178rem);
+
+            @include option(width, 342rem, 170rem);
+        }
+
+        &_2017-1 {
+            position: absolute;
+            @include option(top, 131rem, 333rem);
+            @include option(left, 1038rem, 84rem);
+
+            @include option(width, 269rem, 176rem);
+        }
+
+        &_2019-1 {
+            position: absolute;
+            @include option(top, 182rem, 351rem);
+            @include option(left, 822rem, 2rem);
+
+            @include option(width, 266rem, 144rem);
+        }
+
+        &_2019-2 {
+            position: absolute;
+            @include option(top, 104rem, 308rem);
+            @include option(left, 1094rem, 150rem);
+
+            @include option(width, 327rem, 177rem);
+        }
+
+        &_2020-1 {
+            position: absolute;
+            @include option(top, 248rem, 445rem);
+            @include option(left, 690rem, 7rem);
+            z-index: 1;
+
+            @include option(width, 215rem, 80rem);
+        }
+
+        &_2020-2 {
+            position: absolute;
+            @include option(top, 274rem, 454rem);
+            @include option(left, 898rem, 84rem);
+
+            @include option(width, 186rem, 69rem);
+        }
+
+        &_2020-3 {
+            position: absolute;
+            @include option(top, 105rem, 392rem);
+            @include option(left, 1046rem, 139rem);
+            z-index: 2;
+
+            @include option(width, 276rem, 102rem);
+        }
+
+        &_2020-4 {
+            position: absolute;
+            @include option(top, 230rem, 438rem);
+            @include option(left, 1290rem, 229rem);
+            z-index: 1;
+
+            @include option(width, 170rem, 63rem);
+        }
+
+        &_2020-5 {
+            position: absolute;
+            @include option(top, 276rem, 456rem);
+            @include option(left, 1452rem, 290rem);
+
+            @include option(width, 136rem, 50rem);
+        }
+
+        &_2021-1 {
+            position: absolute;
+            @include option(top, 225rem, 260rem);
+            @include option(left, 896rem, 13rem);
+
+            @include option(width, 535rem, 320rem);
+        }
+
+        &_2022-1 {
+            position: absolute;
+            @include option(top, 8rem, 283rem);
+            @include option(left, 713rem, -8rem);
+
+            @include option(width, 867rem, 360rem);
+        }
+    }
 }

@@ -1,8 +1,8 @@
 .nav {
     position: relative;
-    z-index: 6;
+    z-index: 7;
 
-    @include option(padding, 268rem 0 0, 20rem 0 0);
+    @include option(margin, 268rem 0 0, 20rem 0 0);
 
     &__logo {
         display: block;
@@ -88,7 +88,7 @@
 
         @media (max-width: $MIN-DESKTOP - 1) {
             position: absolute;
-            top: 730rem;
+            top: 710rem;
             z-index: 4;
 
             width: 100%;
@@ -96,35 +96,35 @@
             background-color: $white;
 
             &_8 {
-                top: 845rem;
+                top: 826rem;
             }
 
             &_7 {
-                top: 892rem;
+                top: 873rem;
             }
 
             &_6 {
-                top: 754rem;
+                top: 735rem;
             }
 
             &_5 {
-                top: 822rem;
+                top: 803rem;
             }
 
             &_4 {
-                top: 824rem;
+                top: 805rem;
             }
 
             &_3 {
-                top: 809rem;
+                top: 790rem;
             }
 
             &_2 {
-                top: 709rem;
+                top: 690rem;
             }
 
             &_1 {
-                top: 920rem;
+                top: 901rem;
             }
 
             &_now {
@@ -291,7 +291,7 @@
 
     &__button {
         position: absolute;
-        @include option(top, 932rem, 663rem);
+        @include option(top, 664rem, 643rem);
         @include option(left, 50%);
         z-index: 7;
 
@@ -308,50 +308,50 @@
         cursor: pointer;
 
         &_8 {
-            @include option(top, 932rem, 779rem);
+            @include option(top, 664rem, 759rem);
         }
 
         &_7 {
-            @include option(top, 932rem, 826rem);
+            @include option(top, 664rem, 806rem);
         }
 
         &_6 {
-            @include option(top, 932rem, 687rem);
+            @include option(top, 664rem, 667rem);
         }
 
         &_5 {
-            @include option(top, 932rem, 756rem);
+            @include option(top, 664rem, 736rem);
         }
 
         &_4 {
-            @include option(top, 932rem, 758rem);
+            @include option(top, 664rem, 738rem);
         }
 
         &_3 {
-            @include option(top, 932rem, 743rem);
+            @include option(top, 664rem, 723rem);
         }
 
         &_2 {
-            @include option(top, 932rem, 642rem);
+            @include option(top, 664rem, 622rem);
         }
 
         &_1 {
-            @include option(top, 932rem, 854rem);
+            @include option(top, 664rem, 834rem);
         }
 
         &_now {
             &.nav__button_start {
-                @include option(top, 932rem, 605rem);
+                @include option(top, 664rem, 605rem);
             }
 
             &.nav__button_end {
-                @include option(top, 843rem, 717rem);
+                @include option(top, 575rem, 717rem);
                 @include option(left, 19.76%, 50%);
             }
         }
 
         &_history {
-            @include option(top, 930rem, 629rem);
+            @include option(top, 662rem, 629rem);
         }
 
         animation: buttonNext 2s infinite;

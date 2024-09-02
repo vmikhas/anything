@@ -137,12 +137,12 @@ export const storyContent = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/pack/ld2014_1_d@1.5x.webp 1.5x, ./images/pack/ld2014_1_d@2x.webp 2x',
+                            srcSet: './images/pack/ld2014_1_m@1.5x.webp 1.5x, ./images/pack/ld2014_1_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/pack/ld2014_1_d@1.5x.png 1.5x, ./images/pack/ld2014_1_d@2x.png 2x',
+                            srcSet: './images/pack/ld2014_1_m@1.5x.png 1.5x, ./images/pack/ld2014_1_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -162,12 +162,12 @@ export const storyContent = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/pack/ld2014_2_d@1.5x.webp 1.5x, ./images/pack/ld2014_2_d@2x.webp 2x',
+                            srcSet: './images/pack/ld2014_2_m@1.5x.webp 1.5x, ./images/pack/ld2014_2_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/pack/ld2014_2_d@1.5x.png 1.5x, ./images/pack/ld2014_2_d@2x.png 2x',
+                            srcSet: './images/pack/ld2014_2_m@1.5x.png 1.5x, ./images/pack/ld2014_2_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -187,12 +187,12 @@ export const storyContent = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/pack/ld2014_3_d@1.5x.webp 1.5x, ./images/pack/ld2014_3_d@2x.webp 2x',
+                            srcSet: './images/pack/ld2014_3_m@1.5x.webp 1.5x, ./images/pack/ld2014_3_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/pack/ld2014_3_d@1.5x.png 1.5x, ./images/pack/ld2014_3_d@2x.png 2x',
+                            srcSet: './images/pack/ld2014_3_m@1.5x.png 1.5x, ./images/pack/ld2014_3_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -251,12 +251,12 @@ export const storyContent = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/pack/ld2019_1_d@1.5x.webp 1.5x, ./images/pack/ld2019_1_d@2x.webp 2x',
+                            srcSet: './images/pack/ld2019_1_m@1.5x.webp 1.5x, ./images/pack/ld2019_1_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/pack/ld2019_1_d@1.5x.png 1.5x, ./images/pack/ld2019_1_d@2x.png 2x',
+                            srcSet: './images/pack/ld2019_1_m@1.5x.png 1.5x, ./images/pack/ld2019_1_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -276,12 +276,12 @@ export const storyContent = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/pack/ld2019_2_d@1.5x.webp 1.5x, ./images/pack/ld2019_2_d@2x.webp 2x',
+                            srcSet: './images/pack/ld2019_2_m@1.5x.webp 1.5x, ./images/pack/ld2019_2_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/pack/ld2019_2_d@1.5x.png 1.5x, ./images/pack/ld2019_2_d@2x.png 2x',
+                            srcSet: './images/pack/ld2019_2_m@1.5x.png 1.5x, ./images/pack/ld2019_2_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -309,12 +309,12 @@ export const storyContent = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/pack/ld2020_1_d@1.5x.webp 1.5x, ./images/pack/ld2020_1_d@2x.webp 2x',
+                            srcSet: './images/pack/ld2020_1_m@1.5x.webp 1.5x, ./images/pack/ld2020_1_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/pack/ld2020_1_d@1.5x.png 1.5x, ./images/pack/ld2020_1_d@2x.png 2x',
+                            srcSet: './images/pack/ld2020_1_m@1.5x.png 1.5x, ./images/pack/ld2020_1_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -334,12 +334,12 @@ export const storyContent = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/pack/ld2020_2_d@1.5x.webp 1.5x, ./images/pack/ld2020_2_d@2x.webp 2x',
+                            srcSet: './images/pack/ld2020_2_m@1.5x.webp 1.5x, ./images/pack/ld2020_2_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/pack/ld2020_2_d@1.5x.png 1.5x, ./images/pack/ld2020_2_d@2x.png 2x',
+                            srcSet: './images/pack/ld2020_2_m@1.5x.png 1.5x, ./images/pack/ld2020_2_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -359,12 +359,12 @@ export const storyContent = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/pack/ld2020_3_d@1.5x.webp 1.5x, ./images/pack/ld2020_3_d@2x.webp 2x',
+                            srcSet: './images/pack/ld2020_3_m@1.5x.webp 1.5x, ./images/pack/ld2020_3_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/pack/ld2020_3_d@1.5x.png 1.5x, ./images/pack/ld2020_3_d@2x.png 2x',
+                            srcSet: './images/pack/ld2020_3_m@1.5x.png 1.5x, ./images/pack/ld2020_3_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -384,12 +384,12 @@ export const storyContent = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/pack/ld2020_4_d@1.5x.webp 1.5x, ./images/pack/ld2020_4_d@2x.webp 2x',
+                            srcSet: './images/pack/ld2020_4_m@1.5x.webp 1.5x, ./images/pack/ld2020_4_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/pack/ld2020_4_d@1.5x.png 1.5x, ./images/pack/ld2020_4_d@2x.png 2x',
+                            srcSet: './images/pack/ld2020_4_m@1.5x.png 1.5x, ./images/pack/ld2020_4_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -409,12 +409,12 @@ export const storyContent = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/pack/ld2020_5_d@1.5x.webp 1.5x, ./images/pack/ld2020_5_d@2x.webp 2x',
+                            srcSet: './images/pack/ld2020_5_m@1.5x.webp 1.5x, ./images/pack/ld2020_5_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/pack/ld2020_5_d@1.5x.png 1.5x, ./images/pack/ld2020_5_d@2x.png 2x',
+                            srcSet: './images/pack/ld2020_5_m@1.5x.png 1.5x, ./images/pack/ld2020_5_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -606,12 +606,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/star2010_d@1.5x.webp 1.5x, ./images/background/bg_main/star2010_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/star2010_m@1.5x.webp 1.5x, ./images/background/bg_main/star2010_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/star2010_d@1.5x.png 1.5x, ./images/background/bg_main/star2010_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/star2010_m@1.5x.png 1.5x, ./images/background/bg_main/star2010_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -631,12 +631,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/gradient2010_d@1.5x.webp 1.5x, ./images/background/bg_main/gradient2010_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/gradient2010_m@1.5x.webp 1.5x, ./images/background/bg_main/gradient2010_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/gradient2010_d@1.5x.png 1.5x, ./images/background/bg_main/gradient2010_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/gradient2010_m@1.5x.png 1.5x, ./images/background/bg_main/gradient2010_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -659,12 +659,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/dots_d@1.5x.webp 1.5x, ./images/background/bg_main/dots_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/dots_m@1.5x.webp 1.5x, ./images/background/bg_main/dots_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/dots_d@1.5x.png 1.5x, ./images/background/bg_main/dots_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/dots_m@1.5x.png 1.5x, ./images/background/bg_main/dots_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -684,12 +684,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/dots_d@1.5x.webp 1.5x, ./images/background/bg_main/dots_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/dots_m@1.5x.webp 1.5x, ./images/background/bg_main/dots_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/dots_d@1.5x.png 1.5x, ./images/background/bg_main/dots_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/dots_m@1.5x.png 1.5x, ./images/background/bg_main/dots_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -744,12 +744,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/dots_d@1.5x.webp 1.5x, ./images/background/bg_main/dots_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/dots_m@1.5x.webp 1.5x, ./images/background/bg_main/dots_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/dots_d@1.5x.png 1.5x, ./images/background/bg_main/dots_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/dots_m@1.5x.png 1.5x, ./images/background/bg_main/dots_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -769,12 +769,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/dots_d@1.5x.webp 1.5x, ./images/background/bg_main/dots_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/dots_m@1.5x.webp 1.5x, ./images/background/bg_main/dots_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/dots_d@1.5x.png 1.5x, ./images/background/bg_main/dots_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/dots_m@1.5x.png 1.5x, ./images/background/bg_main/dots_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -833,12 +833,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/dots2017blue_d@1.5x.webp 1.5x, ./images/background/bg_main/dots2017blue_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/dots2017blue_m@1.5x.webp 1.5x, ./images/background/bg_main/dots2017blue_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/dots2017blue_d@1.5x.png 1.5x, ./images/background/bg_main/dots2017blue_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/dots2017blue_m@1.5x.png 1.5x, ./images/background/bg_main/dots2017blue_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -858,12 +858,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/dots2017yellow_d@1.5x.webp 1.5x, ./images/background/bg_main/dots2017yellow_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/dots2017yellow_m@1.5x.webp 1.5x, ./images/background/bg_main/dots2017yellow_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/dots2017yellow_d@1.5x.png 1.5x, ./images/background/bg_main/dots2017yellow_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/dots2017yellow_m@1.5x.png 1.5x, ./images/background/bg_main/dots2017yellow_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -925,12 +925,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/dots2019top_d@1.5x.webp 1.5x, ./images/background/bg_main/dots2019top_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/dots2019top_m@1.5x.webp 1.5x, ./images/background/bg_main/dots2019top_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/dots2019top_d@1.5x.png 1.5x, ./images/background/bg_main/dots2019top_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/dots2019top_m@1.5x.png 1.5x, ./images/background/bg_main/dots2019top_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -950,12 +950,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/dots2019bottom_d@1.5x.webp 1.5x, ./images/background/bg_main/dots2019bottom_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/dots2019bottom_m@1.5x.webp 1.5x, ./images/background/bg_main/dots2019bottom_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/dots2019bottom_d@1.5x.png 1.5x, ./images/background/bg_main/dots2019bottom_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/dots2019bottom_m@1.5x.png 1.5x, ./images/background/bg_main/dots2019bottom_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -1023,12 +1023,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/triangle_d@1.5x.webp 1.5x, ./images/background/bg_main/triangle_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/triangle_m@1.5x.webp 1.5x, ./images/background/bg_main/triangle_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/triangle_d@1.5x.png 1.5x, ./images/background/bg_main/triangle_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/triangle_m@1.5x.png 1.5x, ./images/background/bg_main/triangle_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -1093,12 +1093,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/quality_d@1.5x.webp 1.5x, ./images/background/bg_main/quality_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/quality_m@1.5x.webp 1.5x, ./images/background/bg_main/quality_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/quality_d@1.5x.png 1.5x, ./images/background/bg_main/quality_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/quality_m@1.5x.png 1.5x, ./images/background/bg_main/quality_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -1119,12 +1119,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/gradient2021_d@1.5x.webp 1.5x, ./images/background/bg_main/gradient2021_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/gradient2021_m@1.5x.webp 1.5x, ./images/background/bg_main/gradient2021_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/gradient2021_d@1.5x.png 1.5x, ./images/background/bg_main/gradient2021_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/gradient2021_m@1.5x.png 1.5x, ./images/background/bg_main/gradient2021_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -1189,12 +1189,12 @@ export const backgroundImageMain = {
                 image: {
                     sources: [
                         {
-                            srcSet: './images/background/bg_main/circle_d@1.5x.webp 1.5x, ./images/background/bg_main/circle_d@2x.webp 2x',
+                            srcSet: './images/background/bg_main/circle_m@1.5x.webp 1.5x, ./images/background/bg_main/circle_m@2x.webp 2x',
                             type: 'image/webp',
                             media: '(max-width: 1023px)'
                         },
                         {
-                            srcSet: './images/background/bg_main/circle_d@1.5x.png 1.5x, ./images/background/bg_main/circle_d@2x.png 2x',
+                            srcSet: './images/background/bg_main/circle_m@1.5x.png 1.5x, ./images/background/bg_main/circle_m@2x.png 2x',
                             type: 'image/png',
                             media: '(max-width: 1023px)'
                         },
@@ -1239,6 +1239,32 @@ export const backgroundImageMain = {
 
 export const backgroundImageNow = {
     start: {
+        list: [
+            {
+                svgSrc: './icons/now_1_stick.svg'
+            },
+            {
+                svgSrc: './icons/now_2_stick.svg'
+            },
+            {
+                svgSrc: './icons/bold_stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/thin_stick.svg'
+            },
+            {
+                svgSrc: './icons/extrabold_stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/extrathin_stick.svg'
+            }
+        ],
         image: {
             sources: [
                 {
@@ -1264,6 +1290,57 @@ export const backgroundImageNow = {
         }
     },
     end: {
+        list: [
+            {
+                svgSrc: './icons/now_1_stick.svg'
+            },
+            {
+                svgSrc: './icons/now_3_stick.svg'
+            },
+            {
+                svgSrc: './icons/bold_stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/thin_stick.svg'
+            },
+            {
+                svgSrc: './icons/extrabold_stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/extrathin_stick.svg'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_now/history_m@1.5x.webp 1.5x, ./images/background/bg_now/history_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_now/history_m@1.5x.jpg 1.5x, ./images/background/bg_now/history_m@2x.jpg 2x',
+                            type: 'image/jpeg',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_now/history_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_now/history_d@1.5x.jpg',
+                        alt: 'Фон слайда'
+                    }
+                }
+            }
+        ],
         image: {
             sources: [
                 {
@@ -1292,6 +1369,39 @@ export const backgroundImageNow = {
 
 export const backgroundImageHistory = {
     history: {
+        list: [
+            {
+                svgSrc: './icons/stars.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/stick.svg'
+            },
+            {
+                svgSrc: './icons/dots.svg'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_main/gradient2021_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr:
+                        {
+                            src: './images/background/bg_main/gradient2021_d@1.5x.png',
+                            alt: 'Градиент'
+                        }
+                }
+            }
+        ],
         image: {
             sources: [
                 {
@@ -1313,8 +1423,7 @@ export const backgroundImageHistory = {
             imgAttr:
                 {
                     src: './images/background/bg_history/bg1_d@1.5x.jpg',
-                    alt:
-                        'Фон слайда'
+                    alt: 'Фон слайда'
                 }
         }
     }

@@ -13,6 +13,8 @@ export default function Background({background}) {
         return background[prop];
     }, [background, activeScreen, slideIndex, currentPage]);
 
+    // console.log('currentBackground', currentBackground);
+
     if (!currentBackground || !currentBackground.image) {
         return null;
     }
@@ -28,13 +30,13 @@ export default function Background({background}) {
                         currentBackground.list.map((item, index) => (
                             <React.Fragment key={index}>
                                 {item?.image &&
-                                    <div className={`background__item background__item_${slideIndex}-${index + 1}`}>
+                                    <div className={`background__item background__item_${slideIndex || 'end'}-${index + 1}`}>
                                         <Picture {...item.image} />
                                     </div>
                                 }
 
                                 {item?.svgSrc &&
-                                    <div className={`background__item background__item_${slideIndex}-${index + 1}`}>
+                                    <div className={`background__item background__item_${slideIndex || 'end'}-${index + 1}`}>
                                         <ReactSVG src={item.svgSrc}/>
                                     </div>
                                 }

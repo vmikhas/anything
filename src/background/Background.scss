@@ -35,10 +35,10 @@
         &_1-1 {
             .background_main & {
                 position: absolute;
-                @include option(top, -203rem);
-                @include option(left, -123rem);
+                @include option(top, -203rem, -226rem);
+                @include option(left, -123rem, 61rem);
 
-                @include option(height, 471rem);
+                @include option(height, 471rem, 325rem);
 
                 fill: $grey300;
 
@@ -78,20 +78,20 @@
         &_9-2 {
             .background_main & {
                 position: absolute;
-                @include option(top, 255rem);
-                @include option(left, 1013rem);
+                @include option(top, 255rem, 284rem);
+                @include option(left, 1013rem, -150rem);
 
-                @include option(height, 470rem);
+                @include option(height, 470rem, 296rem);
             }
         }
 
         &_9-3 {
             .background_main & {
                 position: absolute;
-                @include option(top, 705rem);
-                @include option(left, 588rem);
+                @include option(top, 705rem, 453rem);
+                @include option(left, 588rem, -8rem);
 
-                @include option(height, 223rem);
+                @include option(height, 223rem, 130rem);
 
                 fill: $crimson;
             }
@@ -100,10 +100,10 @@
         &_9-4 {
             .background_main & {
                 position: absolute;
-                @include option(top, 490rem);
-                @include option(left, 673rem);
+                @include option(top, 490rem, 366rem);
+                @include option(left, 673rem, -150rem);
 
-                @include option(height, 486rem);
+                @include option(height, 486rem, 307rem);
 
                 fill: $grey300;
             }
@@ -112,10 +112,10 @@
         &_9-5 {
             .background_main & {
                 position: absolute;
-                @include option(top, 839rem);
-                @include option(left, 1131rem);
+                @include option(top, 839rem, 508rem);
+                @include option(left, 1131rem, -35rem);
 
-                @include option(height, 392rem);
+                @include option(height, 392rem, 280rem);
 
                 fill: $grey300;
             }
@@ -139,10 +139,10 @@
         &_7-2 {
             .background_main & {
                 position: absolute;
-                @include option(top, -180rem);
-                @include option(left, 790rem);
+                @include option(top, -121rem, 360rem);
+                @include option(right, -180rem, -62rem);
 
-                @include option(width, 1298rem);
+                @include option(width, 1298rem, 488rem);
             }
         }
 
@@ -157,40 +157,40 @@
         &_7-4 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, 99rem);
-                @include option(left, 0rem);
+                @include option(bottom, 99rem, 214rem);
+                @include option(left, 0rem, -350rem);
 
-                @include option(height, 634rem);
+                @include option(height, 634rem, 414rem);
             }
         }
 
         &_7-5 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, -291rem);
-                @include option(left, 48rem);
+                @include option(bottom, -291rem, -202rem);
+                @include option(left, 48rem, -777rem);
 
-                @include option(width, 1226rem);
+                @include option(height, 724rem, 530rem);
             }
         }
 
         &_7-6 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, 203rem);
-                @include option(left, 1621rem);
+                @include option(bottom, 203rem, 155rem);
+                @include option(right, -927rem, -698rem);
 
-                @include option(width, 1226rem);
+                @include option(height, 724rem, 475rem);
             }
         }
 
         &_6-2 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, -657rem);
-                @include option(left, 15rem);
+                @include option(bottom, -657rem, -448rem);
+                @include option(left, 15rem, 27rem);
 
-                @include option(width, 110%);
+                @include option(width, 110%, 130%);
                 @include option(height, 100%);
 
                 background: linear-gradient(170deg, #aab5d1 0%, rgba(194, 203, 226, 0) 100%);
@@ -202,20 +202,20 @@
         &_6-3 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, -291rem);
-                @include option(left, 48rem);
+                @include option(bottom, -291rem, -72rem);
+                @include option(left, 48rem, -550rem);
 
-                @include option(width, 1226rem);
+                @include option(height, 724rem, 389rem);
             }
         }
 
         &_6-4 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, 203rem);
-                @include option(left, 1621rem);
+                @include option(bottom, 203rem, 164rem);
+                @include option(right, -927rem, -504rem);
 
-                @include option(width, 1226rem);
+                @include option(height, 724rem, 389rem);
             }
         }
 
@@ -225,6 +225,7 @@
                 @include option(bottom, 15rem);
                 @include option(left, -47rem);
 
+                @include option(display, block, none);
                 @include option(height, 218rem);
 
                 fill: $aqua;
@@ -237,6 +238,7 @@
                 @include option(bottom, 95rem);
                 @include option(left, 286rem);
 
+                @include option(display, block, none);
                 @include option(height, 100rem);
 
                 fill: $dark-tangerine;
@@ -249,6 +251,7 @@
                 @include option(bottom, -97rem);
                 @include option(left, -305rem);
 
+                @include option(display, block, none);
                 @include option(height, 211rem);
 
                 fill: $grey900;
@@ -258,20 +261,20 @@
         &_5-5 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, -49rem);
-                @include option(left, 391rem);
+                @include option(bottom, -49rem, -33rem);
+                @include option(left, 391rem, -500rem);
 
-                @include option(width, 893rem);
+                @include option(width, 893rem, 578rem);
             }
         }
 
         &_5-6 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, 206rem);
-                @include option(left, 1217rem);
+                @include option(bottom, 206rem, 131rem);
+                @include option(left, 1217rem, 33rem);
 
-                @include option(width, 893rem);
+                @include option(width, 893rem, 578rem);
             }
         }
 
@@ -281,6 +284,7 @@
                 @include option(bottom, 205rem);
                 @include option(left, 283rem);
 
+                @include option(display, block, none);
                 @include option(height, 153rem);
 
                 fill: $grey900;
@@ -294,6 +298,7 @@
                 @include option(left, 183rem);
                 z-index: 1;
 
+                @include option(display, block, none);
                 @include option(height, 179rem);
 
                 fill: $sienna;
@@ -307,6 +312,7 @@
                 @include option(left, 435rem);
                 z-index: 1;
 
+                @include option(display, block, none);
                 @include option(height, 72rem);
 
 
@@ -320,6 +326,7 @@
                 @include option(bottom, 76rem);
                 @include option(left, 284rem);
 
+                @include option(display, block, none);
                 @include option(height, 160rem);
 
                 fill: $select-yellow;
@@ -329,20 +336,20 @@
         &_4-6 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, 347rem);
-                @include option(left, 846rem);
+                @include option(bottom, 347rem, 275rem);
+                @include option(left, 846rem, -124rem);
 
-                @include option(width, 741rem);
+                @include option(width, 741rem, 401rem);
             }
         }
 
         &_4-7 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, -72rem);
-                @include option(left, 771rem);
+                @include option(bottom, -72rem, 50rem);
+                @include option(left, 771rem, -154rem);
 
-                @include option(width, 1273rem);
+                @include option(width, 1273rem, 690rem);
             }
         }
 
@@ -352,6 +359,7 @@
                 @include option(bottom, 11rem);
                 @include option(left, -55rem);
 
+                @include option(display, block, none);
                 @include option(height, 250rem);
 
                 fill: $grey300;
@@ -364,6 +372,7 @@
                 @include option(bottom, 117rem);
                 @include option(left, 360rem);
 
+                @include option(display, block, none);
                 @include option(height, 100rem);
 
                 fill: $crimson;
@@ -376,6 +385,7 @@
                 @include option(bottom, -75rem);
                 @include option(left, -231rem);
 
+                @include option(display, block, none);
                 @include option(height, 211rem);
             }
         }
@@ -383,14 +393,14 @@
         &_3-5 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, -164rem);
-                @include option(left, 790rem);
+                @include option(bottom, -164rem, -34rem);
+                @include option(left, 790rem, -22rem);
 
-                @include option(height, 400rem);
+                @include option(height, 400rem, 281rem);
 
                 fill: $white;
 
-                transform: rotate(33.5deg);
+                @include option(transform, rotate(33.5deg), 0);
             }
         }
 
@@ -401,6 +411,7 @@
                 @include option(right, -42rem);
                 z-index: 1;
 
+                @include option(display, block, none);
                 @include option(height, 74rem);
 
                 fill: $grey300;
@@ -413,6 +424,7 @@
                 @include option(bottom, 86rem);
                 @include option(right, -199rem);
 
+                @include option(display, block, none);
                 @include option(height, 149rem);
 
                 fill: $crimson;
@@ -422,10 +434,10 @@
         &_3-8 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, -232rem);
-                @include option(left, 794rem);
+                @include option(bottom, -232rem, 26rem);
+                @include option(left, 794rem, -47rem);
 
-                @include option(width, 1734rem);
+                @include option(width, 1734rem, 648rem);
             }
         }
 
@@ -435,6 +447,7 @@
                 @include option(bottom, 140rem);
                 @include option(left, 283rem);
 
+                @include option(display, block, none);
                 @include option(height, 153rem);
             }
         }
@@ -446,6 +459,7 @@
                 @include option(left, 183rem);
                 z-index: 1;
 
+                @include option(display, block, none);
                 @include option(height, 179rem);
 
                 fill: $grey300;
@@ -459,6 +473,7 @@
                 @include option(left, 434rem);
                 z-index: 1;
 
+                @include option(display, block, none);
                 @include option(height, 72rem);
 
                 fill: $white;
@@ -471,6 +486,7 @@
                 @include option(bottom, 10rem);
                 @include option(left, 284rem);
 
+                @include option(display, block, none);
                 @include option(height, 160rem);
 
                 fill: $crimson;
@@ -480,11 +496,11 @@
         &_2-6 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, 38rem);
-                @include option(left, 676rem);
+                @include option(bottom, 38rem, -53rem);
+                @include option(left, 676rem, -81rem);
                 z-index: 1;
 
-                @include option(height, 530rem);
+                @include option(height, 530rem, 284rem);
 
                 fill: $grey300;
             }
@@ -493,10 +509,10 @@
         &_2-7 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, 257rem);
-                @include option(left, 284rem);
+                @include option(bottom, 257rem, 421rem);
+                @include option(left, 284rem, 21rem);
 
-                @include option(width, 913rem);
+                @include option(width, 913rem, 325rem);
             }
         }
 
@@ -506,6 +522,7 @@
                 @include option(bottom, 0);
                 @include option(left, 722rem);
 
+                @include option(display, block, none);
                 @include option(width, 1199rem);
             }
         }
@@ -516,6 +533,7 @@
                 @include option(bottom, 65rem);
                 @include option(left, -167rem);
 
+                @include option(display, block, none);
                 @include option(height, 162rem);
 
                 fill: $granite;
@@ -528,6 +546,7 @@
                 @include option(bottom, 126rem);
                 @include option(left, 87rem);
 
+                @include option(display, block, none);
                 @include option(height, 74rem);
 
                 fill: $white;
@@ -540,6 +559,7 @@
                 @include option(bottom, -32rem);
                 @include option(left, -366rem);
 
+                @include option(display, block, none);
                 @include option(height, 157rem);
 
                 fill: $chocolate;
@@ -553,6 +573,7 @@
                 @include option(right, 0);
                 z-index: 1;
 
+                @include option(display, block, none);
                 @include option(height, 84rem);
 
                 fill: $white;
@@ -565,6 +586,7 @@
                 @include option(top, 246rem);
                 @include option(right, -132rem);
 
+                @include option(display, block, none);
                 @include option(height, 149rem);
 
                 fill: $chocolate;
@@ -574,11 +596,141 @@
         &_1-7 {
             .background_main & {
                 position: absolute;
-                @include option(bottom, -134rem);
-                @include option(left, 788rem);
+                @include option(bottom, -134rem, 129rem);
+                @include option(left, 788rem, -61rem);
 
-                @include option(width, 1247rem);
+                @include option(width, 1247rem, 495rem);
             }
+        }
+
+        &_start-1 {
+            .background_now & {
+                position: absolute;
+                @include option(top, 143rem, 11rem);
+                @include option(left, 263rem, -1rem);
+
+                @include option(height, 331rem, 146rem);
+
+                fill: $grey300;
+            }
+        }
+
+        &_start-2 {
+            .background_now & {
+                position: absolute;
+                @include option(top, 143rem, 11rem);
+                @include option(left, 283rem, -1rem);
+
+                @include option(height, 644rem, 146rem);
+
+                fill: $crimson;
+            }
+        }
+
+        &_start-3 {
+            .background_now & {
+                position: absolute;
+                @include option(top, 915rem, 11rem);
+                @include option(left, -129rem, -1rem);
+
+                @include option(height, 149rem, 146rem);
+
+                fill: $grey300;
+            }
+        }
+
+        &_start-4 {
+            .background_now & {
+                position: absolute;
+                @include option(top, 906rem, 11rem);
+                @include option(left, 26rem, -1rem);
+
+                @include option(height, 84rem, 146rem);
+
+                fill: $white;
+            }
+        }
+
+        &_start-5 {
+            .background_now & {
+                position: absolute;
+                @include option(top, 623rem, 11rem);
+                @include option(right, -162rem, -1rem);
+
+                @include option(height, 125rem, 146rem);
+            }
+        }
+
+        &_start-6 {
+            .background_now & {
+                position: absolute;
+                @include option(top, 724rem, 11rem);
+                @include option(right, 78rem, -1rem);
+
+                @include option(height, 132rem, 146rem);
+
+                fill: $crimson;
+            }
+        }
+
+        &_start-7 {
+            .background_now & {
+                position: absolute;
+                @include option(top, 716rem, 11rem);
+                @include option(right, -12rem, -1rem);
+
+                @include option(height, 130rem, 146rem);
+
+                fill: $grey300;
+            }
+        }
+
+        &_start-8 {
+            .background_now & {
+                position: absolute;
+                @include option(top, 670rem, 11rem);
+                @include option(right, -302rem, -1rem);
+
+                @include option(height, 130rem, 146rem);
+
+                fill: $white;
+            }
+        }
+
+        &_end-1 {
+            .background_now & {
+                position: absolute;
+                @include option(top, 169rem, 11rem);
+                @include option(left, 263rem, -1rem);
+
+                @include option(height, 331rem, 146rem);
+
+                fill: $grey300;
+            }
+        }
+
+        &_end-2 {
+        }
+
+        &_end-3 {
+        }
+
+        &_end-4 {
+        }
+
+        &_end-5 {
+        }
+
+        &_end-6 {
+        }
+
+        &_end-7 {
+        }
+
+        &_end-8 {
+        }
+
+        &_end-9 {
         }
     }
 
