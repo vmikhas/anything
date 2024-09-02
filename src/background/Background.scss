@@ -42,12 +42,11 @@
 
                 fill: $grey300;
 
-                //transform: translate(-100%, 50%);
+                transform: translate(-100%, 50%);
                 transition: .5s .2s ease-in-out;
-
-                @include bg-enter() {
-                    transform: translate(0%, 0%);
-                }
+            }
+            @include bg-enter() {
+                transform: translate(0%, 0%);
             }
         }
 
