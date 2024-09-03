@@ -38,3 +38,10 @@
 		@content;
 	}
 }
+
+@mixin story-pack {
+	.story__container-enter-active &,
+	.story__container-enter-done & {
+		@content;
+	}
+}

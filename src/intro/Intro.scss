@@ -1,55 +1,97 @@
 .intro {
-	position: relative;
-	@include option(top, -356rem, 56rem);
-	@include option(left, 358rem, 0);
-	z-index: 2;
+    position: relative;
+    @include option(top, -356rem, 56rem);
+    @include option(left, 358rem, 0);
+    z-index: 2;
 
-	width: min-content;
+    @include option(width, min-content, 360rem);
+    @include option(height, min-content, 537rem);
+    @include option(overflow, visible, hidden);
 
-	&__title {
-		@include option(width, max-content);
-		@include option(padding, 0, 0 0 0 42rem);
+    &__title {
+        @include option(width, max-content);
+        @include option(padding, 0, 0 0 0 42rem);
 
-		font-family: $RobotoCondensed;
-		font-style: italic;
-		@include option(font-size, 64rem, 28rem);
-		@include option(font-weight, 700);
-		@include option(line-height, 100%);
-		@include option(letter-spacing, -0.03em);
-		color: $grey200;
+        font-family: $RobotoCondensed;
+        font-style: italic;
+        @include option(font-size, 64rem, 28rem);
+        @include option(font-weight, 700);
+        @include option(line-height, 100%);
+        @include option(letter-spacing, -0.03em);
+        color: $grey200;
 
-		&_end {
-			@include option(padding, 26rem 0 0, 0 0 0 42rem);
-		}
-	}
+        &_end {
+            @include option(padding, 26rem 0 0, 0 0 0 42rem);
+        }
+    }
 
-	&__text {
-		@include option(width, 610rem, 313rem);
-		@include option(padding, 27rem 0 0, 18rem 0 0 42rem);
+    &__text {
+        @include option(width, 610rem, 313rem);
+        @include option(padding, 27rem 0 0, 18rem 0 0 42rem);
 
-		@include option(font-size, 20rem, 14rem);
-		@include option(font-weight, 400);
-		@include option(line-height, 140%);
-		color: $white;
+        @include option(font-size, 20rem, 14rem);
+        @include option(font-weight, 400);
+        @include option(line-height, 140%);
+        color: $white;
 
-		& p {
-			@include option(padding, 0 0 28rem, 0 0 23rem);
-		}
-	}
+        & p {
+            @include option(padding, 0 0 28rem, 0 0 23rem);
+        }
+    }
 
-	&__image {
-		position: relative;
-		@include option(top, -81rem, 169rem);
-		@include option(left, 589rem, 9rem);
+    &__image {
+        &_start-1 {
+            position: absolute;
+            @include option(top, 240rem, 307rem);
+            @include option(right, -324rem, 201rem);
+            z-index: 5;
 
-		@include option(width, 908rem, 351rem);
+            @include option(height, 486rem, 211rem);
+        }
 
-		&_end {
-			display: none;
-		}
+        &_start-2 {
+            position: absolute;
+            @include option(top, 231rem, 303rem);
+            @include option(right, -501rem, 125rem);
+            z-index: 4;
 
-		img {
-			width: 100%;
-		}
-	}
+            @include option(height, 384rem, 167rem);
+        }
+
+        &_start-3 {
+            position: absolute;
+            @include option(top, 228rem, 301rem);
+            @include option(right, -646rem, 62rem);
+            z-index: 3;
+
+            @include option(height, 286rem, 125rem);
+        }
+
+        &_start-4 {
+            position: absolute;
+            @include option(top, 226rem, 300rem);
+            @include option(right, -748rem, 17rem);
+            z-index: 2;
+
+            @include option(height, 214rem, 93rem);
+        }
+
+        &_start-5 {
+            position: absolute;
+            @include option(top, 222rem, 299rem);
+            @include option(right, -826rem, -17rem);
+            z-index: 1;
+
+            @include option(height, 152rem, 66rem);
+        }
+
+        &_start-6 {
+            position: absolute;
+            @include option(top, 203rem);
+            @include option(right, -888rem);
+
+            @include option(display, block, none);
+            @include option(height, 121rem);
+        }
+    }
 }

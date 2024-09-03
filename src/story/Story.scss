@@ -213,20 +213,40 @@
             position: absolute;
             @include option(top, 118rem, 210rem);
             @include option(left, 990rem, 64rem);
+            z-index: 2;
 
             @include option(width, 345rem, 217rem);
 
             box-shadow: 10px 34px 94px 0 rgba(57, 84, 123, 0.3);
+
+            transition: .4s 1.3s ease-in-out;
+            transform: translateY(-45%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2007-1 {
             position: absolute;
             @include option(top, 130rem, 306rem);
             @include option(left, 1010rem, 68rem);
+            z-index: 2;
 
             @include option(width, 315rem, 209rem);
 
             box-shadow: 9px 19px 84px 0 rgba(54, 16, 50, 0.15);
+
+            transition: .4s 1.1s ease-in-out;
+            transform: translateY(-45%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2010-1 {
@@ -235,6 +255,15 @@
             @include option(left, 965rem, 53rem);
 
             @include option(width, 424rem, 240rem);
+
+            transition: .4s 1.3s ease-in-out;
+            transform: translateY(-45%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2014-1 {
@@ -243,6 +272,15 @@
             @include option(left, 808rem, -8rem);
 
             @include option(width, 342rem, 170rem);
+
+            transition: .4s 2.1s ease-in-out;
+            transform: translateX(50%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateX(0%);
+                opacity: 1;
+            }
         }
 
         &_2014-2 {
@@ -252,6 +290,15 @@
             z-index: 2;
 
             @include option(width, 337rem, 164rem);
+
+            transition: .4s 1.6s ease-in-out;
+            transform: translateY(-40%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2014-3 {
@@ -260,39 +307,87 @@
             @include option(left, 1185rem, 178rem);
 
             @include option(width, 342rem, 170rem);
+
+            transition: .4s 2.1s ease-in-out;
+            transform: translateX(-50%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateX(0%);
+                opacity: 1;
+            }
         }
 
         &_2017-1 {
             position: absolute;
             @include option(top, 131rem, 333rem);
             @include option(left, 1038rem, 84rem);
+            z-index: 2;
 
             @include option(width, 269rem, 176rem);
+
+            transition: .4s 1.2s ease-in-out;
+            transform: translateY(-35%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2019-1 {
             position: absolute;
             @include option(top, 182rem, 351rem);
             @include option(left, 822rem, 2rem);
+            z-index: 2;
 
             @include option(width, 266rem, 144rem);
+
+            transition: .4s 1s ease-in-out;
+            transform: translateY(-35%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2019-2 {
             position: absolute;
             @include option(top, 104rem, 308rem);
             @include option(left, 1094rem, 150rem);
+            z-index: 3;
 
             @include option(width, 327rem, 177rem);
+
+            transition: .4s 1.3s ease-in-out;
+            transform: translateY(-30%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2020-1 {
             position: absolute;
             @include option(top, 248rem, 445rem);
             @include option(left, 690rem, 7rem);
-            z-index: 1;
+            z-index: 2;
 
             @include option(width, 215rem, 80rem);
+
+            transition: .3s 2.2s ease-in-out;
+            transform: translateY(-68%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2020-2 {
@@ -301,6 +396,15 @@
             @include option(left, 898rem, 84rem);
 
             @include option(width, 186rem, 69rem);
+
+            transition: .3s 2.6s ease-in-out;
+            transform: translateY(-80%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2020-3 {
@@ -310,15 +414,33 @@
             z-index: 2;
 
             @include option(width, 276rem, 102rem);
+
+            transition: .3s 2s ease-in-out;
+            transform: translateY(-40%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2020-4 {
             position: absolute;
             @include option(top, 230rem, 438rem);
             @include option(left, 1290rem, 229rem);
-            z-index: 1;
+            z-index: 2;
 
             @include option(width, 170rem, 63rem);
+
+            transition: .3s 2.4s ease-in-out;
+            transform: translateY(-68%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2020-5 {
@@ -327,6 +449,15 @@
             @include option(left, 1452rem, 290rem);
 
             @include option(width, 136rem, 50rem);
+
+            transition: .3s 2.8s ease-in-out;
+            transform: translateY(-86%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2021-1 {
@@ -335,14 +466,33 @@
             @include option(left, 896rem, 13rem);
 
             @include option(width, 535rem, 320rem);
+
+            transition: .4s 1.8s ease-in-out;
+            transform: translateY(100%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
 
         &_2022-1 {
             position: absolute;
             @include option(top, 8rem, 283rem);
             @include option(left, 713rem, -8rem);
+            z-index: 2;
 
             @include option(width, 867rem, 360rem);
+
+            transition: .4s 1.5s ease-in-out;
+            transform: translateY(-30%);
+            opacity: 0;
+
+            @include story-pack {
+                transform: translateY(0%);
+                opacity: 1;
+            }
         }
     }
 }

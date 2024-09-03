@@ -13,8 +13,6 @@ export default function Background({background}) {
         return background[prop];
     }, [background, activeScreen, slideIndex, currentPage]);
 
-    // console.log('currentBackground', currentBackground);
-
     if (!currentBackground || !currentBackground.image) {
         return null;
     }

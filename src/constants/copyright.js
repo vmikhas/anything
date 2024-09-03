@@ -1241,10 +1241,38 @@ export const backgroundImageNow = {
     start: {
         list: [
             {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_now/bg1_m@1.5x.webp 1.5x, ./images/background/bg_now/bg1_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_now/bg1_m@1.5x.png 1.5x, ./images/background/bg_now/bg1_m@2x.png 2x',
+                            type: 'image/jpeg',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_now/bg1_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_now/bg1_d@1.5x.png',
+                        alt: 'Фон слайда'
+                    }
+                }
+            },
+            {
                 svgSrc: './icons/now_1_stick.svg'
             },
             {
                 svgSrc: './icons/now_2_stick.svg'
+            },
+            {
+                svgSrc: './icons/now_2_stick_m.svg'
             },
             {
                 svgSrc: './icons/bold_stick.svg'
@@ -1266,31 +1294,36 @@ export const backgroundImageNow = {
             }
         ],
         image: {
-            sources: [
-                {
-                    srcSet: './images/background/bg_now/bg1_m@1.5x.webp 1.5x, ./images/background/bg_now/bg1_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/background/bg_now/bg1_m@1.5x.jpg 1.5x, ./images/background/bg_now/bg1_m@2x.jpg 2x',
-                    type: 'image/jpeg',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/background/bg_now/bg1_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
-                }
-            ],
-            imgAttr: {
-                src: './images/background/bg_now/bg1_d@1.5x.jpg',
-                alt: 'Фон слайда'
-            }
+            imgAttr: {}
         }
     },
     end: {
         list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_now/bg2_m@1.5x.webp 1.5x, ./images/background/bg_now/bg2_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_now/bg2_m@1.5x.png 1.5x, ./images/background/bg_now/bg2_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_now/bg2_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/background/bg_now/bg2_d@1.5x.png',
+                        alt: 'Фон слайда'
+                    }
+                }
+            },
             {
                 svgSrc: './icons/now_1_stick.svg'
             },
@@ -1298,6 +1331,9 @@ export const backgroundImageNow = {
                 svgSrc: './icons/now_3_stick.svg'
             },
             {
+                svgSrc: './icons/now_3_stick_m.svg'
+            },
+            {
                 svgSrc: './icons/bold_stick.svg'
             },
             {
@@ -1313,55 +1349,17 @@ export const backgroundImageNow = {
                 svgSrc: './icons/stick.svg'
             },
             {
-                svgSrc: './icons/extrathin_stick.svg'
+                svgSrc: './icons/stick.svg'
             },
             {
                 image: {
-                    sources: [
-                        {
-                            srcSet: './images/background/bg_now/history_m@1.5x.webp 1.5x, ./images/background/bg_now/history_m@2x.webp 2x',
-                            type: 'image/webp',
-                            media: '(max-width: 1023px)'
-                        },
-                        {
-                            srcSet: './images/background/bg_now/history_m@1.5x.jpg 1.5x, ./images/background/bg_now/history_m@2x.jpg 2x',
-                            type: 'image/jpeg',
-                            media: '(max-width: 1023px)'
-                        },
-                        {
-                            srcSet: './images/background/bg_now/history_d@1.5x.webp',
-                            type: 'image/webp',
-                            media: '(min-width: 1024px)'
-                        }
-                    ],
                     imgAttr: {
-                        src: './images/background/bg_now/history_d@1.5x.jpg',
-                        alt: 'Фон слайда'
                     }
                 }
             }
         ],
         image: {
-            sources: [
-                {
-                    srcSet: './images/background/bg_now/bg2_m@1.5x.webp 1.5x, ./images/background/bg_now/bg2_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/background/bg_now/bg2_m@1.5x.jpg 1.5x, ./images/background/bg_now/bg2_m@2x.jpg 2x',
-                    type: 'image/jpeg',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/background/bg_now/bg2_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
-                }
-            ],
             imgAttr: {
-                src: './images/background/bg_now/bg2_d@1.5x.jpg',
-                alt: 'Фон слайда'
             }
         }
     }
@@ -1380,10 +1378,7 @@ export const backgroundImageHistory = {
                 svgSrc: './icons/stick.svg'
             },
             {
-                svgSrc: './icons/stick.svg'
-            },
-            {
-                svgSrc: './icons/dots.svg'
+                svgSrc: './icons/thin_stick.svg'
             },
             {
                 image: {
@@ -1400,6 +1395,9 @@ export const backgroundImageHistory = {
                             alt: 'Градиент'
                         }
                 }
+            },
+            {
+                svgSrc: './icons/dots.svg'
             }
         ],
         image: {
@@ -1433,29 +1431,148 @@ export const introContent = {
     start: {
         title: 'LD сегодня —<br /> международный бренд,<br /> доступный более чем<br /> в 50 странах мира',
         text: '',
-        image: {
-            sources: [
-                {
-                    srcSet: './images/pack/ldnow_m@1.5x.webp 1.5x, ./images/pack/ldnow_m@2x.webp 2x',
-                    type: 'image/webp',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ldnow_m@1.5x.png 1.5x, ./images/pack/ldnow_m@2x.png 2x',
-                    type: 'image/png',
-                    media: '(max-width: 1023px)'
-                },
-                {
-                    srcSet: './images/pack/ldnow_d@1.5x.webp',
-                    type: 'image/webp',
-                    media: '(min-width: 1024px)'
+        list: [
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ldnow_1_m@1.5x.webp 1.5x, ./images/pack/ldnow_1_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ldnow_1_m@1.5x.png 1.5x, ./images/pack/ldnow_1_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ldnow_1_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ldnow_1_d@1.5x.png',
+                        alt: 'Часть радуги из пачек LD'
+                    }
                 }
-            ],
-            imgAttr: {
-                src: './images/pack/ldnow_d@1.5x.png',
-                alt: 'Радуга из пачек LD'
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ldnow_2_m@1.5x.webp 1.5x, ./images/pack/ldnow_2_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ldnow_2_m@1.5x.png 1.5x, ./images/pack/ldnow_2_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ldnow_2_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ldnow_2_d@1.5x.png',
+                        alt: 'Часть радуги из пачек LD'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ldnow_3_m@1.5x.webp 1.5x, ./images/pack/ldnow_3_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ldnow_3_m@1.5x.png 1.5x, ./images/pack/ldnow_3_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ldnow_3_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ldnow_3_d@1.5x.png',
+                        alt: 'Часть радуги из пачек LD'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ldnow_4_m@1.5x.webp 1.5x, ./images/pack/ldnow_4_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ldnow_4_m@1.5x.png 1.5x, ./images/pack/ldnow_4_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ldnow_4_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ldnow_4_d@1.5x.png',
+                        alt: 'Часть радуги из пачек LD'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ldnow_5_m@1.5x.webp 1.5x, ./images/pack/ldnow_5_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ldnow_5_m@1.5x.png 1.5x, ./images/pack/ldnow_5_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/pack/ldnow_5_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ldnow_5_d@1.5x.png',
+                        alt: 'Часть радуги из пачек LD'
+                    }
+                }
+            },
+            {
+                image: {
+                    sources: [
+                        {
+                            srcSet: './images/pack/ldnow_6_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
+                    imgAttr: {
+                        src: './images/pack/ldnow_6_d@1.5x.png',
+                        alt: 'Часть радуги из пачек LD'
+                    }
+                }
             }
-        }
+        ]
     },
     end: {
         title: 'LD сегодня —<br /> международный бренд,<br /> доступный более чем<br /> в 50 странах мира',

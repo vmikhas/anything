@@ -129,16 +129,16 @@
 
             &_now {
                 &.nav__list_start {
-                    top: 678rem;
+                    top: 659rem;
                 }
 
                 &.nav__list_end {
-                    top: 786rem;
+                    top: 767rem;
                 }
             }
 
             &_history {
-                top: 889rem;
+                top: 870rem;
             }
         }
     }
@@ -341,17 +341,17 @@
 
         &_now {
             &.nav__button_start {
-                @include option(top, 664rem, 605rem);
+                @include option(top, 664rem, 585rem);
             }
 
             &.nav__button_end {
-                @include option(top, 575rem, 717rem);
+                @include option(top, 575rem, 697rem);
                 @include option(left, 19.76%, 50%);
             }
         }
 
         &_history {
-            @include option(top, 662rem, 629rem);
+            @include option(top, 662rem, 609rem);
         }
 
         animation: buttonNext 2s infinite;
