@@ -16,9 +16,13 @@ export default function Nav({ mainPage, nowPage, historyPage, clue }) {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.pathname === routes.main) return () => dispatch(setActiveScreen('main'));
-        if (location.pathname === routes.now) return () => dispatch(setActiveScreen('now'));
-        if (location.pathname === routes.history) return () => dispatch(setActiveScreen('history'));
+        if (location.pathname === routes.now) {
+            dispatch(setActiveScreen('now'));
+        } else {
+            dispatch(setCurrentPage('start'));
+            if (location.pathname === routes.main) dispatch(setActiveScreen('main'));
+            else if (location.pathname === routes.history) dispatch(setActiveScreen('history'));
+        }
     }, [ location.pathname ]);
 
     const navLinks = [

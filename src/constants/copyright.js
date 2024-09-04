@@ -98,7 +98,7 @@ export const storyContent = {
     7: {
         title: '2010',
         subtitle: 'LD Club Platinum',
-        desc: '<p class="story__desc_p">Подтверждая статус новатора, в 2010 году под маркой LD запускаются новые сигареты LD Club Platinum — первый в&nbsp;среднеценовом сегменте продукт формата King Size Super Slims.</p>' +
+        desc: '<div class="story__desc_p">Подтверждая статус новатора, в 2010 году под маркой LD запускаются новые сигареты LD Club Platinum — первый в&nbsp;среднеценовом сегменте продукт формата King Size Super Slims.</div>' +
             'Вскоре после запуска линейка LD Club уже вошла в топ 3 мест по&nbsp;уровню продаж среди всех марок формата King&nbsp;Size&nbsp;Super&nbsp;Slims в России.',
         list: [
             {
@@ -302,7 +302,7 @@ export const storyContent = {
     3: {
         title: '2020',
         subtitle: 'В 2020 году произошло обновление дизайна всей линейки сигарет LD',
-        desc: '<p class="story__desc_p">Эта новая ступень в развитии марки позволила создать продукт, соответствующий текущим запросам потребителей — были запущены сигареты в современном динамичном дизайне пачки и с новыми вкусами капсул, которые стали одними из&nbsp;самых популярных среди потребителей.</p>' +
+        desc: '<div class="story__desc_p">Эта новая ступень в развитии марки позволила создать продукт, соответствующий текущим запросам потребителей — были запущены сигареты в современном динамичном дизайне пачки и с новыми вкусами капсул, которые стали одними из&nbsp;самых популярных среди потребителей.</div>' +
             'А также свет увидела обновленная линейка LD&nbsp;Autograph по&nbsp;доступной цене и LD Regular 100 в удлиненном классическом&nbsp;формате.',
         list: [
             {
@@ -467,8 +467,8 @@ export const storyContent = {
     1: {
         title: '2022',
         subtitle: '2022 год – год экспериментов для бренда LD',
-        desc: '<p class="story__desc_p2022">Впервые в линейке LD появляются продукты с двумя уровнями вкуса: капсулой и ароматизированной табачной мешкой.</p>' +
-            '<p class="story__desc_p2022">Новый продукт был создан в&nbsp;соответствии с&nbsp;меняющимися&nbsp;трендами табачного рынка, чтобы удовлетворить самых требовательных потребителей.</p>',
+        desc: '<div class="story__desc_p2022">Впервые в линейке LD появляются продукты с двумя уровнями вкуса: капсулой и ароматизированной табачной мешкой.</div>' +
+            '<div class="story__desc_p2022">Новый продукт был создан в&nbsp;соответствии с&nbsp;меняющимися&nbsp;трендами табачного рынка, чтобы удовлетворить самых требовательных потребителей.</div>',
         list: [
             {
                 image: {
@@ -1353,7 +1353,26 @@ export const backgroundImageNow = {
             },
             {
                 image: {
+                    sources: [
+                        {
+                            srcSet: './images/background/bg_now/history_m@1.5x.webp 1.5x, ./images/background/history_m/bg2_m@2x.webp 2x',
+                            type: 'image/webp',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_now/history_m@1.5x.png 1.5x, ./images/background/history_m/bg2_m@2x.png 2x',
+                            type: 'image/png',
+                            media: '(max-width: 1023px)'
+                        },
+                        {
+                            srcSet: './images/background/bg_now/history_d@1.5x.webp',
+                            type: 'image/webp',
+                            media: '(min-width: 1024px)'
+                        }
+                    ],
                     imgAttr: {
+                        src: './images/background/bg_now/history_d@1.5x.png',
+                        alt: 'Фон слайда'
                     }
                 }
             }

@@ -14,16 +14,16 @@ export default function Story({ content }) {
         <section className={'story'}>
             <Pagination {...paginationContent} />
             <SwitchTransition>
-                <CSSTransition key={slideIndex} classNames={'story__container'} timeout={200} unmountOnExit>
+                <CSSTransition key={slideIndex} classNames={'story__container'} timeout={300} appear unmountOnExit>
                     <div className={'story__container'}>
                         <h1 className={`story__title story__title_${currentContent.title}`}>{currentContent.title}</h1>
                         <h2 className={`story__subtitle story__subtitle_${currentContent.title}`}>{parse(currentContent.subtitle)}</h2>
-                        <p className={`story__desc story__desc_${currentContent.title}`}>{parse(currentContent.desc)}</p>
+                        <div className={`story__desc story__desc_${currentContent.title}`}>{parse(currentContent.desc)}</div>
                         <div className={`story__image story__image_${currentContent.title}`}>
                             {currentContent?.list &&
                                 currentContent.list.map((item, index) => (
                                     item?.image &&
-                                        <div className={`story__item story__image_${currentContent.title}-${index + 1}`}>
+                                        <div className={`story__item story__image_${currentContent.title}-${index + 1}`} key={index + 1}>
                                             <Picture {...item.image} />
                                         </div>
                                 ))
@@ -35,6 +35,3 @@ export default function Story({ content }) {
         </section>
     );
 }
-
-
-{/*<Picture {...currentContent.image} />*/}

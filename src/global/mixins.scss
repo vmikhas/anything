@@ -45,3 +45,10 @@
 		@content;
 	}
 }
+
+@mixin intro-img {
+	.intro__image-enter-active &,
+	.intro__image-enter-done & {
+		@content;
+	}
+}

@@ -42,56 +42,121 @@
     &__image {
         &_start-1 {
             position: absolute;
-            @include option(top, 240rem, 307rem);
-            @include option(right, -324rem, 201rem);
+            @include option(top, 264rem, 317rem);
+            @include option(right, -265rem, 227rem);
             z-index: 5;
 
-            @include option(height, 486rem, 211rem);
+            @include option(height, 439rem, 191rem);
+
+            transition-property: transform, opacity;
+            transition-duration: 1.3s, .1s;
+            opacity: 0;
+            transform: translate(315%, -60%) scale(.25) rotate(-17deg);
+
+            @include intro-img {
+                opacity: 1;
+                transform: translate(0, 0) scale(1) rotate(17deg);
+            }
         }
 
         &_start-2 {
             position: absolute;
-            @include option(top, 231rem, 303rem);
-            @include option(right, -501rem, 125rem);
+            @include option(top, 249rem, 311rem);
+            @include option(right, -454rem, 145rem);
             z-index: 4;
 
-            @include option(height, 384rem, 167rem);
+            @include option(height, 348rem, 151rem);
+
+            transition-property: transform, opacity;
+            transition-duration: 1.5s, .1s;
+            opacity: 0;
+            filter: brightness(0.93);
+            transform: translate(280%, -58%) scale(.31) rotate(-17deg);
+
+            @include intro-img {
+                opacity: 1;
+                transform: translate(0, 0) scale(1) rotate(17deg);
+            }
         }
 
         &_start-3 {
             position: absolute;
-            @include option(top, 228rem, 301rem);
-            @include option(right, -646rem, 62rem);
+            @include option(top, 244rem, 308rem);
+            @include option(right, -612rem, 76rem);
             z-index: 3;
 
-            @include option(height, 286rem, 125rem);
+            @include option(height, 255rem, 111rem);
+
+            transition-property: transform, opacity;
+            transition-duration: 1.7s, .1s;
+            opacity: 0;
+            filter: brightness(0.86);
+            transform: translate(219%, -62%) scale(.38) rotate(-17deg);
+
+            @include intro-img {
+                opacity: 1;
+                transform: translate(0, 0) scale(1) rotate(17deg);
+            }
         }
 
         &_start-4 {
             position: absolute;
-            @include option(top, 226rem, 300rem);
-            @include option(right, -748rem, 17rem);
+            @include option(top, 239rem, 306rem);
+            @include option(right, -724rem, 28rem);
             z-index: 2;
 
-            @include option(height, 214rem, 93rem);
+            @include option(height, 188rem, 82rem);
+
+            transition-property: transform, opacity;
+            transition-duration: 1.9s, .1s;
+            opacity: 0;
+            filter: brightness(0.79);
+            transform: translate(168%, -67%) scale(.45) rotate(-17deg);
+
+            @include intro-img {
+                opacity: 1;
+                transform: translate(0, 0) scale(1) rotate(17deg);
+            }
         }
 
         &_start-5 {
             position: absolute;
-            @include option(top, 222rem, 299rem);
-            @include option(right, -826rem, -17rem);
+            @include option(top, 231rem, 303rem);
+            @include option(right, -808rem, -9rem);
             z-index: 1;
 
-            @include option(height, 152rem, 66rem);
+            @include option(height, 134rem, 58rem);
+
+            transition-property: transform, opacity;
+            transition-duration: 2.1s, .1s;
+            opacity: 0;
+            filter: brightness(0.72);
+            transform: translate(114%, -66%) scale(.65) rotate(-17deg);
+
+            @include intro-img {
+                opacity: 1;
+                transform: translate(0, 0) scale(1) rotate(17deg);
+            }
         }
 
         &_start-6 {
             position: absolute;
-            @include option(top, 203rem);
-            @include option(right, -888rem);
+            @include option(top, 209rem);
+            @include option(right, -873rem);
 
             @include option(display, block, none);
-            @include option(height, 121rem);
+            @include option(height, 109rem);
+
+            transition-property: transform, opacity;
+            transition-duration: 2.3s, .1s;
+            opacity: 0;
+            filter: brightness(0.65);
+            transform: translate(37%, -50%) scale(.8) rotate(-17deg);
+
+            @include intro-img {
+                opacity: 1;
+                transform: translate(0, 0) scale(1) rotate(17deg);
+            }
         }
     }
 }

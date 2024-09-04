@@ -7,11 +7,16 @@ import { ReactSVG } from 'react-svg';
 export default function Background({background}) {
     const {currentPage, slideIndex, activeScreen} = useSelector((state) => state.content);
 
+    const prop = useMemo(() => {
+        return   activeScreen === 'main' ?
+            slideIndex : activeScreen === 'now' ?
+                currentPage
+                : 'history';
+    }, [activeScreen, slideIndex, currentPage]);
+
     const currentBackground = useMemo(() => {
-        const prop = activeScreen === 'main' ? slideIndex
-            : activeScreen === 'now' ? currentPage : 'history';
         return background[prop];
-    }, [background, activeScreen, slideIndex, currentPage]);
+    }, [background, prop]);
 
     if (!currentBackground || !currentBackground.image) {
         return null;
@@ -19,7 +24,7 @@ export default function Background({background}) {
 
     return (
         <SwitchTransition>
-            <CSSTransition key={slideIndex} classNames={'background'} timeout={200} unmountOnExit>
+            <CSSTransition key={slideIndex} classNames={'background'} timeout={200} appear unmountOnExit>
                 <div className={`background background_${slideIndex} background_${activeScreen}`}>
 
                     <Picture {...currentBackground.image} />
@@ -27,17 +32,10 @@ export default function Background({background}) {
                     {currentBackground?.list &&
                         currentBackground.list.map((item, index) => (
                             <React.Fragment key={index}>
-                                {item?.image &&
-                                    <div className={`background__item background__item_${slideIndex || 'end'}-${index + 1}`}>
-                                        <Picture {...item.image} />
-                                    </div>
-                                }
-
-                                {item?.svgSrc &&
-                                    <div className={`background__item background__item_${slideIndex || 'end'}-${index + 1}`}>
-                                        <ReactSVG src={item.svgSrc}/>
-                                    </div>
-                                }
+                                <div className={`background__item background__item_${prop || 'end'}-${index + 1}`}>
+                                    {item?.image && <Picture {...item.image} />}
+                                    {item?.svgSrc &&  <ReactSVG src={item.svgSrc}/>}
+                                </div>
                             </React.Fragment>
                         ))
                     }
