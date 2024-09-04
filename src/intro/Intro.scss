@@ -20,8 +20,29 @@
         @include option(letter-spacing, -0.03em);
         color: $grey200;
 
+        transform-origin: 0 0;
+        transform: scale(0);
+        opacity: 0;
+
         &_end {
             @include option(padding, 26rem 0 0, 0 0 0 42rem);
+        }
+
+        &-appear-active,
+        &-appear-done,
+        &-enter-active,
+        &-enter-done {
+            transition: .3s 1.3s ease-in-out;
+            transform-origin: 0 0;
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        &-exit {
+            transition: .3s ease-in-out;
+            transform-origin: 0 0;
+            transform: scale(0);
+            opacity: 0;
         }
     }
 
@@ -37,6 +58,25 @@
         & p {
             @include option(padding, 0 0 28rem, 0 0 23rem);
         }
+
+        transform-origin: 0 0;
+        transform: scale(0);
+        opacity: 0;
+
+        &-enter-active,
+        &-enter-done {
+            transition: .3s 1.6s ease-in-out;
+            transform-origin: 0 0;
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        &-exit {
+            transition: .3s ease-in-out;
+            transform-origin: 0 0;
+            transform: scale(0);
+            opacity: 0;
+        }
     }
 
     &__image {
@@ -50,13 +90,9 @@
 
             transition-property: transform, opacity;
             transition-duration: 1.3s, .1s;
+            transition-delay: 1.5s;
             opacity: 0;
             transform: translate(315%, -60%) scale(.25) rotate(-17deg);
-
-            @include intro-img {
-                opacity: 1;
-                transform: translate(0, 0) scale(1) rotate(17deg);
-            }
         }
 
         &_start-2 {
@@ -69,14 +105,10 @@
 
             transition-property: transform, opacity;
             transition-duration: 1.5s, .1s;
+            transition-delay: 1.5s;
             opacity: 0;
             filter: brightness(0.93);
             transform: translate(280%, -58%) scale(.31) rotate(-17deg);
-
-            @include intro-img {
-                opacity: 1;
-                transform: translate(0, 0) scale(1) rotate(17deg);
-            }
         }
 
         &_start-3 {
@@ -89,14 +121,10 @@
 
             transition-property: transform, opacity;
             transition-duration: 1.7s, .1s;
+            transition-delay: 1.5s;
             opacity: 0;
             filter: brightness(0.86);
             transform: translate(219%, -62%) scale(.38) rotate(-17deg);
-
-            @include intro-img {
-                opacity: 1;
-                transform: translate(0, 0) scale(1) rotate(17deg);
-            }
         }
 
         &_start-4 {
@@ -109,14 +137,10 @@
 
             transition-property: transform, opacity;
             transition-duration: 1.9s, .1s;
+            transition-delay: 1.5s;
             opacity: 0;
             filter: brightness(0.79);
             transform: translate(168%, -67%) scale(.45) rotate(-17deg);
-
-            @include intro-img {
-                opacity: 1;
-                transform: translate(0, 0) scale(1) rotate(17deg);
-            }
         }
 
         &_start-5 {
@@ -129,14 +153,10 @@
 
             transition-property: transform, opacity;
             transition-duration: 2.1s, .1s;
+            transition-delay: 1.5s;
             opacity: 0;
             filter: brightness(0.72);
             transform: translate(114%, -66%) scale(.65) rotate(-17deg);
-
-            @include intro-img {
-                opacity: 1;
-                transform: translate(0, 0) scale(1) rotate(17deg);
-            }
         }
 
         &_start-6 {
@@ -149,14 +169,22 @@
 
             transition-property: transform, opacity;
             transition-duration: 2.3s, .1s;
+            transition-delay: 1.5s;
             opacity: 0;
             filter: brightness(0.65);
             transform: translate(37%, -50%) scale(.8) rotate(-17deg);
+        }
 
-            @include intro-img {
-                opacity: 1;
-                transform: translate(0, 0) scale(1) rotate(17deg);
-            }
+        &-appear-active,
+        &-appear-done {
+            opacity: 1;
+            transform: translate(0, 0) scale(1) rotate(17deg);
+        }
+
+        &-exit {
+            opacity: 0;
+            transform: translate(0, 0) scale(1) rotate(17deg);
+            transition: .3s ease-in-out;
         }
     }
 }

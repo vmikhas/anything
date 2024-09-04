@@ -6,7 +6,7 @@ export default function Factory({ text, image }) {
 
         <section className={"factory"}>
             <div className={"factory__container"}>
-                <h1 className={"visually-hidden"}>История основания фабрики и в последствии бренда LD</h1>
+                <h2 className={"visually-hidden"}>История основания фабрики и в последствии бренда LD</h2>
                 <div className={"factory__text"}>{parse(text)}</div>
                 <div className={"factory__image"}>
                     <Picture {...image} />

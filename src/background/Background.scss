@@ -4,11 +4,6 @@
     left: 0;
     z-index: 0;
     overflow: hidden;
-    //height: 100vh;
-
-    //img {
-    //    width: 100vw;
-    //}
 
     &_now {
         background-color: $grey200;
@@ -174,7 +169,7 @@
 
                 @include option(width, 1298rem, 488rem);
 
-                animation: rotation 90s 1.7s linear infinite;
+                animation: rotation 90s 2s linear infinite;
             }
         }
 
