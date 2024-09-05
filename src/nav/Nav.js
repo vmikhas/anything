@@ -38,7 +38,7 @@ export default function Nav({ mainPage, nowPage, historyPage, clue }) {
         if (location.pathname === routes.main) {
             if ((nextSlideIndex < totalSlidesMain) && (nextSlideIndex === 0)) {
                 navigate(routes.now);
-                nextSlideIndex = 'start';
+                nextSlideIndex = 9;
             }
         } else if (location.pathname === routes.now) {
             if (currentPage === 'end') {
@@ -46,9 +46,9 @@ export default function Nav({ mainPage, nowPage, historyPage, clue }) {
             }
             if (currentPage === 'start') {
                 dispatch(setCurrentPage('end'));
+                nextSlideIndex = 9;
             } else {
                 navigate(routes.history);
-                nextSlideIndex = 1;
             }
         } else if (location.pathname === routes.history) {
             navigate(routes.main);

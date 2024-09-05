@@ -3,7 +3,7 @@ import Picture from '../constants/Picture';
 import React, { useMemo } from 'react';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import { ReactSVG } from 'react-svg';
-// import { Parallax } from 'react-parallax';
+import { MouseParallax } from 'react-just-parallax';
 
 export default function Background({ background }) {
     const { currentPage, slideIndex, activeScreen } = useSelector((state) => state.content);
@@ -30,20 +30,23 @@ export default function Background({ background }) {
                     <Picture {...currentBackground.image} />
 
                     {currentBackground?.list &&
-                        currentBackground.list.map((item, index) => (
-                            // <Parallax
-                            //     strength={100}
-                            //     className={`background__item background__item_${prop || 'end'}-${index + 1}`}
-                            // >
-                                <React.Fragment key={index}>
-                                    <div className={`background__item background__item_${prop || 'end'}-${index + 1}`}>
-                                        {item?.image && <Picture {...item.image} />}
-                                        {item?.svgSrc && <ReactSVG src={item.svgSrc}/>}
-                                    </div>
+                        currentBackground.list.map((item, index) => {
+                            const parallaxStrength = 0.02 + ((index + 1) * 0.001);
 
-                                </React.Fragment>
-                            // </Parallax>
-                        ))
+                            return (
+                                <div className={`background__item background__item_${prop || 'end'}-${index + 1}`} key={index}>
+                                    <MouseParallax
+                                        strength={parallaxStrength}
+                                        shouldResetPosition={true}
+                                    >
+                                        <React.Fragment>
+                                            {item?.image && <Picture {...item.image} />}
+                                            {item?.svgSrc && <ReactSVG src={item.svgSrc} />}
+                                        </React.Fragment>
+                                    </MouseParallax>
+                                </div>
+                            );
+                        })
                     }
                 </div>
             </CSSTransition>
