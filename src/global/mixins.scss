@@ -39,9 +39,17 @@
 	}
 }
 
-@mixin story-pack {
+@mixin story-element {
 	.story__container-enter-active &,
 	.story__container-enter-done & {
 		@content;
+	}
+}
+
+@mixin pagination {
+	.pagination__list-appear-active &,
+	.pagination__list-appear-done &,
+	.pagination__list-enter-done & {
+		@content
 	}
 }

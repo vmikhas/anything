@@ -36,6 +36,15 @@
         @include option(text-align, start, right);
         color: $crimson;
 
+        transition: .3s .8s ease-in-out;
+        transform: translateY(-10%);
+        opacity: 0;
+
+        @include story-element {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+
         &_1999 {
             @include option(padding, 41rem 0 0, 0 19rem 0 0);
         }
@@ -83,6 +92,15 @@
         @include option(letter-spacing, -0.03em);
         color: $grey600;
 
+        transition: .3s 1s ease-in-out;
+        transform: translateY(-10%);
+        opacity: 0;
+
+        @include story-element {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+
         &_1999 {
             @include option(padding, 54rem 0 0 13rem, 13rem 0 0 15rem);
         }
@@ -124,6 +142,15 @@
         @include option(font-weight, 400);
         @include option(line-height, 140%);
         color: $grey800;
+
+        transition: .3s 1.2s ease-in-out;
+        transform: translateY(-10%);
+        opacity: 0;
+
+        @include story-element {
+            transform: translateY(0%);
+            opacity: 1;
+        }
 
         &_p {
             @include option(padding, 0 0 27rem, 0 0 22rem);
@@ -223,7 +250,7 @@
             transform: translateY(-45%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -243,7 +270,7 @@
             transform: translateY(-45%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -260,7 +287,7 @@
             transform: translateY(-45%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -277,7 +304,7 @@
             transform: translateX(50%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateX(0%);
                 opacity: 1;
             }
@@ -295,7 +322,7 @@
             transform: translateY(-40%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -312,7 +339,7 @@
             transform: translateX(-50%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateX(0%);
                 opacity: 1;
             }
@@ -330,7 +357,7 @@
             transform: translateY(-35%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -348,7 +375,7 @@
             transform: translateY(-35%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -366,7 +393,7 @@
             transform: translateY(-30%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -384,7 +411,7 @@
             transform: translateY(-68%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -401,7 +428,7 @@
             transform: translateY(-80%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -419,7 +446,7 @@
             transform: translateY(-40%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -437,7 +464,7 @@
             transform: translateY(-68%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -454,7 +481,7 @@
             transform: translateY(-86%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -471,7 +498,7 @@
             transform: translateY(100%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }
@@ -479,17 +506,17 @@
 
         &_2022-1 {
             position: absolute;
-            @include option(top, 8rem, 283rem);
+            @include option(top, 118rem, 283rem);
             @include option(left, 713rem, -8rem);
             z-index: 2;
 
             @include option(width, 867rem, 360rem);
 
             transition: .4s 1.5s ease-in-out;
-            transform: translateY(-30%);
+            transform: translateY(-25%);
             opacity: 0;
 
-            @include story-pack {
+            @include story-element {
                 transform: translateY(0%);
                 opacity: 1;
             }

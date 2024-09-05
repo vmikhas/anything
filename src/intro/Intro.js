@@ -14,7 +14,7 @@ export default function Intro({ contents }) {
                     <h2 className={`intro__title intro__title_${currentPage}`}>{parse(currentContent.title)}</h2>
                 </CSSTransition>
 
-                <CSSTransition key={`text-${currentPage}`} classNames={'intro__text'} timeout={10000} appear>
+                <CSSTransition key={`text-${currentPage}`} classNames={'intro__text'} timeout={300} appear>
                     <div className={'intro__text'}>{parse(currentContent.text)}</div>
                 </CSSTransition>
 

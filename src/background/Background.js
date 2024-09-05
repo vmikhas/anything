@@ -3,20 +3,20 @@ import Picture from '../constants/Picture';
 import React, { useMemo } from 'react';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import { ReactSVG } from 'react-svg';
+// import { Parallax } from 'react-parallax';
 
-export default function Background({background}) {
-    const {currentPage, slideIndex, activeScreen} = useSelector((state) => state.content);
+export default function Background({ background }) {
+    const { currentPage, slideIndex, activeScreen } = useSelector((state) => state.content);
 
     const prop = useMemo(() => {
-        return   activeScreen === 'main' ?
-            slideIndex : activeScreen === 'now' ?
-                currentPage
+        return activeScreen === 'main' ? slideIndex
+            : activeScreen === 'now' ? currentPage
                 : 'history';
-    }, [activeScreen, slideIndex, currentPage]);
+    }, [ activeScreen, slideIndex, currentPage ]);
 
     const currentBackground = useMemo(() => {
         return background[prop];
-    }, [background, prop]);
+    }, [ background, prop ]);
 
     if (!currentBackground || !currentBackground.image) {
         return null;
@@ -31,12 +31,18 @@ export default function Background({background}) {
 
                     {currentBackground?.list &&
                         currentBackground.list.map((item, index) => (
-                            <React.Fragment key={index}>
-                                <div className={`background__item background__item_${prop || 'end'}-${index + 1}`}>
-                                    {item?.image && <Picture {...item.image} />}
-                                    {item?.svgSrc &&  <ReactSVG src={item.svgSrc}/>}
-                                </div>
-                            </React.Fragment>
+                            // <Parallax
+                            //     strength={100}
+                            //     className={`background__item background__item_${prop || 'end'}-${index + 1}`}
+                            // >
+                                <React.Fragment key={index}>
+                                    <div className={`background__item background__item_${prop || 'end'}-${index + 1}`}>
+                                        {item?.image && <Picture {...item.image} />}
+                                        {item?.svgSrc && <ReactSVG src={item.svgSrc}/>}
+                                    </div>
+
+                                </React.Fragment>
+                            // </Parallax>
                         ))
                     }
                 </div>
