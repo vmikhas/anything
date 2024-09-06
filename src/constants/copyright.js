@@ -503,18 +503,23 @@ export const backgroundImageMain = {
     9: {
         list: [
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/stars.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/thin_stick.svg'
             },
             {
+                parallaxStretch: 0.02,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.01,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/dots.svg'
             }
         ],
@@ -545,9 +550,11 @@ export const backgroundImageMain = {
     8: {
         list: [
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/stars.svg'
             },
             {
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -600,9 +607,11 @@ export const backgroundImageMain = {
     7: {
         list: [
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/stars.svg'
             },
             {
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -628,6 +637,7 @@ export const backgroundImageMain = {
                 }
             },
             {
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -653,9 +663,11 @@ export const backgroundImageMain = {
                 }
             },
             {
+                parallaxStretch: 0.01,
                 svgSrc: './icons/stripes.svg'
             },
             {
+                parallaxStretch: 0.015,
                 image: {
                     sources: [
                         {
@@ -681,6 +693,7 @@ export const backgroundImageMain = {
                 }
             },
             {
+                parallaxStretch: 0.02,
                 image: {
                     sources: [
                         {
@@ -733,14 +746,17 @@ export const backgroundImageMain = {
     6: {
         list: [
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/stars.svg'
             },
             {
+                parallaxStretch: 0,
                 image: {
                     imgAttr: {}
                 }
             },
             {
+                parallaxStretch: 0.015,
                 image: {
                     sources: [
                         {
@@ -766,6 +782,7 @@ export const backgroundImageMain = {
                 }
             },
             {
+                parallaxStretch: 0.02,
                 image: {
                     sources: [
                         {
@@ -818,18 +835,23 @@ export const backgroundImageMain = {
     5: {
         list: [
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/stars.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.02,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.025,
                 svgSrc: './icons/extrathin_stick.svg'
             },
             {
+                parallaxStretch: 0.025,
                 image: {
                     sources: [
                         {
@@ -855,6 +877,7 @@ export const backgroundImageMain = {
                 }
             },
             {
+                parallaxStretch: 0.015,
                 image: {
                     sources: [
                         {
@@ -907,21 +930,27 @@ export const backgroundImageMain = {
     4: {
         list: [
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/stars.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/extrathin_stick.svg'
             },
             {
+                parallaxStretch: 0.025,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.02,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.01,
                 svgSrc: './icons/extrabold_stick.svg'
             },
             {
+                parallaxStretch: 0.01,
                 image: {
                     sources: [
                         {
@@ -947,6 +976,7 @@ export const backgroundImageMain = {
                 }
             },
             {
+                parallaxStretch: 0.013,
                 image: {
                     sources: [
                         {
@@ -999,27 +1029,35 @@ export const backgroundImageMain = {
     3: {
         list: [
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/stars.svg'
             },
             {
+                parallaxStretch: 0.018,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.018,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/thin_stick.svg'
             },
             {
+                parallaxStretch: 0.013,
                 svgSrc: './icons/dots.svg'
             },
             {
+                parallaxStretch: 0.02,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/bold_stick.svg'
             },
             {
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -1072,24 +1110,31 @@ export const backgroundImageMain = {
     2: {
         list: [
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/stars.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/thin_stick.svg'
             },
             {
+                parallaxStretch: 0.018,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.018,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.013,
                 svgSrc: './icons/extrabold_stick.svg'
             },
             {
+                parallaxStretch: 0.012,
                 svgSrc: './icons/dots.svg'
             },
             {
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -1115,7 +1160,7 @@ export const backgroundImageMain = {
                 }
             },
             {
-
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -1168,24 +1213,31 @@ export const backgroundImageMain = {
     1: {
         list: [
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/stars.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.018,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.02,
                 svgSrc: './icons/extrathin_stick.svg'
             },
             {
+                parallaxStretch: 0.02,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/bold_stick.svg'
             },
             {
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -1241,6 +1293,7 @@ export const backgroundImageNow = {
     start: {
         list: [
             {
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -1266,30 +1319,39 @@ export const backgroundImageNow = {
                 }
             },
             {
+                parallaxStretch: 0.01,
                 svgSrc: './icons/now_1_stick.svg'
             },
             {
+                parallaxStretch: 0.013,
                 svgSrc: './icons/now_2_stick.svg'
             },
             {
+                parallaxStretch: 0.013,
                 svgSrc: './icons/now_2_stick_m.svg'
             },
             {
+                parallaxStretch: 0.01,
                 svgSrc: './icons/bold_stick.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.02,
                 svgSrc: './icons/thin_stick.svg'
             },
             {
+                parallaxStretch: 0.013,
                 svgSrc: './icons/extrabold_stick.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.018,
                 svgSrc: './icons/extrathin_stick.svg'
             }
         ],
@@ -1300,6 +1362,7 @@ export const backgroundImageNow = {
     end: {
         list: [
             {
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -1325,33 +1388,43 @@ export const backgroundImageNow = {
                 }
             },
             {
+                parallaxStretch: 0.01,
                 svgSrc: './icons/now_1_stick.svg'
             },
             {
+                parallaxStretch: 0.012,
                 svgSrc: './icons/now_3_stick.svg'
             },
             {
+                parallaxStretch: 0.012,
                 svgSrc: './icons/now_3_stick_m.svg'
             },
             {
+                parallaxStretch: 0.014,
                 svgSrc: './icons/bold_stick.svg'
             },
             {
+                parallaxStretch: 0.018,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.014,
                 svgSrc: './icons/thin_stick.svg'
             },
             {
+                parallaxStretch: 0.01,
                 svgSrc: './icons/extrabold_stick.svg'
             },
             {
+                parallaxStretch: 0.015,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.018,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -1378,8 +1451,7 @@ export const backgroundImageNow = {
             }
         ],
         image: {
-            imgAttr: {
-            }
+            imgAttr: {}
         }
     }
 };
@@ -1388,18 +1460,23 @@ export const backgroundImageHistory = {
     history: {
         list: [
             {
+                parallaxStretch: 0,
                 svgSrc: './icons/stars.svg'
             },
             {
+                parallaxStretch: 0.012,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.012,
                 svgSrc: './icons/stick.svg'
             },
             {
+                parallaxStretch: 0.014,
                 svgSrc: './icons/thin_stick.svg'
             },
             {
+                parallaxStretch: 0,
                 image: {
                     sources: [
                         {
@@ -1416,6 +1493,7 @@ export const backgroundImageHistory = {
                 }
             },
             {
+                parallaxStretch: 0.011,
                 svgSrc: './icons/dots.svg'
             }
         ],
@@ -1596,7 +1674,7 @@ export const introContent = {
     end: {
         title: 'LD сегодня —<br /> международный бренд,<br /> доступный более чем<br /> в 50 странах мира',
         text: '<p>На протяжении всего времени существования марки, сигареты LD развиваются в соответствии с передовыми трендами табачного рынка, чтобы соответствовать вкусам и&nbsp;предпочтениям потребителей.</p>' +
-            'Бренд LD не останавливается на достигнутом и продолжает работать над тем, чтобы завоевать доверие потребителей, предоставляя возможность выбрать высококачественные продукты, а также совершенствуя и дополняя каждую пачку сигарет различными инновациями.',
+            'Бренд LD не останавливается на достигнутом и продолжает работать над тем, чтобы завоевать доверие потребителей, предоставляя возможность выбрать высококачественные продукты, а также совершенствуя и дополняя каждую пачку сигарет различными инновациями.'
     }
 };
 

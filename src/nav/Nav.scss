@@ -305,7 +305,34 @@
         border: none;
         border-radius: 100%;
 
+        animation: buttonNext 2s infinite;
+
         cursor: pointer;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 98%;
+            height: 98%;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+            transition: .25s ease-in-out;
+            opacity: 0;
+
+            border-radius: 50%;
+            box-shadow: 0 0 10rem 5rem $white;
+        }
+
+        &:hover,
+        &:focus {
+            &::before {
+                opacity: 1;
+            }
+        }
 
         &_8 {
             @include option(top, 664rem, 759rem);
@@ -353,18 +380,19 @@
         &_history {
             @include option(top, 662rem, 609rem);
         }
-
-        animation: buttonNext 2s infinite;
     }
 
     @keyframes buttonNext {
         0% {
+            transition: 2s ease-in-out;
             transform: translate(-50%, 5rem);
         }
         50% {
+            transition: 2s ease-in-out;
             transform: translate(-50%, -5rem);
         }
         100% {
+            transition: 2s ease-in-out;
             transform: translate(-50%, 5rem);
         }
     }

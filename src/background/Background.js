@@ -24,29 +24,23 @@ export default function Background({ background }) {
 
     return (
         <SwitchTransition>
-            <CSSTransition key={slideIndex} classNames={'background'} timeout={200} appear unmountOnExit>
+            <CSSTransition key={`${ slideIndex } ${currentPage}`} classNames={'background'} timeout={200} appear mountOnEnter unmountOnExit>
                 <div className={`background background_${slideIndex} background_${activeScreen}`}>
 
                     <Picture {...currentBackground.image} />
 
                     {currentBackground?.list &&
-                        currentBackground.list.map((item, index) => {
-                            const parallaxStrength = 0.02 + ((index + 1) * 0.001);
-
-                            return (
-                                <div className={`background__item background__item_${prop || 'end'}-${index + 1}`} key={index}>
-                                    <MouseParallax
-                                        strength={parallaxStrength}
-                                        shouldResetPosition={true}
-                                    >
-                                        <React.Fragment>
-                                            {item?.image && <Picture {...item.image} />}
-                                            {item?.svgSrc && <ReactSVG src={item.svgSrc} />}
-                                        </React.Fragment>
-                                    </MouseParallax>
-                                </div>
-                            );
-                        })
+                        currentBackground.list.map((item, index) => (
+                            <div className={`background__item background__item_${prop || 'end'}-${index + 1}`}
+                                 key={index}>
+                                <MouseParallax strength={item.parallaxStretch} shouldResetPosition>
+                                    <React.Fragment>
+                                        {item?.image && <Picture {...item.image} />}
+                                        {item?.svgSrc && <ReactSVG src={item.svgSrc}/>}
+                                    </React.Fragment>
+                                </MouseParallax>
+                            </div>
+                        ))
                     }
                 </div>
             </CSSTransition>

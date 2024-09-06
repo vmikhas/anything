@@ -16,6 +16,9 @@ export default function Nav({ mainPage, nowPage, historyPage, clue }) {
     const location = useLocation();
 
     useEffect(() => {
+        if (location.pathname !== routes.main) {
+            dispatch(setSlideIndex(9));
+        }
         if (location.pathname === routes.now) {
             dispatch(setActiveScreen('now'));
         } else {
@@ -23,7 +26,7 @@ export default function Nav({ mainPage, nowPage, historyPage, clue }) {
             if (location.pathname === routes.main) dispatch(setActiveScreen('main'));
             else if (location.pathname === routes.history) dispatch(setActiveScreen('history'));
         }
-    }, [ location.pathname ]);
+    }, [ dispatch, location.pathname ]);
 
     const navLinks = [
         { name: 'main', page: mainPage, route: routes.main },
@@ -68,7 +71,9 @@ export default function Nav({ mainPage, nowPage, historyPage, clue }) {
             <nav className={`nav__list nav__list_${active} nav__list_${slideIndex} nav__list_${currentPage}`}>
                 {navLinks.map(({ name, page, route }) => (
                     <a className={`nav__link nav__link_${slideIndex} nav__link_${active} ${active === name ? 'nav__link_active' : ''}`}
-                       href={`#${name}`} key={name} onClick={() => navigate(route)}>
+                       href={`#${name}`}
+                       key={name}
+                       onClick={() => navigate(route)}>
                         {parse(page)}
                     </a>
                 ))}
