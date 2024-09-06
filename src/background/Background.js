@@ -1,12 +1,14 @@
+import React, { useMemo, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import Picture from '../constants/Picture';
-import React, { useMemo } from 'react';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import { ReactSVG } from 'react-svg';
 import { MouseParallax } from 'react-just-parallax';
 
 export default function Background({ background }) {
     const { currentPage, slideIndex, activeScreen } = useSelector((state) => state.content);
+
+    const nodeRef = useRef(null);
 
     const prop = useMemo(() => {
         return activeScreen === 'main' ? slideIndex
@@ -24,8 +26,8 @@ export default function Background({ background }) {
 
     return (
         <SwitchTransition>
-            <CSSTransition key={`${ slideIndex } ${currentPage}`} classNames={'background'} timeout={200} appear mountOnEnter unmountOnExit>
-                <div className={`background background_${slideIndex} background_${activeScreen}`}>
+            <CSSTransition key={`${ slideIndex } ${currentPage}`} nodeRef={nodeRef} classNames={'background'} timeout={200} appear mountOnEnter unmountOnExit>
+                <div className={`background background_${slideIndex} background_${activeScreen}`} ref={nodeRef}>
 
                     <Picture {...currentBackground.image} />
 

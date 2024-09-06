@@ -1,17 +1,20 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { setSlideIndex } from '../redux/reducers/contentSlice';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import { useRef } from 'react';
 
 export default function Pagination({ years }) {
     const active = useSelector((state) => state.content.slideIndex);
     const dispatch = useDispatch();
 
+    const nodeRef = useRef(null);
+
     return (
 
         <div className={'pagination'}>
             <SwitchTransition>
-                <CSSTransition key={'pagination'} classNames={`pagination__list`} timeout={300} appear>
-                    <ul className={'pagination__list'}>
+                <CSSTransition nodeRef={nodeRef} key={'pagination'} classNames={`pagination__list`} timeout={300} appear>
+                    <ul className={'pagination__list'} ref={nodeRef}>
                         {years.map((year, id) => (
                             <li className={`pagination__item pagination__item_${active} pagination__item_item-${id}
                                     ${year.type === active ? 'pagination__item_active' : ''}`} key={'item-' + id}>

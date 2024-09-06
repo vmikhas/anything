@@ -2,20 +2,24 @@ import parse from 'html-react-parser';
 import { useSelector } from 'react-redux';
 import Picture from '../constants/Picture';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { useRef } from 'react';
 
 export default function Intro({ contents }) {
     const { currentPage } = useSelector((state) => state.content);
     let currentContent = contents[currentPage];
 
+    const titleRef = useRef(null);
+    const textRef = useRef(null);
+
     return (
         <section className={'intro'}>
             <TransitionGroup component={null}>
-                <CSSTransition key={`title-${currentPage}`} classNames={'intro__title'} timeout={300} appear>
-                    <h2 className={`intro__title intro__title_${currentPage}`}>{parse(currentContent.title)}</h2>
+                <CSSTransition key={`title-${currentPage}`} nodeRef={titleRef}classNames={'intro__title'} timeout={300} appear>
+                    <h2 className={`intro__title intro__title_${currentPage}`} ref={titleRef}>{parse(currentContent.title)}</h2>
                 </CSSTransition>
 
-                <CSSTransition key={`text-${currentPage}`} classNames={'intro__text'} timeout={300} appear>
-                    <div className={'intro__text'}>{parse(currentContent.text)}</div>
+                <CSSTransition key={`text-${currentPage}`} nodeRef={textRef} classNames={'intro__text'} timeout={300} appear>
+                    <div className={'intro__text'} ref={textRef}>{parse(currentContent.text)}</div>
                 </CSSTransition>
 
                 {currentContent?.list && currentContent.list.map((item, index) => (
